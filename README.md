@@ -1,2 +1,2 @@
 # alnaiem
-Athkar Application
+Athkar Flutter Application
