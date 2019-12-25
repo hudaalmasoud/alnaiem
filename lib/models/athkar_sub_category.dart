@@ -156,15 +156,15 @@ class AthkarSubCategory extends ChangeNotifier {
     9: [],
     10: [],
     11: [],
+    12: [],
+    13: [],
+    14: [],
+    15: [],
+    16: [],
+    17: [],
   };
 
   List<String> getSubCategoryByIndex(int index) {
-//    subCategoryMap[1].forEach((key, value) {
-//      print('key: $key, value: $value');
-//    });
-    //List<String> x = subCategoryMap[index];
-    //print(subCategoryMap[index]);
-    //print(x);
     return subCategoryMap[index];
   }
 }
