@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533514524976",
+    "firebase_url": "https://alnaiem.firebaseio.com",
+    "project_id": "alnaiem",
+    "storage_bucket": "alnaiem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533514524976:android:ff52cce81dbdb84accd0f5",
+        "android_client_info": {
+          "package_name": "com.eurekaappz.alnaiem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533514524976-u27brcmkdg71pa6722sp8ik0okoshecu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDABs8SntNOL6zUbY_RvPI-yLEaA2JDzVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533514524976-u27brcmkdg71pa6722sp8ik0okoshecu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

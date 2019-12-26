@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AboutUs extends StatelessWidget {
+class AddNew extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('معلومات التطبيق'),
+        title: Text('إضافة ذكر جديد'),
       ),
     );
   }

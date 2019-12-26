@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>533514524976-mmuiupvbouovg8mhrsh09nu57ru16bec.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.533514524976-mmuiupvbouovg8mhrsh09nu57ru16bec</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjaHx-mMU-b8_0nKsOKk8Om2HXBlOFtXE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>533514524976</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eurekaappz.alnaiem</string>
+	<key>PROJECT_ID</key>
+	<string>alnaiem</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alnaiem.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:533514524976:ios:ac0e6621639a1c0bccd0f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://alnaiem.firebaseio.com</string>
+</dict>
+</plist>

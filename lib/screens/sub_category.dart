@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:alnaiem/models/athkar_sub_category.dart';
-import 'package:alnaiem/components/reusable_button.dart';
+import 'package:alnaiem/components/reusable_sub_category_button.dart';
 
 AthkarSubCategory athkarSubCategoryModel = AthkarSubCategory();
 
@@ -25,7 +25,7 @@ class SubCategory extends StatelessWidget {
                       .getSubCategoryByIndex(currentIndex)
                       .length;
               i++)
-            ReusableButton(
+            ReusableSubCategoryButton(
               buttonTitle: athkarSubCategoryModel
                   .getSubCategoryByIndex(currentIndex)[i]
                   .toString(),
