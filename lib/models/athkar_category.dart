@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AthkarCategory extends ChangeNotifier {
+class AthkarCategory {
+  String title;
+  String imagePath;
+
+  AthkarCategory(String title, String imagePath) {
+    this.title = title;
+    this.imagePath = imagePath;
+  }
+
   List<String> category = [
     'أذكار الصباح',
     'أذكار المساء',
@@ -19,8 +27,4 @@ class AthkarCategory extends ChangeNotifier {
     'أذكار المسجد',
     'أذكار الآمور العارضة',
   ];
-
-  List<String> getCategory() {
-    return category;
-  }
 }

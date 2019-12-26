@@ -3,17 +3,22 @@ import 'package:alnaiem/util/constants.dart';
 
 class ReusableButton extends StatelessWidget {
   ReusableButton(
-      {@required this.onTap, @required this.buttonTitle, this.color});
+      {@required this.onTap,
+      @required this.buttonTitle,
+      this.color,
+      this.imagePath});
   final Function onTap;
   final String buttonTitle;
   final Color color;
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        //height: 100.0,
+        height: 60.0,
+        //width: 100.0,
         decoration: BoxDecoration(
 //          image: new DecorationImage(
 //            image: new AssetImage('assets/images/theme.jpg'),
@@ -25,9 +30,9 @@ class ReusableButton extends StatelessWidget {
             width: 1.0,
           ),
           color: color,
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(15.0),
           image: new DecorationImage(
-            image: new AssetImage('assets/images/morning.png'),
+            image: new AssetImage(imagePath),
             colorFilter: new ColorFilter.mode(
                 Colors.black.withOpacity(0.3), BlendMode.dstATop),
             alignment: Alignment.topRight,
@@ -36,11 +41,11 @@ class ReusableButton extends StatelessWidget {
         child: Center(
           child: Text(
             buttonTitle,
-            style: kLargeButtonTextStyle,
+            style: kCategoryButtonTextStyle,
             textDirection: TextDirection.rtl,
           ),
         ),
-        margin: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+        margin: EdgeInsets.only(top: 10.0, left: 7.0, right: 7.0),
         padding:
             EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
       ),
