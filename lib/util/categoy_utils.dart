@@ -3,6 +3,10 @@ import 'package:alnaiem/models/athkar_category.dart';
 class CategoryUtil {
   List<AthkarCategory> athkars = new List<AthkarCategory>();
 
+  CategoryUtil() {
+    populateCategories();
+  }
+
   void populateCategories() {
     athkars
         .add(new AthkarCategory('أذكار الصباح', 'assets/images/morning.png'));
@@ -19,16 +23,16 @@ class CategoryUtil {
         .add(new AthkarCategory('أذكار الصلاة', 'assets/images/morning.png'));
     athkars.add(new AthkarCategory('أذكار السفر', 'assets/images/morning.png'));
     athkars
+        .add(new AthkarCategory('أذكار الخلاء', 'assets/images/morning.png'));
+    athkars.add(new AthkarCategory('دعاء الركوب', 'assets/images/morning.png'));
+    athkars
         .add(new AthkarCategory('أذكار اللباس', 'assets/images/morning.png'));
     athkars
         .add(new AthkarCategory('أذكار الطعام', 'assets/images/morning.png'));
-    athkars
-        .add(new AthkarCategory('أذكار الخلاء', 'assets/images/morning.png'));
     athkars.add(new AthkarCategory(
         'أذكار الخروج من المنزل', 'assets/images/morning.png'));
     athkars.add(
         new AthkarCategory('أذكار دخول المنزل', 'assets/images/morning.png'));
-    athkars.add(new AthkarCategory('دعاد الركوب', 'assets/images/morning.png'));
     athkars
         .add(new AthkarCategory('أذكار المسجد', 'assets/images/morning.png'));
     athkars.add(new AthkarCategory(

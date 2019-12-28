@@ -11,7 +11,6 @@ List<AthkarCategory> categories;
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    athkars.populateCategories();
     categories = athkars.getCategories();
 
     return Stack(
