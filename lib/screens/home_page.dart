@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Image.asset(
-          "assets/images/theme2.jpg",
+          "assets/images/theme4.jpg",
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -56,40 +56,5 @@ class HomePage extends StatelessWidget {
         )
       ],
     );
-
-//    return Scaffold(
-//      appBar: AppBar(
-//        backgroundColor: Colors.transparent,
-//        //title: Text(kAthkarAlMuslimHeaderText),
-//        title: Text(
-//          kAthkarAlMuslimHeaderText,
-//        ),
-//        leading: IconButton(
-//          icon: Image.asset('assets/images/theme.jpg'),
-//          onPressed: () {},
-//        ),
-//      ),
-//      body: ListView(
-//        children: <Widget>[
-//          for (var i = 0; i < athkarCategory.getCategory().length; i++)
-//            ReusableButton(
-//              buttonTitle: athkarCategory.getCategory()[i].toString(),
-//              onTap: () {
-//                Navigator.push(
-//                  context,
-//                  MaterialPageRoute(
-//                    builder: (context) => SubCategory(
-//                      subCategoryTitle:
-//                          athkarCategory.getCategory()[i].toString(),
-//                      currentIndex: i,
-//                    ),
-//                  ),
-//                );
-//              },
-//              color: (i % 2) == 0 ? Color(0xFFb2d8d8) : Color(0xFF66b2b2),
-//            ),
-//        ],
-//      ),
-//    );
   }
 }

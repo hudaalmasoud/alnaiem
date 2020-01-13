@@ -3,10 +3,22 @@ import 'package:flutter/material.dart';
 class Settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('إعدادات'),
-      ),
+    return Stack(
+      children: <Widget>[
+        Image.asset(
+          //"assets/images/prayersTime.png",
+          "assets/images/theme4.jpg",
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.cover,
+        ),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            title: Text('إعدادات'),
+          ),
+        )
+      ],
     );
   }
 }

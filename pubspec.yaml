@@ -47,7 +47,23 @@ flutter:
 
   assets:
     - assets/images/theme2.jpg
-    - assets/images/morning.png
+    - assets/images/theme3.jpg
+    - assets/images/theme4.jpg
+    - assets/images/theme5.jpg
+    - assets/images/prayersTime.png
+    - assets/images/morningIcon.png
+    - assets/images/eveningIcon.png
+    - assets/images/sleepIcon.png
+    - assets/images/ablutionIcon.jpg
+    - assets/images/prayersCallIcon.png
+    - assets/images/prayIcon.png
+    - assets/images/afterPrayIcon.png
+    - assets/images/travelIcon.png
+    - assets/images/restroomIcon.png
+    - assets/images/clothIcon.png
+    - assets/images/forkIcon.png
+    - assets/images/outOfHomeIcon.png
+    - assets/images/backToHomeIcon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

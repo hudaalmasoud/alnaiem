@@ -3,7 +3,7 @@ import 'package:alnaiem/util/constants.dart';
 
 class ReusableSubCategoryButton extends StatelessWidget {
   ReusableSubCategoryButton(
-      {@required this.onTap, @required this.buttonTitle, this.color});
+      {@required this.onTap, @required this.buttonTitle, @required this.color});
   final Function onTap;
   final String buttonTitle;
   final Color color;
@@ -33,7 +33,7 @@ class ReusableSubCategoryButton extends StatelessWidget {
           textDirection: TextDirection.rtl,
         ),
         //),
-        margin: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+        margin: EdgeInsets.only(top: 15.0, left: 20.0, right: 20.0),
         padding:
             EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
       ),

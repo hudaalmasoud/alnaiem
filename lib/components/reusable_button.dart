@@ -5,8 +5,8 @@ class ReusableButton extends StatelessWidget {
   ReusableButton(
       {@required this.onTap,
       @required this.buttonTitle,
-      this.color,
-      this.imagePath});
+      @required this.color,
+      @required this.imagePath});
   final Function onTap;
   final String buttonTitle;
   final Color color;
@@ -45,7 +45,7 @@ class ReusableButton extends StatelessWidget {
             textDirection: TextDirection.rtl,
           ),
         ),
-        margin: EdgeInsets.only(top: 10.0, left: 7.0, right: 7.0),
+        margin: EdgeInsets.only(top: 15.0, left: 7.0, right: 7.0),
         padding:
             EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
       ),
