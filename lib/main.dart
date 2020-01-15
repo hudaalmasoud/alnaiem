@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/about_us.dart';
-import 'screens/settings.dart';
 import 'screens/prayers_time.dart';
 
 void main() => runApp(MyApp());

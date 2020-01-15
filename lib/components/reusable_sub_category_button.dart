@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
 
-class ReusableSubCategoryButton extends StatelessWidget {
+class ReusableSubCategoryButton extends StatefulWidget {
   ReusableSubCategoryButton(
       {@required this.onTap, @required this.buttonTitle, @required this.color});
   final Function onTap;
@@ -9,9 +9,15 @@ class ReusableSubCategoryButton extends StatelessWidget {
   final Color color;
 
   @override
+  _ReusableSubCategoryButtonState createState() =>
+      _ReusableSubCategoryButtonState();
+}
+
+class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: widget.onTap,
       child: Container(
         decoration: BoxDecoration(
 //          image: new DecorationImage(
@@ -23,12 +29,12 @@ class ReusableSubCategoryButton extends StatelessWidget {
             style: BorderStyle.solid,
             width: 1.0,
           ),
-          color: color,
+          color: widget.color,
           borderRadius: BorderRadius.circular(30.0),
         ),
         //child: Center(
         child: Text(
-          buttonTitle,
+          widget.buttonTitle,
           style: kLargeButtonTextStyle,
           textDirection: TextDirection.rtl,
         ),

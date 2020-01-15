@@ -44,6 +44,7 @@ class HomePage extends StatelessWidget {
                         builder: (context) => SubCategory(
                           subCategoryTitle: categories[i].title,
                           currentIndex: i,
+                          athkarCategory: categories[i],
                         ),
                       ),
                     );
