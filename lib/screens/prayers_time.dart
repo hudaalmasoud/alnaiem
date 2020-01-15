@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AddNew extends StatelessWidget {
+class PrayerTime extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
