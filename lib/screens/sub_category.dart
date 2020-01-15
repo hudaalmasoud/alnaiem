@@ -20,7 +20,8 @@ class SubCategory extends StatefulWidget {
 }
 
 class _SubCategoryState extends State<SubCategory> {
-  int counter = 5;
+  Color evenColor = Color(0xFFb2d8d8);
+  Color oddColor = Color(0xFF66b2b2);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,14 @@ class _SubCategoryState extends State<SubCategory> {
           appBar: AppBar(
             title: Text(widget.subCategoryTitle),
             actions: <Widget>[
-              Icon(Icons.refresh),
+              new IconButton(
+                icon: new Icon(Icons.refresh),
+                onPressed: () {
+                  setState(() {
+                    widget.athkarCategory.reset();
+                  });
+                },
+              ),
             ],
 //            title: Image.asset(
 //              'assets/images/eveningIcon.png',
@@ -53,16 +61,28 @@ class _SubCategoryState extends State<SubCategory> {
                   i < widget.athkarCategory.subCategoryDetails.length;
                   i++)
                 ReusableSubCategoryButton(
-                  buttonTitle: widget
-                          .athkarCategory.subCategoryDetails[i].text +
-                      ' (' +
-                      widget.athkarCategory.subCategoryDetails[i].totalCounter
-                          .toString() +
-                      ')',
-                  color: ((i % 2 == 0) & (counter > 0))
-                      ? Color(0xFFb2d8d8)
-                      : Color(0xFF66b2b2),
-                  onTap: () {},
+                  buttonTitle:
+                      widget.athkarCategory.subCategoryDetails[i].text +
+                          ' (' +
+                          (widget.athkarCategory.subCategoryDetails[i]
+                                      .totalCounter -
+                                  widget.athkarCategory.subCategoryDetails[i]
+                                      .currentCounter)
+                              .toString() +
+                          ')',
+                  color: (i % 2) == 0 ? evenColor : oddColor,
+                  onTap: () {
+                    setState(() {
+                      if (widget.athkarCategory.subCategoryDetails[i]
+                              .currentCounter <
+                          widget.athkarCategory.subCategoryDetails[i]
+                              .totalCounter)
+                        widget.athkarCategory.subCategoryDetails[i]
+                            .setCurrentCounter(widget.athkarCategory
+                                    .subCategoryDetails[i].currentCounter +
+                                1);
+                    });
+                  },
                 ),
             ],
           ),

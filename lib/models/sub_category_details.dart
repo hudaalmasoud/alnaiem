@@ -8,4 +8,12 @@ class SubCategoryDetails {
     this.totalCounter = totalCounter;
     this.currentCounter = currentCounter;
   }
+
+  void setTotalCounter(int counter) {
+    this.totalCounter = counter;
+  }
+
+  void setCurrentCounter(int counter) {
+    this.currentCounter = counter;
+  }
 }

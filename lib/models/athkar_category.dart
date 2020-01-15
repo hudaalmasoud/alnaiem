@@ -11,4 +11,10 @@ class AthkarCategory {
     this.imagePath = imagePath;
     this.subCategoryDetails = subCategoryDetails;
   }
+
+  void reset() {
+    for (final subCategoryDetail in this.subCategoryDetails) {
+      subCategoryDetail.setCurrentCounter(0);
+    }
+  }
 }
