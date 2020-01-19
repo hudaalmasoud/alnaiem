@@ -20,92 +20,67 @@ class AboutUs extends StatelessWidget {
           appBar: AppBar(
             title: Text('معلومات التطبيق'),
           ),
-          body: Column(
+          body: SafeArea(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Expanded(
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: GestureDetector(
-                        //onTap: onPress,
-                        child: Container(
-                          margin: EdgeInsets.only(
-                              top: 15.0, left: 35.0, right: 35.0),
-                          decoration: BoxDecoration(
-                            color: Color(0xFFb2d8d8).withOpacity(0.02),
-                            borderRadius: BorderRadius.circular(10.0),
-                            image: new DecorationImage(
-                              image: new AssetImage(
-                                  'assets/images/morningIcon.png'),
-                              colorFilter: new ColorFilter.mode(
-                                  Colors.black.withOpacity(0.8),
-                                  BlendMode.dstATop),
-                              alignment: Alignment.topCenter,
-                            ),
-                          ),
+              CircleAvatar(
+                radius: 85.0,
+                backgroundImage: AssetImage('assets/images/morningIcon.png'),
+              ),
+              Text('النعيم', style: kCategoryButtonTextStyle),
+              Card(
+                color: Color(0xFF66b2b2),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.web,
+                    color: Colors.white,
+                  ),
+                  title: RichText(
+                    textDirection: TextDirection.ltr,
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'https://eurekaappz.com',
+                          style: kCategoryButtonTextStyle,
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              launch('https://eurekaappz.com');
+                            },
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Expanded(
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: GestureDetector(
-                        //onTap: onPress,
-                        child: Container(
-                          margin: EdgeInsets.only(
-                              left: 35.0, right: 35.0, bottom: 35.0),
-                          padding: EdgeInsets.only(
-                              bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
-                          decoration: BoxDecoration(
-                            color: Color(0xFFb2d8d8),
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: new RichText(
-                            textDirection: TextDirection.rtl,
-                            text: new TextSpan(
-                              children: [
-                                new TextSpan(
-                                  text:
-                                      'زوروا موقعنا للمزيد من المعلومات:' + ' ',
-                                  style: kLargeButtonTextStyle,
-                                ),
-                                new TextSpan(
-                                  text: 'إضغط هنا',
-                                  style: kContactUsTextStyle,
-                                  recognizer: TapGestureRecognizer()
-                                    ..onTap = () {
-                                      launch('https://eurekaappz.com');
-                                    },
-                                ),
-                                new TextSpan(
-                                  text: '\n' + 'للتواصل معنا:' + ' ',
-                                  style: kLargeButtonTextStyle,
-                                ),
-                                new TextSpan(
-                                  text: 'إضغط هنا',
-                                  style: kContactUsTextStyle,
-                                  recognizer: TapGestureRecognizer()
-                                    ..onTap = () {
-                                      if (1 == 1) {
-                                        sendMessage();
-                                      }
-                                    },
-                                ),
-                              ],
-                            ),
-                          ),
+              Card(
+                color: Color(0xFF66b2b2),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.white,
+                  ),
+                  title: RichText(
+                    textDirection: TextDirection.ltr,
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'hudamasoud86@gmail.com',
+                          style: kCategoryButtonTextStyle,
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              sendMessage();
+                            },
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
-          ),
+          )),
         )
       ],
     );
@@ -116,17 +91,12 @@ void sendMessage() {
   String inputEmail;
   String inputMessage;
   Email email;
-  if (1 == 1) {
-    email = Email(
-      body: 'email body',
-      subject: 'Email subject',
-      recipients: ['hudamasoud86@gmail.com'],
-    );
-    send(email);
-  }
-
-//  },
-//  );
+  email = Email(
+    body: 'email body',
+    subject: 'Email subject',
+    recipients: ['hudamasoud86@gmail.com'],
+  );
+  send(email);
   debugPrint('email - > $inputEmail  message -> $inputMessage');
 }
 

@@ -49,8 +49,7 @@ class _AddPrayerState extends State<AddPrayer> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(
-                    top: 10.0, left: 30.0, right: 30.0, bottom: 30.0),
+                margin: EdgeInsets.only(top: 15.0, left: 7.0, right: 7.0),
               ),
               Expanded(
                 child: Container(
