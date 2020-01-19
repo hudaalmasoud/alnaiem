@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/about_us.dart';
-import 'screens/prayers_time.dart';
-//import 'screens/add_prayer.dart';
+//import 'screens/prayers_time.dart';
+import 'screens/add_prayer.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,8 +17,8 @@ class MyAppState extends State<MyApp> {
   int _selectedPage = 0;
   final _pageOptions = [
     HomePage(),
-    PrayerTime(),
-    //AddPrayer(),
+    //PrayerTime(),
+    AddPrayer(),
     AboutUs(),
   ];
   @override
@@ -51,25 +51,21 @@ class MyAppState extends State<MyApp> {
                 title: Text(''),
                 //backgroundColor: Color(0xFF36a8a8),
               ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.timer),
-                title: Text(''),
-                //backgroundColor: Color(0xFF36a8a8),
-              ),
 //              BottomNavigationBarItem(
-//                icon: Icon(Icons.add),
+//                icon: Icon(Icons.timer),
 //                title: Text(''),
 //                //backgroundColor: Color(0xFF36a8a8),
 //              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.add),
+                title: Text(''),
+                //backgroundColor: Color(0xFF36a8a8),
+              ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.info),
                 title: Text(''),
                 //backgroundColor: Color(0xFF36a8a8),
               ),
-//            BottomNavigationBarItem(
-//              icon: Icon(Icons.settings),
-//              title: Text(''),
-//            ),
             ],
           ),
         ),

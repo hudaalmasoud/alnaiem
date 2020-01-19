@@ -37,6 +37,12 @@ class _SubCategoryState extends State<SubCategory> {
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             title: Text(widget.subCategoryTitle),
+//            leading: new Padding(
+//              padding: const EdgeInsets.all(8.0),
+//              child: new Material(
+//                shape: new CircleBorder(),
+//              ),
+//            ),
             actions: <Widget>[
               new IconButton(
                 icon: new Icon(Icons.refresh),
@@ -70,6 +76,19 @@ class _SubCategoryState extends State<SubCategory> {
                                       .currentCounter)
                               .toString() +
                           ')',
+                  /////TODo: Remove
+//                  buttonTitle:
+//                      widget.athkarCategory.subCategoryDetails[i].text +
+//                          '  ' +
+//                          '\n \n',
+//                  counter: ' ' +
+//                      (widget.athkarCategory.subCategoryDetails[i]
+//                                  .totalCounter -
+//                              widget.athkarCategory.subCategoryDetails[i]
+//                                  .currentCounter)
+//                          .toString() +
+//                      ' ',
+
                   color: (i % 2) == 0 ? evenColor : oddColor,
                   onTap: () {
                     setState(() {

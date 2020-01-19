@@ -14,7 +14,7 @@ class AddPrayer extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text('إضافة ذكر جديد'),
+            title: Text('إضافة ذِكر/ دعاء جديد'),
           ),
         )
       ],
