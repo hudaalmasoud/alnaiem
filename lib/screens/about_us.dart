@@ -55,7 +55,7 @@ class AboutUs extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color(0xFF66b2b2),
+                color: Color(0xFFb2d8d8),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
@@ -73,6 +73,50 @@ class AboutUs extends StatelessWidget {
                             ..onTap = () {
                               sendMessage();
                             },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Color(0xFF66b2b2),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.share,
+                    color: Colors.white,
+                  ),
+                  title: RichText(
+                    textDirection: TextDirection.ltr,
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Apple Store',
+                          style: kCategoryButtonTextStyle,
+                          recognizer: TapGestureRecognizer()..onTap = () {},
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Color(0xFFb2d8d8),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.share,
+                    color: Colors.white,
+                  ),
+                  title: RichText(
+                    textDirection: TextDirection.ltr,
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Google Play',
+                          style: kCategoryButtonTextStyle,
+                          recognizer: TapGestureRecognizer()..onTap = () {},
                         ),
                       ],
                     ),
