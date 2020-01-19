@@ -31,7 +31,12 @@ class AboutUs extends StatelessWidget {
               Text('النعيم', style: kCategoryButtonTextStyle),
               Card(
                 color: Color(0xFF66b2b2),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: EdgeInsets.only(
+                  top: 15.0,
+                  left: MediaQuery.of(context).size.width * 0.05,
+                  right: MediaQuery.of(context).size.width * 0.05,
+                ),
+                //margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.web,
@@ -56,7 +61,10 @@ class AboutUs extends StatelessWidget {
               ),
               Card(
                 color: Color(0xFFb2d8d8),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: EdgeInsets.only(
+                    top: 15.0,
+                    left: MediaQuery.of(context).size.width * 0.05,
+                    right: MediaQuery.of(context).size.width * 0.05),
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
@@ -81,7 +89,10 @@ class AboutUs extends StatelessWidget {
               ),
               Card(
                 color: Color(0xFF66b2b2),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: EdgeInsets.only(
+                    top: 15.0,
+                    left: MediaQuery.of(context).size.width * 0.05,
+                    right: MediaQuery.of(context).size.width * 0.05),
                 child: ListTile(
                   leading: Icon(
                     Icons.share,
@@ -103,7 +114,10 @@ class AboutUs extends StatelessWidget {
               ),
               Card(
                 color: Color(0xFFb2d8d8),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: EdgeInsets.only(
+                    top: 15.0,
+                    left: MediaQuery.of(context).size.width * 0.05,
+                    right: MediaQuery.of(context).size.width * 0.05),
                 child: ListTile(
                   leading: Icon(
                     Icons.share,

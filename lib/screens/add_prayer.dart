@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:alnaiem/components/theket_list.dart';
 import 'add_screen.dart';
 import 'package:alnaiem/models/athkar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AddPrayer extends StatefulWidget {
   @override
@@ -53,7 +54,12 @@ class _AddPrayerState extends State<AddPrayer> {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20.0),
+                  margin: EdgeInsets.only(
+                      left: MediaQuery.of(context).size.width * 0.05,
+                      right: MediaQuery.of(context).size.width * 0.05),
+                  //padding: EdgeInsets.symmetric(horizontal: 20.0),
+                  padding: EdgeInsets.only(
+                      bottom: 10.0, top: 10.0, left: 15.0, right: 15.0),
                   decoration: BoxDecoration(
                     color: Color(0xFFb2d8d8).withOpacity(0.3),
                     borderRadius: BorderRadius.only(
