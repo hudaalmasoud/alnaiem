@@ -100,6 +100,13 @@ class CategoryUtil {
         populateBackToHomeAthkars(),
       ),
     );
+    athkars.add(
+      new AthkarCategory(
+        'أدعية للميت',
+        'assets/images/prayersForDeadIcon.png',
+        populatePrayersForDeadAthkars(),
+      ),
+    );
 //    athkars
 //        .add(new AthkarCategory('أذكار المسجد', 'assets/images/morning.png'));
 //    athkars.add(new AthkarCategory(
@@ -1015,5 +1022,223 @@ class CategoryUtil {
           0),
     );
     return backToHomeAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayersForDeadAthkars() {
+    List<SubCategoryDetails> prayersForDeadAthkars =
+        new List<SubCategoryDetails>();
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أبدله داراً خيراً من داره، وأهلاً خيراً من أهله، وأدخله الجنّة، وأعذه من عذاب القبر ومن عذاب النّار.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ عامله بما أنت أهله، ولا تعامله بما هو أهله.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجزه عن الإحسان إحساناً وعن الإساءة عفواً وغفراناً.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إن كان محسناً فزد من حسناته، وإن كان مسيئاً فتجاوز عن سيّئاته.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أدخله الجنّة من غير مناقشة حساب ولا سابقة عذاب.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ آنسه في وحدته وفي وحشته وفي غربته.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أنزله منزلاً مباركاً وأنت خير المنزلين.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أنزله منازل الصدّيقين والشّهداء والصّالحين، وحسن أولئك رفيقاً.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجعل قبره روضةً من رياض الجنّة، ولا تجعله حفرةً من حفر النّار.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ افسح له في قبره مدّ بصره، وافرش قبره من فراش الجنّة.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أعذه من عذاب القبر، وجفاف ِالأرض عن جنبيها.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ املأ قبره بالرّضا والنّور والفسحة والسّرور.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه في ذمّتك وحبل جوارك، فقِهِِ فتنة القبر، وعذاب النّار، وأنت أهل الوفاء والحقّ، فاغفر له وارحمه إنّك أنت الغفور الرّحيم.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه عبدك وابن عبدك خرج من الدّنيا وسعتها ومحبوبها وأحبّائه فيها إلى ظلمة القبر وما هو لاقيه.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه كان يشهد أنّك لا إله إلّا أنت وأنّ محمّداً عبدك ورسولك وأنت أعلم به.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّا نتوسّل بك إليك، ونقسم بك عليك أن ترحمه ولا تعذّبه، وأن تثبّته عند السؤال.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه نَزَل بك وأنت خير منزولٍ به، وأصبح فقيراً إلى رحمتك وأنت غنيٌّ عن عذابه.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ آته برحمتك ورضاك، وقهِ فتنة القبر وعذابه، وآته برحمتك الأمن من عذابك حتّى تبعثه إلى جنّتك يا أرحم الرّاحمين.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ انقله من مواطن الدّود وضيق اللحود إلى جنّات الخلود.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ احمه تحت الأرض، واستره يوم العرض، ولا تخزه يوم يبعثون (يوم لا ينفع مالٌ ولا بنون إلّا من أتى الله بقلبٍ سليم).',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ يمّن كتابه، ويسّر حسابه، وثقّل بالحسنات ميزانه، وثبّت على الصّراط أقدامه، وأسكنه في أعلى الجنّات بجوار حبيبك ومصطفاك (صلّى الله عليه وسلّم).',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أمّنه من فزع يوم القيامة، ومن هول يوم القيامة، واجعل نفسه آمنة مطمئنّة، ولقّنه حجّته.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجعله في بطن القبر مطمئنّاً وعند قيام الأشهاد آمن، وبجود رضوانك واثق، وإلى أعلى درجاتك سابق.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجعل عن يمينه نوراً حتّى تبعثه آمناً مطمئنّاً في نورٍ من نورك.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ انظر إليه نظرة رضا، فإنّ من تنظر إليه نظرة رضا لا تعذّبه أبداً.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أسكنه فسيح الجنان، واغفر له يا رحمن، وارحمه يا رحيم، وتجاوز عمّا تعلم يا عليم.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اعف عنه فإنّك القائل "ويعفو عن كثير".', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه جاء ببابك، وأناخ بجنابك، فَجد عليه بعفوك وإكرامك وجود إحسانك.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّ رحمتك وسعت كلّ شيء فارحمه رحمةً تطمئنّ بها نفسه، وتقرّ بها عينه.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ احشره مع المتّقين إلى الرّحمن وفداً.', 1, 0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ احشره مع أصحاب اليمين، واجعل تحيّته سلامٌ لك من أصحاب اليمين.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ بشّره بقولك "كلوا واشربوا هنيئاً بما أسلفتم في الأيّام الخالية".',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجعله من الّذين سعدوا في الجنّة خالدين فيها ما دامت السموات والأرض.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لا نزكّيه عليك، ولكنّا نحسبه أنّه أمن وعمل صالحاً، فاجعل له جنّتين ذواتي أفنان بحقّ قولك: "ولمن خاف مقام ربّه جنّتان".',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ شفع فيه نبيّنا ومصطفاك، واحشره تحت لوائه، واسقه من يده الشّريفة شربةً هنيئةً لا يظمأ بعدها أبداً.',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجعله في جنّة الخلد "الَّتِي وُعِدَ الْمُتَّقُونَ كَانَتْ لَهُمْ جَزَاء وَمَصِيرًا. لَهُمْ فِيهَا مَا يَشَاؤُونَ خَالِدِينَ كَانَ عَلَى رَبِّكَ وَعْدًا مَسْؤُولا".',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه صبر على البلاء فلم يجزع، فامنحه درجة الصّابرين الّذين يوفون أجورهم بغير حساب فإنّك القائل "إنّما يوفي الصّابرون أجرهم بغير حساب".',
+          1,
+          0),
+    );
+    prayersForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنّه كان مصلّ لك، فثبّته على الصّراط يوم تزل الأقدام.',
+          1,
+          0),
+    );
+    return prayersForDeadAthkars;
   }
 }
