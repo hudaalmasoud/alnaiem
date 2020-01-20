@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:alnaiem/util/utilities.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 
 class AboutUs extends StatelessWidget {
   @override
@@ -22,99 +22,124 @@ class AboutUs extends StatelessWidget {
             title: Text(kAboutUsHeaderText),
           ),
           body: SafeArea(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              CircleAvatar(
-                radius: 85.0,
-                backgroundImage: AssetImage('assets/images/morningIcon.png'),
-              ),
-              Text(kAppName, style: kCategoryButtonTextStyle),
-              Card(
-                color: kDarkButtonColor,
-                margin: EdgeInsets.only(
-                  top: 15.0,
-                  left: MediaQuery.of(context).size.width * 0.05,
-                  right: MediaQuery.of(context).size.width * 0.05,
-                ),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.web,
-                    color: Colors.white,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircularProfileAvatar(
+                  '',
+                  child: Image.asset(
+                    'assets/images/morningIcon.png',
                   ),
-                  title: RichText(
-                    textDirection: TextDirection.ltr,
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: KEurekaAppzSiteURL,
-                          style: kCategoryButtonTextStyle,
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              launch(KEurekaAppzSiteURL);
-                            },
-                        ),
-                      ],
+                  borderColor: kButtonBorderColor,
+                  borderWidth: 2,
+                  elevation: 2,
+                  radius: 75,
+                ),
+                Text(kAppName, style: kCategoryButtonTextStyle),
+                Card(
+                  shape: StadiumBorder(
+                    side: BorderSide(
+                      color: kButtonBorderColor,
+                      width: 1.0,
                     ),
                   ),
-                ),
-              ),
-              Card(
-                color: kLightButtonColor,
-                margin: EdgeInsets.only(
+                  color: kDarkButtonColor,
+                  margin: EdgeInsets.only(
                     top: 15.0,
                     left: MediaQuery.of(context).size.width * 0.05,
-                    right: MediaQuery.of(context).size.width * 0.05),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    color: Colors.white,
+                    right: MediaQuery.of(context).size.width * 0.05,
                   ),
-                  title: RichText(
-                    textDirection: TextDirection.ltr,
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: kEurekaAppzEmailAddress,
-                          style: kCategoryButtonTextStyle,
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              sendMessage();
-                            },
-                        ),
-                      ],
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.web,
+                      color: Colors.white,
+                    ),
+                    title: RichText(
+                      textDirection: TextDirection.ltr,
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: KEurekaAppzSiteURL,
+                            style: kCategoryButtonTextStyle,
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                launch(KEurekaAppzSiteURL);
+                              },
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Card(
-                color: kDarkButtonColor,
-                margin: EdgeInsets.only(
-                    top: 15.0,
-                    left: MediaQuery.of(context).size.width * 0.05,
-                    right: MediaQuery.of(context).size.width * 0.05),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.share,
-                    color: Colors.white,
+                Card(
+                  shape: StadiumBorder(
+                    side: BorderSide(
+                      color: kButtonBorderColor,
+                      width: 1.0,
+                    ),
                   ),
-                  title: RichText(
-                    textDirection: TextDirection.ltr,
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: kShareAppText,
-                          style: kCategoryButtonTextStyle,
-                          recognizer: TapGestureRecognizer()..onTap = () {},
-                        ),
-                      ],
+                  color: kLightButtonColor,
+                  margin: EdgeInsets.only(
+                      top: 15.0,
+                      left: MediaQuery.of(context).size.width * 0.05,
+                      right: MediaQuery.of(context).size.width * 0.05),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
+                    title: RichText(
+                      textDirection: TextDirection.ltr,
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: kEurekaAppzEmailAddress,
+                            style: kCategoryButtonTextStyle,
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                sendMessage();
+                              },
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
-          )),
-        )
+                Card(
+                  shape: StadiumBorder(
+                    side: BorderSide(
+                      color: kButtonBorderColor,
+                      width: 1.0,
+                    ),
+                  ),
+                  color: kDarkButtonColor,
+                  margin: EdgeInsets.only(
+                      top: 15.0,
+                      left: MediaQuery.of(context).size.width * 0.05,
+                      right: MediaQuery.of(context).size.width * 0.05),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.share,
+                      color: Colors.white,
+                    ),
+                    title: RichText(
+                      textDirection: TextDirection.ltr,
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: kShareAppText,
+                            style: kCategoryButtonTextStyle,
+                            recognizer: TapGestureRecognizer()..onTap = () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

@@ -29,7 +29,7 @@ const kDarkButtonColor = Color(0xFF66b2b2);
 
 const kLightButtonColor = Color(0xFFb2d8d8);
 
-const kBackgroundImage = 'assets/images/theme4.jpg';
+const kBackgroundImage = 'assets/images/backgroungImage.jpg';
 
 const kAppName = 'النعيم';
 
