@@ -34,7 +34,27 @@ class _SubCategoryState extends State<SubCategory> {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text(widget.subCategoryTitle),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(widget.subCategoryTitle + '  '),
+//                Image.asset(
+//                  widget.athkarCategory.imagePath,
+//                  height: 30.0,
+//                  width: 30.0,
+//                  fit: BoxFit.cover,
+//                ),
+                ClipRRect(
+                  borderRadius: new BorderRadius.circular(20.0),
+                  child: Image(
+                    fit: BoxFit.fill,
+                    image: AssetImage(widget.athkarCategory.imagePath),
+                    height: 35.0,
+                    width: 35.0,
+                  ),
+                ),
+              ],
+            ),
             actions: <Widget>[
               new IconButton(
                 icon: new Icon(Icons.refresh),

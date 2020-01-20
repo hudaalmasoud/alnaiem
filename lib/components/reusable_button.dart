@@ -19,10 +19,6 @@ class ReusableButton extends StatelessWidget {
       child: Container(
         height: 60.0,
         decoration: BoxDecoration(
-//          image: new DecorationImage(
-//            image: new AssetImage('assets/images/theme.jpg'),
-//            fit: BoxFit.cover,
-//          ),
           border: Border.all(
             color: kButtonBorderColor,
             style: BorderStyle.solid,
