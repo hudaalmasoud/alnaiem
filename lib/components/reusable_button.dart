@@ -18,14 +18,13 @@ class ReusableButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 60.0,
-        //width: 100.0,
         decoration: BoxDecoration(
 //          image: new DecorationImage(
 //            image: new AssetImage('assets/images/theme.jpg'),
 //            fit: BoxFit.cover,
 //          ),
           border: Border.all(
-            color: Color(0xFFc4421a),
+            color: kButtonBorderColor,
             style: BorderStyle.solid,
             width: 1.0,
           ),

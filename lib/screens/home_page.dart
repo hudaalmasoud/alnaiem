@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Image.asset(
-          "assets/images/theme4.jpg",
+          kBackgroundImage,
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -24,9 +24,8 @@ class HomePage extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-              //backgroundColor: Colors.transparent,
               title: Text(
-            kAthkarAlMuslimHeaderText,
+            kHomePageHeaderText,
             style: TextStyle(
               color: Colors.white,
               //fontSize: 30.0,
@@ -49,7 +48,7 @@ class HomePage extends StatelessWidget {
                       ),
                     );
                   },
-                  color: (i % 2) == 0 ? Color(0xFFb2d8d8) : Color(0xFF66b2b2),
+                  color: (i % 2) == 0 ? kLightButtonColor : kDarkButtonColor,
                   imagePath: categories[i].imagePath,
                 ),
             ],

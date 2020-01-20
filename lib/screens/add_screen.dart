@@ -9,8 +9,6 @@ class AddScreen extends StatelessWidget {
     String newTitle;
 
     return Container(
-      //color: Color(0xff757575),
-      //color: Colors.black,
       child: Container(
         padding: EdgeInsets.all(50.0),
         decoration: BoxDecoration(
@@ -32,8 +30,8 @@ class AddScreen extends StatelessWidget {
               },
             ),
             FlatButton(
-              child: Text('إضافة', style: kCategoryButtonTextStyle),
-              color: Color(0xFF66b2b2),
+              child: Text(kAddText, style: kCategoryButtonTextStyle),
+              color: kDarkButtonColor,
               onPressed: () {
                 addCallback(newTitle);
                 Navigator.pop(context);

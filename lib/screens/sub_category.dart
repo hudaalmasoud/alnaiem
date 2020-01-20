@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:alnaiem/models/athkar_sub_category.dart';
 import 'package:alnaiem/components/reusable_sub_category_button.dart';
 import 'package:alnaiem/models/athkar_category.dart';
+import 'package:alnaiem/util/constants.dart';
 
 AthkarSubCategory athkarSubCategoryModel = AthkarSubCategory();
 
@@ -20,15 +21,12 @@ class SubCategory extends StatefulWidget {
 }
 
 class _SubCategoryState extends State<SubCategory> {
-  Color evenColor = Color(0xFFb2d8d8);
-  Color oddColor = Color(0xFF66b2b2);
-
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
         Image.asset(
-          "assets/images/theme4.jpg",
+          kBackgroundImage,
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -37,29 +35,18 @@ class _SubCategoryState extends State<SubCategory> {
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             title: Text(widget.subCategoryTitle),
-//            leading: new Padding(
-//              padding: const EdgeInsets.all(8.0),
-//              child: new Material(
-//                shape: new CircleBorder(),
-//              ),
-//            ),
             actions: <Widget>[
               new IconButton(
                 icon: new Icon(Icons.refresh),
                 onPressed: () {
-                  setState(() {
-                    widget.athkarCategory.reset();
-                  });
+                  setState(
+                    () {
+                      widget.athkarCategory.reset();
+                    },
+                  );
                 },
               ),
             ],
-//            title: Image.asset(
-//              'assets/images/eveningIcon.png',
-//              fit: BoxFit.cover,
-//              height: 32,
-//              width: 32,
-//              color: Colors.black.withOpacity(0.1),
-//            ),
           ),
           body: ListView(
             children: <Widget>[
@@ -76,36 +63,25 @@ class _SubCategoryState extends State<SubCategory> {
                                       .currentCounter)
                               .toString() +
                           ')',
-                  /////TODo: Remove
-//                  buttonTitle:
-//                      widget.athkarCategory.subCategoryDetails[i].text +
-//                          '  ' +
-//                          '\n \n',
-//                  counter: ' ' +
-//                      (widget.athkarCategory.subCategoryDetails[i]
-//                                  .totalCounter -
-//                              widget.athkarCategory.subCategoryDetails[i]
-//                                  .currentCounter)
-//                          .toString() +
-//                      ' ',
-
-                  color: (i % 2) == 0 ? evenColor : oddColor,
+                  color: (i % 2) == 0 ? kLightButtonColor : kDarkButtonColor,
                   onTap: () {
-                    setState(() {
-                      if (widget.athkarCategory.subCategoryDetails[i]
-                              .currentCounter <
+                    setState(
+                      () {
+                        if (widget.athkarCategory.subCategoryDetails[i]
+                                .currentCounter <
+                            widget.athkarCategory.subCategoryDetails[i]
+                                .totalCounter)
                           widget.athkarCategory.subCategoryDetails[i]
-                              .totalCounter)
-                        widget.athkarCategory.subCategoryDetails[i]
-                            .setCurrentCounter(widget.athkarCategory
-                                    .subCategoryDetails[i].currentCounter +
-                                1);
-                    });
+                              .setCurrentCounter(widget.athkarCategory
+                                      .subCategoryDetails[i].currentCounter +
+                                  1);
+                      },
+                    );
                   },
                 ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

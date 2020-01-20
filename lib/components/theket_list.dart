@@ -2,15 +2,15 @@ import 'package:alnaiem/models/athkar.dart';
 import 'package:flutter/material.dart';
 import 'package:alnaiem/components/theker_tile.dart';
 
-class TasksList extends StatefulWidget {
+class ThekerList extends StatefulWidget {
   final List<Athkar> athkar;
-  TasksList(this.athkar);
+  ThekerList(this.athkar);
 
   @override
-  _TasksListState createState() => _TasksListState();
+  _ThekerListState createState() => _ThekerListState();
 }
 
-class _TasksListState extends State<TasksList> {
+class _ThekerListState extends State<ThekerList> {
   @override
   Widget build(BuildContext context) {
 //    return ListView.builder(

@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:alnaiem/util/utilities.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 
 class AboutUs extends StatelessWidget {
@@ -10,7 +11,7 @@ class AboutUs extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Image.asset(
-          "assets/images/theme4.jpg",
+          kBackgroundImage,
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -18,7 +19,7 @@ class AboutUs extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text('معلومات التطبيق'),
+            title: Text(kAboutUsHeaderText),
           ),
           body: SafeArea(
               child: Column(
@@ -28,15 +29,14 @@ class AboutUs extends StatelessWidget {
                 radius: 85.0,
                 backgroundImage: AssetImage('assets/images/morningIcon.png'),
               ),
-              Text('النعيم', style: kCategoryButtonTextStyle),
+              Text(kAppName, style: kCategoryButtonTextStyle),
               Card(
-                color: Color(0xFF66b2b2),
+                color: kDarkButtonColor,
                 margin: EdgeInsets.only(
                   top: 15.0,
                   left: MediaQuery.of(context).size.width * 0.05,
                   right: MediaQuery.of(context).size.width * 0.05,
                 ),
-                //margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.web,
@@ -47,11 +47,11 @@ class AboutUs extends StatelessWidget {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: 'https://eurekaappz.com',
+                          text: KEurekaAppzSiteURL,
                           style: kCategoryButtonTextStyle,
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
-                              launch('https://eurekaappz.com');
+                              launch(KEurekaAppzSiteURL);
                             },
                         ),
                       ],
@@ -60,7 +60,7 @@ class AboutUs extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color(0xFFb2d8d8),
+                color: kLightButtonColor,
                 margin: EdgeInsets.only(
                     top: 15.0,
                     left: MediaQuery.of(context).size.width * 0.05,
@@ -75,7 +75,7 @@ class AboutUs extends StatelessWidget {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: 'hudamasoud86@gmail.com',
+                          text: kEurekaAppzEmailAddress,
                           style: kCategoryButtonTextStyle,
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
@@ -88,7 +88,7 @@ class AboutUs extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color(0xFF66b2b2),
+                color: kDarkButtonColor,
                 margin: EdgeInsets.only(
                     top: 15.0,
                     left: MediaQuery.of(context).size.width * 0.05,
@@ -103,32 +103,7 @@ class AboutUs extends StatelessWidget {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: 'Apple Store',
-                          style: kCategoryButtonTextStyle,
-                          recognizer: TapGestureRecognizer()..onTap = () {},
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                color: Color(0xFFb2d8d8),
-                margin: EdgeInsets.only(
-                    top: 15.0,
-                    left: MediaQuery.of(context).size.width * 0.05,
-                    right: MediaQuery.of(context).size.width * 0.05),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.share,
-                    color: Colors.white,
-                  ),
-                  title: RichText(
-                    textDirection: TextDirection.ltr,
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: 'Google Play',
+                          text: kShareAppText,
                           style: kCategoryButtonTextStyle,
                           recognizer: TapGestureRecognizer()..onTap = () {},
                         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:alnaiem/components/theket_list.dart';
 import 'add_screen.dart';
 import 'package:alnaiem/models/athkar.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:alnaiem/util/constants.dart';
 
 class AddPrayer extends StatefulWidget {
   @override
@@ -22,14 +22,14 @@ class _AddPrayerState extends State<AddPrayer> {
     return Stack(
       children: <Widget>[
         Image.asset(
-          "assets/images/theme4.jpg",
+          kBackgroundImage,
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
         ),
         Scaffold(
           floatingActionButton: FloatingActionButton(
-            backgroundColor: Color(0xFFb2d8d8),
+            backgroundColor: kLightButtonColor,
             child: Icon(Icons.add),
             onPressed: () {
               showModalBottomSheet(
@@ -44,7 +44,7 @@ class _AddPrayerState extends State<AddPrayer> {
           ),
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text('إضافة ذِكر/ دعاء جديد'),
+            title: Text(kAddPageHeaderText),
           ),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,17 +57,16 @@ class _AddPrayerState extends State<AddPrayer> {
                   margin: EdgeInsets.only(
                       left: MediaQuery.of(context).size.width * 0.05,
                       right: MediaQuery.of(context).size.width * 0.05),
-                  //padding: EdgeInsets.symmetric(horizontal: 20.0),
                   padding: EdgeInsets.only(
                       bottom: 10.0, top: 10.0, left: 15.0, right: 15.0),
                   decoration: BoxDecoration(
-                    color: Color(0xFFb2d8d8).withOpacity(0.3),
+                    color: kLightButtonColor.withOpacity(0.3),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20.0),
                       topRight: Radius.circular(20.0),
                     ),
                   ),
-                  child: TasksList(athkar),
+                  child: ThekerList(athkar),
                 ),
               ),
             ],
