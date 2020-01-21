@@ -46,8 +46,8 @@ class AboutUs extends StatelessWidget {
                   color: kDarkButtonColor,
                   margin: EdgeInsets.only(
                     top: 15.0,
-                    left: MediaQuery.of(context).size.width * 0.05,
-                    right: MediaQuery.of(context).size.width * 0.05,
+                    left: MediaQuery.of(context).size.width * 0.03,
+                    right: MediaQuery.of(context).size.width * 0.03,
                   ),
                   child: ListTile(
                     leading: Icon(
@@ -81,8 +81,8 @@ class AboutUs extends StatelessWidget {
                   color: kLightButtonColor,
                   margin: EdgeInsets.only(
                       top: 15.0,
-                      left: MediaQuery.of(context).size.width * 0.05,
-                      right: MediaQuery.of(context).size.width * 0.05),
+                      left: MediaQuery.of(context).size.width * 0.03,
+                      right: MediaQuery.of(context).size.width * 0.03),
                   child: ListTile(
                     leading: Icon(
                       Icons.email,
@@ -115,8 +115,8 @@ class AboutUs extends StatelessWidget {
                   color: kDarkButtonColor,
                   margin: EdgeInsets.only(
                       top: 15.0,
-                      left: MediaQuery.of(context).size.width * 0.05,
-                      right: MediaQuery.of(context).size.width * 0.05),
+                      left: MediaQuery.of(context).size.width * 0.03,
+                      right: MediaQuery.of(context).size.width * 0.03),
                   child: ListTile(
                     leading: Icon(
                       Icons.share,

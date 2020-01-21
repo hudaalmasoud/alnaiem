@@ -39,8 +39,8 @@ class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
         ),
         margin: EdgeInsets.only(
             top: 15.0,
-            left: MediaQuery.of(context).size.width * 0.05,
-            right: MediaQuery.of(context).size.width * 0.05),
+            left: MediaQuery.of(context).size.width * 0.03,
+            right: MediaQuery.of(context).size.width * 0.03),
         padding:
             EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
       ),
