@@ -13,8 +13,7 @@ class _AddPrayerState extends State<AddPrayer> {
   List<Athkar> athkar = [
     Athkar(name: 'Huda 1'),
     Athkar(name: 'Huda 2'),
-    Athkar(name: 'Huda 2'),
-    Athkar(name: 'Huda 3'),
+    Athkar(name: 'هدهد ابو سمرة'),
   ];
 
   @override
@@ -44,7 +43,7 @@ class _AddPrayerState extends State<AddPrayer> {
           ),
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text(kAddPageHeaderText),
+            title: Text(kAddPageHeaderText, style: kHeaderTextStyle),
           ),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,6 +66,458 @@ class _AddPrayerState extends State<AddPrayer> {
                     ),
                   ),
                   child: ThekerList(athkar),
+//                  child: ListView(
+//                    children: <Widget>[
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Amiri',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Amiri,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Amiri',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Amiri,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Aref_Ruqaa',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Aref_Ruqaa,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Aref_Ruqaa',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Aref_Ruqaa,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Baloo_Bhaijaan',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Baloo_Bhaijaan,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Baloo_Bhaijaan',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Baloo_Bhaijaan,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Cairo',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Cairo,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Cairo',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Cairo,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + 'Changa',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Changa,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' + 'Changa',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Changa,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  El_Messiri',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.El_Messiri,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  El_Messiri',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.El_Messiri,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Harmattan',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Harmattan,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Harmattan',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Harmattan,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Jomhuria',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Jomhuria,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Jomhuria',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Jomhuria,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Katibeh',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Katibeh,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Katibeh',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Katibeh,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Lalezar',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lalezar,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Lalezar',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lalezar,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Lateef',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lateef,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Lateef',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lateef,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Lemonada',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lemonada,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Lemonada',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Lemonada,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Mada',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Mada,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' + '  Mada',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Mada,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Markazi_Text',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Markazi_Text,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Markazi_Text',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Markazi_Text,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Mirza',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Mirza,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Mirza',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Mirza,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Rakkas',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Rakkas,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Rakkas',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Rakkas,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Reem_Kufi',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Reem_Kufi,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Reem_Kufi',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Reem_Kufi,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'بسم الله الرحمن الرحيم' + '  Scheherazade',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Scheherazade,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                      ListTile(
+//                        title: Text(
+//                          'لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ له' +
+//                              '  Scheherazade',
+//                          style: TextStyle(
+//                            fontSize: 20.0,
+//                            fontWeight: FontWeight.bold,
+//                            color: Colors.black,
+//                            fontFamily: ArabicFonts.Scheherazade,
+//                            package: 'google_fonts_arabic',
+//                          ),
+//                        ),
+//                      ),
+//                    ],
+//                  ),
                 ),
               ),
             ],

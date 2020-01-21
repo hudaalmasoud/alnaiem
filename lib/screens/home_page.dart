@@ -26,10 +26,7 @@ class HomePage extends StatelessWidget {
           appBar: AppBar(
               title: Text(
             kHomePageHeaderText,
-            style: TextStyle(
-              color: Colors.white,
-              //fontSize: 30.0,
-            ),
+            style: kHeaderTextStyle,
           )),
           body: ListView(
             children: <Widget>[

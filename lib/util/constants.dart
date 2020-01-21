@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts_arabic/fonts.dart';
 
 const kHomePageHeaderText = 'أذكار المسلم';
 const kAddPageHeaderText = 'إضافة ذِكر/ دعاء';
@@ -8,14 +9,41 @@ const kAboutUsHeaderText = 'معلومات التطبيق';
 const kBottomContainerHeight = 80.0;
 
 const kLargeButtonTextStyle = TextStyle(
-  fontSize: 20.0,
+  fontSize: 15.0,
   fontWeight: FontWeight.bold,
   color: Colors.black,
-//    fontFamily: 'SpaceMono'
+  fontFamily: ArabicFonts.Cairo,
+  package: 'google_fonts_arabic',
 );
 
-const kCategoryButtonTextStyle =
-    TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.black);
+const kCategoryButtonTextStyle = TextStyle(
+    fontSize: 17.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Cairo,
+    package: 'google_fonts_arabic');
+
+const kHeaderTextStyle = TextStyle(
+    fontSize: 17.0,
+    color: Colors.white,
+    fontFamily: ArabicFonts.Cairo,
+    package: 'google_fonts_arabic');
+
+const kAboutUsButtonTextStyle =
+    TextStyle(fontSize: 17.0, color: Colors.black, fontFamily: 'SpaceMono');
+
+const kAboutUsShareTextStyle = TextStyle(
+    fontSize: 17.0,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Cairo,
+    package: 'google_fonts_arabic');
+
+const kAppNameTextStyle = TextStyle(
+    fontSize: 25.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Changa,
+    package: 'google_fonts_arabic');
 
 const kContactUsTextStyle = TextStyle(fontSize: 15.0, color: Colors.blue);
 
@@ -31,7 +59,7 @@ const kLightButtonColor = Color(0xFFb2d8d8);
 
 const kBackgroundImage = 'assets/images/backgroungImage.jpg';
 
-const kAppName = 'النعيم';
+const kAppName = 'النَّعِيمِ';
 
 const KEurekaAppzSiteURL = 'https://eurekaappz.com';
 

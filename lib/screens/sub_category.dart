@@ -37,13 +37,10 @@ class _SubCategoryState extends State<SubCategory> {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(widget.subCategoryTitle + '  '),
-//                Image.asset(
-//                  widget.athkarCategory.imagePath,
-//                  height: 30.0,
-//                  width: 30.0,
-//                  fit: BoxFit.cover,
-//                ),
+                Text(
+                  widget.subCategoryTitle + '  ',
+                  style: kHeaderTextStyle,
+                ),
                 ClipRRect(
                   borderRadius: new BorderRadius.circular(20.0),
                   child: Image(

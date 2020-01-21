@@ -19,7 +19,7 @@ class AboutUs extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text(kAboutUsHeaderText),
+            title: Text(kAboutUsHeaderText, style: kHeaderTextStyle),
           ),
           body: SafeArea(
             child: Column(
@@ -35,7 +35,7 @@ class AboutUs extends StatelessWidget {
                   elevation: 2,
                   radius: 75,
                 ),
-                Text(kAppName, style: kCategoryButtonTextStyle),
+                Text(kAppName, style: kAppNameTextStyle),
                 Card(
                   shape: StadiumBorder(
                     side: BorderSide(
@@ -60,7 +60,7 @@ class AboutUs extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: KEurekaAppzSiteURL,
-                            style: kCategoryButtonTextStyle,
+                            style: kAboutUsButtonTextStyle,
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
                                 launch(KEurekaAppzSiteURL);
@@ -94,7 +94,7 @@ class AboutUs extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: kEurekaAppzEmailAddress,
-                            style: kCategoryButtonTextStyle,
+                            style: kAboutUsButtonTextStyle,
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
                                 sendMessage();
@@ -128,7 +128,7 @@ class AboutUs extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: kShareAppText,
-                            style: kCategoryButtonTextStyle,
+                            style: kAboutUsShareTextStyle,
                             recognizer: TapGestureRecognizer()..onTap = () {},
                           ),
                         ],

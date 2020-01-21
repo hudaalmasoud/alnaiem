@@ -13,16 +13,6 @@ class ThekerList extends StatefulWidget {
 class _ThekerListState extends State<ThekerList> {
   @override
   Widget build(BuildContext context) {
-//    return ListView.builder(
-//      itemBuilder: (context, index) {
-//        return ThekerTile(
-//          name: widget.athkar[index].name,
-//          isDeleted: widget.athkar[index].isDeleted,
-//        );
-//      },
-//      itemCount: widget.athkar.length,
-//    );
-
     return ListView.separated(
       separatorBuilder: (context, index) => Divider(
         color: Colors.black,
