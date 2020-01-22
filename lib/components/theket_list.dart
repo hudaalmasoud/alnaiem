@@ -18,10 +18,7 @@ class _ThekerListState extends State<ThekerList> {
         color: Colors.black,
       ),
       itemBuilder: (context, index) {
-        return ThekerTile(
-          name: widget.athkar[index].name,
-          isDeleted: widget.athkar[index].isDeleted,
-        );
+        return ThekerTile(name: widget.athkar[index].name);
       },
       itemCount: widget.athkar.length,
     );
