@@ -11,8 +11,7 @@ class AddPrayer extends StatefulWidget {
 
 class _AddPrayerState extends State<AddPrayer> {
   List<Athkar> athkar = [
-    Athkar(name: 'Huda 1'),
-    Athkar(name: 'Huda 2'),
+    Athkar(name: 'Huda'),
     Athkar(name: 'هدهد ابو سمرة'),
   ];
 
@@ -65,7 +64,19 @@ class _AddPrayerState extends State<AddPrayer> {
                       topRight: Radius.circular(20.0),
                     ),
                   ),
-                  child: ThekerList(athkar),
+                  child: ListView.separated(
+                    separatorBuilder: (context, index) => Divider(
+                      color: Colors.black,
+                    ),
+                    itemBuilder: (context, index) {
+                      return ListTile(
+                        title: Text(athkar[index].name,
+                            style: kCategoryButtonTextStyle),
+                      );
+                    },
+                    itemCount: athkar.length,
+                  ),
+                  //child: ThekerList(athkar),
 //                  child: ListView(
 //                    children: <Widget>[
 //                      ListTile(
