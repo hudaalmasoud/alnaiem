@@ -72,6 +72,7 @@ flutter:
     - assets/images/backToHomeIcon.png
     - assets/images/backgroungImage.jpg
     - assets/images/prayersForDeadIcon.png
+    - assets/images/eurekalogoIcon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -28,12 +28,13 @@ class AboutUs extends StatelessWidget {
                 CircularProfileAvatar(
                   '',
                   child: Image.asset(
-                    'assets/images/morningIcon.png',
+                    'assets/images/eurekalogoIcon.png',
                   ),
                   borderColor: kButtonBorderColor,
                   borderWidth: 2,
                   elevation: 2,
                   radius: 75,
+                  backgroundColor: Colors.black,
                 ),
                 Text(kAppName, style: kAppNameTextStyle),
                 Card(
@@ -152,7 +153,7 @@ void sendMessage() {
   email = Email(
     body: 'email body',
     subject: 'Email subject',
-    recipients: ['hudamasoud86@gmail.com'],
+    recipients: [kEurekaAppzEmailAddress],
   );
   send(email);
   debugPrint('email - > $inputEmail  message -> $inputMessage');
