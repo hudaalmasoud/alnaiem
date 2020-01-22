@@ -63,7 +63,7 @@ const kAppName = 'النَّعِيمِ';
 
 const KEurekaAppzSiteURL = 'https://eurekaappz.com';
 
-const kEurekaAppzEmailAddress = 'hudamasoud86@gmail.com';
+const kEurekaAppzEmailAddress = 'info@eurekaappz.com';
 
 const kEurekaAppzEmailBody = 'Email Body';
 
