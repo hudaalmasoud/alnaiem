@@ -45,6 +45,18 @@ const kAppNameTextStyle = TextStyle(
     fontFamily: ArabicFonts.Changa,
     package: 'google_fonts_arabic');
 
+const kAAlertTextStyle = TextStyle(
+    fontSize: 20.0,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Changa,
+    package: 'google_fonts_arabic');
+
+const kAAlertButtonsTextStyle = TextStyle(
+    fontSize: 15.0,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Changa,
+    package: 'google_fonts_arabic');
+
 const kContactUsTextStyle = TextStyle(fontSize: 15.0, color: Colors.blue);
 
 const kHeaderColor = Color(0xFF36a8a8);

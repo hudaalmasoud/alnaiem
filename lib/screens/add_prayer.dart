@@ -98,7 +98,9 @@ class _AddPrayerState extends State<AddPrayer> {
                                     onPressed: () {
                                       setState(
                                         () {
-                                          _delete(snapshot.data[i].id);
+                                          showAlertDialog(
+                                              context, snapshot.data[i].id);
+                                          //_delete(snapshot.data[i].id);
                                         },
                                       );
                                     },
@@ -149,25 +151,55 @@ class _AddPrayerState extends State<AddPrayer> {
     print('Number of rows: ' + counter.toString());
     return counter;
   }
-}
 
-//                                  trailing: (snapshot.data[i].id != 0)
-//                                      ? IconButton(
-//                                          //icon: Icon(Icons.delete),
-//                                          icon: Image.asset(
-//                                            'assets/images/delete.png',
-//                                            width: 15.0,
-//                                            height: 15.0,
-//                                          ),
-//                                          color: Colors.black,
-//                                          onPressed: () {
-//                                            setState(
-//                                              () {
-//                                                _delete(snapshot.data[i].id);
-//                                              },
-//                                            );
-//                                          },
-//                                        )
-//                                      : null,
-//                                  title: new Text(snapshot.data[i].Text,
-//                                      style: kCategoryButtonTextStyle),
+  showAlertDialog(BuildContext context, int id) {
+// set up the buttons
+    Widget cancelButton = FlatButton(
+      textColor: Colors.black,
+      child: Text(
+        "إلغاء",
+        style: kAAlertButtonsTextStyle,
+      ),
+      onPressed: () {
+        Navigator.of(context).pop();
+      },
+    );
+
+    Widget continueButton = FlatButton(
+      textColor: Colors.black,
+      child: Text(
+        "تأكيد",
+        style: kAAlertButtonsTextStyle,
+      ),
+      onPressed: () {
+        setState(
+          () {
+            _delete(id);
+            Navigator.of(context).pop();
+          },
+        );
+      },
+    );
+
+    // set up the AlertDialog
+    AlertDialog alert = AlertDialog(
+      backgroundColor: Colors.white,
+      content: Text(
+        "هل أنت متأكد من الإستمرار بالحذف؟",
+        textDirection: TextDirection.rtl,
+        style: kAAlertTextStyle,
+      ),
+      actions: [
+        cancelButton,
+        continueButton,
+      ],
+    );
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
+}
