@@ -50,7 +50,7 @@ class MyAppState extends State<MyApp> {
                 //backgroundColor: Color(0xFF36a8a8),
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.add),
+                icon: Icon(Icons.create),
                 title: Text(''),
                 //backgroundColor: Color(0xFF36a8a8),
               ),

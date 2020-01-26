@@ -20,8 +20,12 @@ class _AddPrayerState extends State<AddPrayer> {
         ),
         Scaffold(
           floatingActionButton: FloatingActionButton(
-            backgroundColor: kLightButtonColor,
-            child: Icon(Icons.add),
+            backgroundColor: Colors.white,
+            child: Icon(
+              Icons.add,
+              color: kButtonBorderColor,
+              size: 30.0,
+            ),
             onPressed: () {
               showModalBottomSheet(
                 context: context,
@@ -30,7 +34,10 @@ class _AddPrayerState extends State<AddPrayer> {
                     setState(
                       () {
                         //TODO: check for not empty string
+                        //int numberOfRows = getCount();
+                        //if (getCount() != 100) {
                         _save(newTitle);
+                        //}
                         print('number of prayers: ' + getCount().toString());
                       },
                     );
@@ -44,18 +51,21 @@ class _AddPrayerState extends State<AddPrayer> {
             title: Text(kAddPageHeaderText, style: kHeaderTextStyle),
           ),
           body: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            //crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(
-                margin: EdgeInsets.only(top: 15.0, left: 7.0, right: 7.0),
-              ),
+//              Container(
+////                margin: EdgeInsets.only(
+////                    top: 15.0, left: 7.0, right: 7.0, bottom: 15.0),
+////              ),
               Expanded(
                 child: Container(
                   margin: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width * 0.05,
-                      right: MediaQuery.of(context).size.width * 0.05),
-                  padding: EdgeInsets.only(
-                      bottom: 10.0, top: 10.0, left: 15.0, right: 15.0),
+                      left: MediaQuery.of(context).size.width * 0.02,
+                      right: MediaQuery.of(context).size.width * 0.02,
+                      top: MediaQuery.of(context).size.width * 0.02,
+                      bottom: MediaQuery.of(context).size.width * 0.02),
+//                  padding: EdgeInsets.only(
+//                      bottom: 1.0, top: 1.0, left: 1.0, right: 1.0),
                   decoration: BoxDecoration(
                     color: kLightButtonColor.withOpacity(0.3),
                     borderRadius: BorderRadius.only(
@@ -63,59 +73,43 @@ class _AddPrayerState extends State<AddPrayer> {
                       topRight: Radius.circular(20.0),
                     ),
                   ),
-//                  child: ListView.separated(
-//                    separatorBuilder: (context, index) => Divider(
-//                      color: Colors.black,
-//                    ),
-//                    itemBuilder: (context, index) {
-//                      return ListTile(
-//                        title: Text(athkar[index].name,
-//                            style: kCategoryButtonTextStyle),
-//                      );
-//                    },
-//                    itemCount: athkar.length,
-//                  ),
                   child: FutureBuilder<List>(
                     future: _read2(),
                     initialData: List(),
                     builder: (context, snapshot) {
                       return snapshot.hasData
-                          ? new ListView.builder(
-                              padding: const EdgeInsets.all(10.0),
+                          ? ListView.separated(
+                              separatorBuilder: (context, index) => Divider(
+                                color: kButtonBorderColor,
+                              ),
+                              //padding: const EdgeInsets.only(left: 1.0),
                               itemCount: snapshot.data.length,
                               itemBuilder: (context, i) {
                                 return ListTile(
-                                    title: new Text(snapshot.data[i].Text,
-                                        style: kCategoryButtonTextStyle),
-                                    trailing: (snapshot.data[i].id != 0)
-                                        ? IconButton(
-                                            icon: Icon(Icons.delete),
-                                            onPressed: () {
-                                              setState(() {
-                                                //_delete(snapshot.data[i].id);
-                                                _delete(snapshot.data[i].id);
-                                              });
-                                            })
-                                        : null);
+                                  title: new Text(snapshot.data[i].Text,
+                                      style: kCategoryButtonTextStyle,
+                                      textDirection: TextDirection.rtl),
+                                  trailing: IconButton(
+                                    icon: Image.asset(
+                                      'assets/images/delete.png',
+                                      width: 15.0,
+                                      height: 15.0,
+                                    ),
+                                    onPressed: () {
+                                      setState(
+                                        () {
+                                          _delete(snapshot.data[i].id);
+                                        },
+                                      );
+                                    },
+                                  ),
+                                );
                               },
                             )
                           : Center(
                               child: CircularProgressIndicator(),
                             );
                     },
-//                    builder: (context, snapshot) {
-//                      return snapshot.hasData
-//                          ? new ListView.builder(
-//                              padding: const EdgeInsets.all(10.0),
-//                              itemCount: snapshot.data.length,
-//                              itemBuilder: (context, i) {
-//                                return _buildRow(snapshot.data[i]);
-//                              },
-//                            )
-//                          : Center(
-//                              child: CircularProgressIndicator(),
-//                            );
-//                    },
                   ),
                 ),
               ),
@@ -129,7 +123,7 @@ class _AddPrayerState extends State<AddPrayer> {
   Future<List<Prayers>> _read2() async {
     DatabaseHelper helper = DatabaseHelper.instance;
 
-    List<Prayers> prayer = await helper.queryAllPrayerss();
+    List<Prayers> prayer = await helper.queryAllPrayers();
 
     return prayer;
   }
@@ -139,19 +133,41 @@ class _AddPrayerState extends State<AddPrayer> {
     prayers.Text = text;
     DatabaseHelper helper = DatabaseHelper.instance;
     int id = await helper.insert(prayers);
-    print('inserted row: $id');
+    //print('inserted row: $id');
   }
 
   _delete(int id) async {
+    //print('delete row: $id');
     DatabaseHelper helper = DatabaseHelper.instance;
     await helper.delete(id);
-    print('delete row: $id');
   }
 
   //TODO: use this to allow adding max of 100 prayer
   Future<int> getCount() async {
     DatabaseHelper helper = DatabaseHelper.instance;
     int counter = await helper.getNumberOfPrayers();
+    print('Number of rows: ' + counter.toString());
     return counter;
   }
 }
+
+//                                  trailing: (snapshot.data[i].id != 0)
+//                                      ? IconButton(
+//                                          //icon: Icon(Icons.delete),
+//                                          icon: Image.asset(
+//                                            'assets/images/delete.png',
+//                                            width: 15.0,
+//                                            height: 15.0,
+//                                          ),
+//                                          color: Colors.black,
+//                                          onPressed: () {
+//                                            setState(
+//                                              () {
+//                                                _delete(snapshot.data[i].id);
+//                                              },
+//                                            );
+//                                          },
+//                                        )
+//                                      : null,
+//                                  title: new Text(snapshot.data[i].Text,
+//                                      style: kCategoryButtonTextStyle),

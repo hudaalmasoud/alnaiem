@@ -23,15 +23,30 @@ class AddScreen extends StatelessWidget {
           children: <Widget>[
             TextField(
               autofocus: true,
+              maxLines: 2,
               textAlign: TextAlign.center,
+              autocorrect: false,
               style: new TextStyle(color: Colors.black),
               onChanged: (newText) {
+                //TODO: check for empty and null value
+                //if (newText.isNotEmpty && newText != null) {
                 newTitle = newText;
+                //}
               },
+            ),
+            SizedBox(
+              height: 10.0,
             ),
             FlatButton(
               child: Text(kAddText, style: kCategoryButtonTextStyle),
               color: kDarkButtonColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: new BorderRadius.circular(18.0),
+                side: BorderSide(
+                  color: kButtonBorderColor,
+                  width: 1.0,
+                ),
+              ),
               onPressed: () {
                 addCallback(newTitle);
                 Navigator.pop(context);
