@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'add_screen.dart';
-import 'package:alnaiem/models/athkar.dart';
 import 'package:alnaiem/util/constants.dart';
 import 'package:alnaiem/util/database_helpers.dart';
 
@@ -10,22 +9,6 @@ class AddPrayer extends StatefulWidget {
 }
 
 class _AddPrayerState extends State<AddPrayer> {
-  List<Athkar> athkar = [
-    Athkar(name: 'Huda'),
-    Athkar(name: 'هدهد ابو سمرة'),
-  ];
-
-  //TODO: call the _read2();
-  // @override
-//  void initState() {
-//    setState(
-//      () {
-//        //_read();
-//      },
-//    );
-//    super.initState();
-//  }
-
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
@@ -47,7 +30,6 @@ class _AddPrayerState extends State<AddPrayer> {
                     setState(
                       () {
                         //TODO: check for not empty string
-                        //athkar.add(Athkar(name: newTitle));
                         _save(newTitle);
                         print('number of prayers: ' + getCount().toString());
                       },
