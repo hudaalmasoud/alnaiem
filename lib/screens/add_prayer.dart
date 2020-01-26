@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'add_screen.dart';
 import 'package:alnaiem/models/athkar.dart';
 import 'package:alnaiem/util/constants.dart';
-import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:alnaiem/util/database_helpers.dart';
 
 class AddPrayer extends StatefulWidget {
   @override
@@ -11,34 +10,21 @@ class AddPrayer extends StatefulWidget {
 }
 
 class _AddPrayerState extends State<AddPrayer> {
-  int _counter = 0;
   List<Athkar> athkar = [
     Athkar(name: 'Huda'),
     Athkar(name: 'هدهد ابو سمرة'),
   ];
 
-  @override
-  void initState() {
-    super.initState();
-    _loadCounter();
-  }
-
-  //Loading counter value on start
-  _loadCounter() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _counter = (prefs.getInt('counter') ?? 0);
-    });
-  }
-
-  //Incrementing counter after click
-  _incrementCounter() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _counter = (prefs.getInt('counter') ?? 0) + 1;
-      prefs.setInt('counter', _counter);
-    });
-  }
+  //TODO: call the _read2();
+  // @override
+//  void initState() {
+//    setState(
+//      () {
+//        //_read();
+//      },
+//    );
+//    super.initState();
+//  }
 
   Widget build(BuildContext context) {
     return Stack(
@@ -60,7 +46,10 @@ class _AddPrayerState extends State<AddPrayer> {
                   (newTitle) {
                     setState(
                       () {
-                        athkar.add(Athkar(name: newTitle));
+                        //TODO: check for not empty string
+                        //athkar.add(Athkar(name: newTitle));
+                        _save(newTitle);
+                        print('number of prayers: ' + getCount().toString());
                       },
                     );
                   },
@@ -92,17 +81,59 @@ class _AddPrayerState extends State<AddPrayer> {
                       topRight: Radius.circular(20.0),
                     ),
                   ),
-                  child: ListView.separated(
-                    separatorBuilder: (context, index) => Divider(
-                      color: Colors.black,
-                    ),
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(athkar[index].name,
-                            style: kCategoryButtonTextStyle),
-                      );
+//                  child: ListView.separated(
+//                    separatorBuilder: (context, index) => Divider(
+//                      color: Colors.black,
+//                    ),
+//                    itemBuilder: (context, index) {
+//                      return ListTile(
+//                        title: Text(athkar[index].name,
+//                            style: kCategoryButtonTextStyle),
+//                      );
+//                    },
+//                    itemCount: athkar.length,
+//                  ),
+                  child: FutureBuilder<List>(
+                    future: _read2(),
+                    initialData: List(),
+                    builder: (context, snapshot) {
+                      return snapshot.hasData
+                          ? new ListView.builder(
+                              padding: const EdgeInsets.all(10.0),
+                              itemCount: snapshot.data.length,
+                              itemBuilder: (context, i) {
+                                return ListTile(
+                                    title: new Text(snapshot.data[i].Text,
+                                        style: kCategoryButtonTextStyle),
+                                    trailing: (snapshot.data[i].id != 0)
+                                        ? IconButton(
+                                            icon: Icon(Icons.delete),
+                                            onPressed: () {
+                                              setState(() {
+                                                //_delete(snapshot.data[i].id);
+                                                _delete(snapshot.data[i].id);
+                                              });
+                                            })
+                                        : null);
+                              },
+                            )
+                          : Center(
+                              child: CircularProgressIndicator(),
+                            );
                     },
-                    itemCount: athkar.length,
+//                    builder: (context, snapshot) {
+//                      return snapshot.hasData
+//                          ? new ListView.builder(
+//                              padding: const EdgeInsets.all(10.0),
+//                              itemCount: snapshot.data.length,
+//                              itemBuilder: (context, i) {
+//                                return _buildRow(snapshot.data[i]);
+//                              },
+//                            )
+//                          : Center(
+//                              child: CircularProgressIndicator(),
+//                            );
+//                    },
                   ),
                 ),
               ),
@@ -111,5 +142,34 @@ class _AddPrayerState extends State<AddPrayer> {
         )
       ],
     );
+  }
+
+  Future<List<Prayers>> _read2() async {
+    DatabaseHelper helper = DatabaseHelper.instance;
+
+    List<Prayers> prayer = await helper.queryAllPrayerss();
+
+    return prayer;
+  }
+
+  _save(String text) async {
+    Prayers prayers = Prayers();
+    prayers.Text = text;
+    DatabaseHelper helper = DatabaseHelper.instance;
+    int id = await helper.insert(prayers);
+    print('inserted row: $id');
+  }
+
+  _delete(int id) async {
+    DatabaseHelper helper = DatabaseHelper.instance;
+    await helper.delete(id);
+    print('delete row: $id');
+  }
+
+  //TODO: use this to allow adding max of 100 prayer
+  Future<int> getCount() async {
+    DatabaseHelper helper = DatabaseHelper.instance;
+    int counter = await helper.getNumberOfPrayers();
+    return counter;
   }
 }
