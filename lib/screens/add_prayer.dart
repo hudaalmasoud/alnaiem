@@ -36,7 +36,11 @@ class _AddPrayerState extends State<AddPrayer> {
                         //TODO: check for not empty string
                         //int numberOfRows = getCount();
                         //if (getCount() != 100) {
+                        //String x = newTitle;
+                        //if (x.isNotEmpty && x != null) {
                         _save(newTitle);
+                        //}
+
                         //}
                         print('number of prayers: ' + getCount().toString());
                       },
@@ -81,6 +85,7 @@ class _AddPrayerState extends State<AddPrayer> {
                           ? ListView.separated(
                               separatorBuilder: (context, index) => Divider(
                                 color: kButtonBorderColor,
+                                thickness: 1.0,
                               ),
                               //padding: const EdgeInsets.only(left: 1.0),
                               itemCount: snapshot.data.length,
@@ -100,7 +105,6 @@ class _AddPrayerState extends State<AddPrayer> {
                                         () {
                                           showAlertDialog(
                                               context, snapshot.data[i].id);
-                                          //_delete(snapshot.data[i].id);
                                         },
                                       );
                                     },
@@ -124,9 +128,7 @@ class _AddPrayerState extends State<AddPrayer> {
 
   Future<List<Prayers>> _read2() async {
     DatabaseHelper helper = DatabaseHelper.instance;
-
     List<Prayers> prayer = await helper.queryAllPrayers();
-
     return prayer;
   }
 
