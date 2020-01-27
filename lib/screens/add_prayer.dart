@@ -30,19 +30,12 @@ class _AddPrayerState extends State<AddPrayer> {
               showModalBottomSheet(
                 context: context,
                 builder: (context) => AddScreen(
-                  (newTitle) {
+                  (String newTitle) {
                     setState(
                       () {
-                        //TODO: check for not empty string
-                        //int numberOfRows = getCount();
-                        //if (getCount() != 100) {
-                        //String x = newTitle;
-                        //if (x.isNotEmpty && x != null) {
-                        _save(newTitle);
-                        //}
-
-                        //}
-                        print('number of prayers: ' + getCount().toString());
+                        if (newTitle != null && newTitle.trim().isNotEmpty) {
+                          _save(newTitle);
+                        }
                       },
                     );
                   },

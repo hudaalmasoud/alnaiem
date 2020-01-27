@@ -27,11 +27,8 @@ class AddScreen extends StatelessWidget {
               textAlign: TextAlign.center,
               autocorrect: false,
               style: new TextStyle(color: Colors.black),
-              onChanged: (newText) {
-                //TODO: check for empty and null value
-                //if (newText.isNotEmpty && newText != null) {
+              onChanged: (String newText) {
                 newTitle = newText;
-                //}
               },
             ),
             SizedBox(
