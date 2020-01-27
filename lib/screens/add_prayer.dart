@@ -113,7 +113,20 @@ class _AddPrayerState extends State<AddPrayer> {
                               },
                             )
                           : Center(
-                              child: CircularProgressIndicator(),
+                              child: ListView.separated(
+                                separatorBuilder: (context, index) => Divider(
+                                  color: kButtonBorderColor,
+                                  thickness: 1.0,
+                                ),
+                                itemCount: 1,
+                                itemBuilder: (context, i) {
+                                  return ListTile(
+                                    title: new Text('لم يتم إضافة ذِكر/ دعاء',
+                                        style: kCategoryButtonTextStyle,
+                                        textDirection: TextDirection.rtl),
+                                  );
+                                },
+                              ), //CircularProgressIndicator(),
                             );
                     },
                   ),
@@ -170,7 +183,7 @@ class _AddPrayerState extends State<AddPrayer> {
     Widget continueButton = FlatButton(
       textColor: Colors.black,
       child: Text(
-        "تأكيد",
+        "إستمرار",
         style: kAAlertButtonsTextStyle,
       ),
       onPressed: () {
@@ -187,7 +200,7 @@ class _AddPrayerState extends State<AddPrayer> {
     AlertDialog alert = AlertDialog(
       backgroundColor: Colors.white,
       content: Text(
-        "هل أنت متأكد من الإستمرار بالحذف؟",
+        "هل تريد الإستمرار بالحذف؟",
         textDirection: TextDirection.rtl,
         style: kAAlertTextStyle,
       ),

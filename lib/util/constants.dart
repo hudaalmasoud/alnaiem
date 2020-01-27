@@ -9,10 +9,10 @@ const kAboutUsHeaderText = 'معلومات التطبيق';
 const kBottomContainerHeight = 80.0;
 
 const kLargeButtonTextStyle = TextStyle(
-  fontSize: 15.0,
-  fontWeight: FontWeight.bold,
+  fontSize: 25.0,
+  //fontWeight: FontWeight.bold,
   color: Colors.black,
-  fontFamily: ArabicFonts.Cairo,
+  fontFamily: ArabicFonts.Lateef,
   package: 'google_fonts_arabic',
 );
 
