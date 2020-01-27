@@ -26,14 +26,19 @@ class _AddPrayerState extends State<AddPrayer> {
               color: kButtonBorderColor,
               size: 30.0,
             ),
-            onPressed: () {
+            onPressed: () async {
+              int count = await getCount();
               showModalBottomSheet(
                 context: context,
                 builder: (context) => AddScreen(
                   (String newTitle) {
                     setState(
                       () {
-                        if (newTitle != null && newTitle.trim().isNotEmpty) {
+                        print('Count :' + count.toString());
+
+                        if (newTitle != null &&
+                            newTitle.trim().isNotEmpty &&
+                            int.parse(count.toString()) < 100) {
                           _save(newTitle);
                         }
                       },
@@ -114,12 +119,15 @@ class _AddPrayerState extends State<AddPrayer> {
                                 itemCount: 1,
                                 itemBuilder: (context, i) {
                                   return ListTile(
-                                    title: new Text('لم يتم إضافة ذِكر/ دعاء',
+                                    title: new Text(
+                                        'لم يتم إضافة ذِكر/ دعاء.' +
+                                            '\n' +
+                                            ' يمكنك الإضافة حتى ١٠٠ ذِكر/ دعاء',
                                         style: kCategoryButtonTextStyle,
                                         textDirection: TextDirection.rtl),
                                   );
                                 },
-                              ), //CircularProgressIndicator(),
+                              ),
                             );
                     },
                   ),
@@ -143,7 +151,6 @@ class _AddPrayerState extends State<AddPrayer> {
     prayers.Text = text;
     DatabaseHelper helper = DatabaseHelper.instance;
     int id = await helper.insert(prayers);
-    //print('inserted row: $id');
   }
 
   _delete(int id) async {
@@ -152,7 +159,6 @@ class _AddPrayerState extends State<AddPrayer> {
     await helper.delete(id);
   }
 
-  //TODO: use this to allow adding max of 100 prayer
   Future<int> getCount() async {
     DatabaseHelper helper = DatabaseHelper.instance;
     int counter = await helper.getNumberOfPrayers();

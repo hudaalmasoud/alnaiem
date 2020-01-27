@@ -92,9 +92,6 @@ class DatabaseHelper {
   }
 
   Future<int> delete(int id) async {
-//    Database db = await database;
-//    return await db.delete(columnText, where: '$columnId = ?', whereArgs: [id]);
-
     Database db = await database;
     return await db.delete("prayers", where: "_id = ?", whereArgs: [id]);
   }
@@ -106,17 +103,13 @@ class DatabaseHelper {
     List<Prayers> list = result.isNotEmpty
         ? result.map((c) => Prayers.fromMap(c)).toList()
         : null;
-    // print the results
-    //result.forEach((row) => print(row));
-
     return list;
   }
 
   Future<int> getNumberOfPrayers() async {
     Database db = await database;
-    final count = Sqflite.firstIntValue(
+    int count = Sqflite.firstIntValue(
         await db.rawQuery('SELECT COUNT(*) FROM prayers'));
-    //print('people count: $count');
     return count;
   }
 }
