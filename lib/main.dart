@@ -24,6 +24,7 @@ class MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Athkar Application',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         primaryColor: kHeaderColor,
         scaffoldBackgroundColor: Color(0xFFD3E2E8),
