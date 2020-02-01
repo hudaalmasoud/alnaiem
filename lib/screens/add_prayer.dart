@@ -50,7 +50,12 @@ class _AddPrayerState extends State<AddPrayer> {
           ),
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text(kAddPageHeaderText, style: kHeaderTextStyle),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(kAddPageHeaderText, style: kHeaderTextStyle),
+              ],
+            ),
           ),
           body: Column(
             //crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,7 +127,7 @@ class _AddPrayerState extends State<AddPrayer> {
                                     title: new Text(
                                         'لم يتم إضافة ذِكر/ دعاء.' +
                                             '\n' +
-                                            ' يمكنك الإضافة حتى ١٠٠ ذِكر/ دعاء',
+                                            ' يمكنك الإضافة حتى ١٠٠ ذِكر/ دعاء.',
                                         style: kCategoryButtonTextStyle,
                                         textDirection: TextDirection.rtl),
                                   );

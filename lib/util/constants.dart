@@ -75,6 +75,8 @@ const kAppName = 'النَّعِيمِ';
 
 const KEurekaAppzSiteURL = 'https://eurekaappz.com';
 
+const KShareURL = 'http://onelink.to/alnaiem';
+
 const kEurekaAppzEmailAddress = 'info@eurekaappz.com';
 
 const kEurekaAppzEmailBody = 'Email Body';

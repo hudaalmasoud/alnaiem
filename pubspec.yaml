@@ -31,6 +31,7 @@ dependencies:
   google_fonts_arabic: ^1.1.7
   sqflite: ^1.2.0
   path_provider: ^1.5.1
+  share: ^0.6.3+5
 
 dev_dependencies:
   flutter_test:

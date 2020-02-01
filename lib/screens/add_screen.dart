@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
 
-class AddScreen extends StatelessWidget {
+class AddScreen extends StatefulWidget {
   final Function addCallback;
   AddScreen(this.addCallback);
+
+  @override
+  _AddScreenState createState() => _AddScreenState();
+}
+
+class _AddScreenState extends State<AddScreen> {
+  String newTitle;
+
   @override
   Widget build(BuildContext context) {
-    String newTitle;
-
     return Container(
       child: Container(
         padding: EdgeInsets.all(50.0),
@@ -28,7 +34,9 @@ class AddScreen extends StatelessWidget {
               autocorrect: false,
               style: new TextStyle(color: Colors.black),
               onChanged: (String newText) {
-                newTitle = newText;
+                setState(() {
+                  newTitle = newText;
+                });
               },
             ),
             SizedBox(
@@ -45,7 +53,7 @@ class AddScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                addCallback(newTitle);
+                widget.addCallback(newTitle);
                 Navigator.pop(context);
               },
             ),

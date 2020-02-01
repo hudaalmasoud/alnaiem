@@ -34,8 +34,8 @@ class Prayers {
 // singleton class to manage the database
 class DatabaseHelper {
   // This is the actual database filename that is saved in the docs directory.
-  //static final _databaseName = "AlnaiemDatabase.db";
-  static final _databaseName = "test.db";
+  static final _databaseName = "AlnaiemDatabase.db";
+  //static final _databaseName = "test.db";
   // Increment this version when you need to change the schema.
   static final _databaseVersion = 1;
 
@@ -76,6 +76,7 @@ class DatabaseHelper {
   Future<int> insert(Prayers prayer) async {
     Database db = await database;
     int id = await db.insert(tablePrayers, prayer.toMap());
+    print(prayer.Text + ':' + id.toString());
     return id;
   }
 

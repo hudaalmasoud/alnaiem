@@ -24,9 +24,14 @@ class HomePage extends StatelessWidget {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-              title: Text(
-            kHomePageHeaderText,
-            style: kHeaderTextStyle,
+              title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                kHomePageHeaderText,
+                style: kHeaderTextStyle,
+              ),
+            ],
           )),
           body: ListView(
             children: <Widget>[
