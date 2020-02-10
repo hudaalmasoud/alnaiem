@@ -63,6 +63,8 @@ const kHeaderColor = Color(0xFF36a8a8);
 
 const kFooterColor = Color(0xFF36a8a8);
 
+const kFooterColors = Color(0xFF36a8a8);
+
 const kButtonBorderColor = Color(0xFFc4421a);
 
 const kDarkButtonColor = Color(0xFF66b2b2);
