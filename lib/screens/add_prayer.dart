@@ -36,9 +36,8 @@ class _AddPrayerState extends State<AddPrayer> {
                       () {
                         print('Count :' + count.toString());
 
-                        if (newTitle != null &&
-                            newTitle.trim().isNotEmpty &&
-                            int.parse(count.toString()) < 100) {
+                        //if (newTitle != null && newTitle.trim().isNotEmpty && int.parse(count.toString()) < 100) {
+                        if (newTitle != null && newTitle.trim().isNotEmpty) {
                           _save(newTitle);
                         }
                       },
@@ -124,12 +123,17 @@ class _AddPrayerState extends State<AddPrayer> {
                                 itemCount: 1,
                                 itemBuilder: (context, i) {
                                   return ListTile(
-                                    title: new Text(
-                                        'لم يتم إضافة ذِكر/ دعاء.' +
-                                            '\n' +
-                                            ' يمكنك الإضافة حتى ١٠٠ ذِكر/ دعاء.',
+                                    title: new Text('لم يتم إضافة ذِكر/ دعاء.',
                                         style: kCategoryButtonTextStyle,
                                         textDirection: TextDirection.rtl),
+//                                    title: new Text(
+//                                        'لم يتم إضافة ذِكر/ دعاء.'
+//                                            +
+//                                            '\n' +
+//                                            ' يمكنك الإضافة حتى ١٠٠ ذِكر/ دعاء.'
+//                                        ,
+//                                        style: kCategoryButtonTextStyle,
+//                                        textDirection: TextDirection.rtl),
                                   );
                                 },
                               ),
