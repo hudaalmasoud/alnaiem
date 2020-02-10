@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts_arabic/fonts.dart';
 
-const kHomePageHeaderText = 'أذكار المسلم';
+const kHomePageHeaderText = 'أذكار و أدعية مختارة';
 const kAddPageHeaderText = 'إضافة ذِكر/ دعاء';
 const kAddText = 'إضافة';
 const kAboutUsHeaderText = 'معلومات التطبيق';
