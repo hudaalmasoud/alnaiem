@@ -41,7 +41,8 @@ class ReusableButton extends StatelessWidget {
           ),
         ),
         margin: EdgeInsets.only(
-            top: 15.0,
+            top: 7.5,
+            bottom: 7.5,
             left: MediaQuery.of(context).size.width * 0.03,
             right: MediaQuery.of(context).size.width * 0.03),
         padding:

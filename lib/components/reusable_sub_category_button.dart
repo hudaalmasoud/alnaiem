@@ -3,14 +3,10 @@ import 'package:alnaiem/util/constants.dart';
 
 class ReusableSubCategoryButton extends StatefulWidget {
   ReusableSubCategoryButton(
-      {@required this.onTap,
-      @required this.buttonTitle,
-      @required this.color,
-      @required this.counter});
+      {@required this.onTap, @required this.buttonTitle, @required this.color});
   final Function onTap;
   final String buttonTitle;
   final Color color;
-  final String counter;
 
   @override
   _ReusableSubCategoryButtonState createState() =>
@@ -38,7 +34,8 @@ class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
           textDirection: TextDirection.rtl,
         ),
         margin: EdgeInsets.only(
-            top: 15.0,
+            top: 7.5,
+            bottom: 7.5,
             left: MediaQuery.of(context).size.width * 0.03,
             right: MediaQuery.of(context).size.width * 0.03),
         padding:

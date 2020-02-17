@@ -159,7 +159,6 @@ class _AddPrayerState extends State<AddPrayer> {
   }
 
   _delete(int id) async {
-    //print('delete row: $id');
     DatabaseHelper helper = DatabaseHelper.instance;
     await helper.delete(id);
   }
@@ -174,7 +173,15 @@ class _AddPrayerState extends State<AddPrayer> {
   showAlertDialog(BuildContext context, int id) {
 // set up the buttons
     Widget cancelButton = FlatButton(
+      color: kDarkButtonColor,
       textColor: Colors.black,
+      shape: RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(18.0),
+        side: BorderSide(
+          color: kButtonBorderColor,
+          width: 1.0,
+        ),
+      ),
       child: Text(
         "إلغاء",
         style: kAAlertButtonsTextStyle,
@@ -185,9 +192,17 @@ class _AddPrayerState extends State<AddPrayer> {
     );
 
     Widget continueButton = FlatButton(
+      color: kDarkButtonColor,
       textColor: Colors.black,
+      shape: RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(18.0),
+        side: BorderSide(
+          color: kButtonBorderColor,
+          width: 1.0,
+        ),
+      ),
       child: Text(
-        "إستمرار",
+        "استمرار",
         style: kAAlertButtonsTextStyle,
       ),
       onPressed: () {
@@ -203,8 +218,14 @@ class _AddPrayerState extends State<AddPrayer> {
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        side: BorderSide(
+          color: kButtonBorderColor,
+          width: 2.0,
+        ),
+      ),
       content: Text(
-        "هل تريد الإستمرار بالحذف؟",
+        "هل تريد الاستمرار بالحذف؟",
         textDirection: TextDirection.rtl,
         style: kAAlertTextStyle,
       ),
