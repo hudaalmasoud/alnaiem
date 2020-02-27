@@ -11,6 +11,188 @@ class CategoryUtil {
   void populateCategories() {
     athkars.add(
       new AthkarCategory(
+        'أذكار الاستيقاظ من النوم',
+        'assets/images/1.jpg',
+        populatewakingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء لبس الثوب',
+        'assets/images/clothIcon.png',
+        populateClothWearAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء لبس الثوب الجديد',
+        'assets/images/1.jpg',
+        populateWearNewClothAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن لبس ثوباً جديداً',
+        'assets/images/1.jpg',
+        populateToWhoWearNewClothAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول إذا وضع ثوبه',
+        'assets/images/1.jpg',
+        populatePutClothAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء دخول الخلاء',
+        'assets/images/restroomIcon.png',
+        populateEnterRestroomAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الخروج من الخلاء',
+        'assets/images/1.jpg',
+        populateOutOfRestroomAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الذكر قبل الوضوء',
+        'assets/images/ablutionIcon.jpg',
+        populateBeforeAblutionAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الذكر بعد الفراغ من الوضوء',
+        'assets/images/1.jpg',
+        populateAfterAblutionAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الذكر عند الخروج من المنزل',
+        'assets/images/outOfHomeIcon.png',
+        populateOutOfHomeAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الذكر عند الدخول المنزل',
+        'assets/images/backToHomeIcon.png',
+        populateBackToHomeAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الذهاب إلى المسجد',
+        'assets/images/1.jpg',
+        populateGoingToMosqueAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء دخول المسجد',
+        'assets/images/1.jpg',
+        populateEnterMosqueAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الخروج من المسجد',
+        'assets/images/1.jpg',
+        populateGettingOutMosqueAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'أذكار الأذان',
+        'assets/images/prayersCallIcon.png',
+        populatePrayerCallAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الاستفتاح',
+        'assets/images/1.jpg',
+        populateEsteftahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الركوع',
+        'assets/images/1.jpg',
+        populateKneelDownAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الرفع من الركوع',
+        'assets/images/1.jpg',
+        populateKneelUpAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء السجود',
+        'assets/images/1.jpg',
+        populateProstratingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الجلسة بين السجدتين',
+        'assets/images/1.jpg',
+        populateBetweenProstratingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء سجود التلاوة',
+        'assets/images/1.jpg',
+        populatePrayersProstratingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'التشهد',
+        'assets/images/1.jpg',
+        populateTashahudAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الصلاة على النبي ﷺ بعد التشهد',
+        'assets/images/1.jpg',
+        populateAfterTashahudAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'بعد التشهد الأخير/قبل السلام',
+        'assets/images/1.jpg',
+        populateAfterTashahudBeforeSalamAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'أذكار بعد السلام من الصلاة',
+        'assets/images/afterPrayIcon.png',
+        populateAfterPrayAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء صلاة الاستخارة',
+        'assets/images/1.jpg',
+        populateEstekharaAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
         'أذكار الصباح',
         'assets/images/morningIcon.png',
         populateMorningAthkars(),
@@ -32,74 +214,697 @@ class CategoryUtil {
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الوضوء',
-        'assets/images/ablutionIcon.jpg',
-        populateAblutionAthkars(),
+        'الدعاء إذا تقلب ليلاً',
+        'assets/images/1.jpg',
+        populateWakefulnessAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الأذان',
-        'assets/images/prayersCallIcon.png',
-        populatePrayerCallAthkars(),
+        'دعاء الفزع في النوم ومن بلي بالوحشةً',
+        'assets/images/1.jpg',
+        populateNightmareAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الصلاة',
-        'assets/images/prayIcon.png',
-        populatePrayAthkars(),
+        'ما يفعل من رأى الرؤيا أو الحلمً',
+        'assets/images/1.jpg',
+        populateSeeingDreamAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار ما بعد الصلاة',
-        'assets/images/afterPrayIcon.png',
-        populateAfterPrayAthkars(),
+        'دعاء قنوت الوتر',
+        'assets/images/1.jpg',
+        populateAlwaterAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار السفر',
+        'الذكر عقب السلام من الوتر',
+        'assets/images/1.jpg',
+        populateAfterAlwaterAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الكرب',
+        'assets/images/1.jpg',
+        populateAlkarbAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء لقاء العدو وذي السلطان',
+        'assets/images/1.jpg',
+        populateFacingEnemyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من خاف ظلم السلطان',
+        'assets/images/1.jpg',
+        populateFearOfFacingEnemyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء على العدو',
+        'assets/images/1.jpg',
+        populatePrayersOnEnemyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من أصابه شك في الإيمان',
+        'assets/images/1.jpg',
+        populateFaithQuestioningAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء قضاء الدين',
+        'assets/images/1.jpg',
+        populatePaymentAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الوسوسة في الصلاة والقراءة',
+        'assets/images/1.jpg',
+        populateWaswasinPrayingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من استصعب عليه أمر',
+        'assets/images/1.jpg',
+        populateHardThingsAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول ويفعل من أذنب ذنباً',
+        'assets/images/1.jpg',
+        populateWhoDidBadThingsAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء طرد الشيطان ووساوسهً',
+        'assets/images/1.jpg',
+        populateForDevilAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء حينما يقع مالا يرضاه أو غلب على أمره',
+        'assets/images/1.jpg',
+        populateWeaknessAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'تهنئة المولود له وجوابه',
+        'assets/images/1.jpg',
+        populateNewBabyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء للمريض في عيادته',
+        'assets/images/1.jpg',
+        populateVisitingSickPersonAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'فضل عيادة المريض',
+        'assets/images/1.jpg',
+        populateTheBenefitOfVisitingSickPersonAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء المريض الذي يئس من حياته',
+        'assets/images/1.jpg',
+        populateDesperateAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'تلقين المحتضر',
+        'assets/images/1.jpg',
+        populateTalqeenAlMohtaderAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من أصيب بمصيبة',
+        'assets/images/1.jpg',
+        populateMnOsebBmosebahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء عند إغماض الميت',
+        'assets/images/1.jpg',
+        populateEghmadAlMayetAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء للميت في الصلاة عليه',
+        'assets/images/1.jpg',
+        populatePrayForDeadAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء للفرط في الصلاة عليه',
+        'assets/images/1.jpg',
+        populatePrayForDead2Athkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء التعزية',
+        'assets/images/1.jpg',
+        populateAltazeyahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء عند إدخال الميت القبر',
+        'assets/images/1.jpg',
+        populatePutDeadInGraveAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء بعد دفن الميت',
+        'assets/images/1.jpg',
+        populateAfterPutDeadInGraveAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء زيارة القبور',
+        'assets/images/1.jpg',
+        populateVisitGraveAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الريح',
+        'assets/images/1.jpg',
+        populateWindAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الرعد',
+        'assets/images/1.jpg',
+        populateThunderAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'من أدعية الاستسقاء',
+        'assets/images/1.jpg',
+        populateAskForRainAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء إذا نزل المطر',
+        'assets/images/1.jpg',
+        populateDuringRainAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'من أدعية الاستصحاء',
+        'assets/images/1.jpg',
+        populateEsteshaAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء رؤية الهلال',
+        'assets/images/1.jpg',
+        populateSeeingCrescentAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء عند إفطار الصائم',
+        'assets/images/1.jpg',
+        populateFeedingFastingPersonAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء قبل الطعام',
+        'assets/images/forkIcon.png',
+        populateBeforeEatingFoodAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء عند الفراغ من الطعام',
+        'assets/images/1.jpg',
+        populateAfterEatingFoodAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الضيف لصاحب الطعام',
+        'assets/images/1.jpg',
+        populateVisitorForHostingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن سقاه أو إذا أراد ذلك',
+        'assets/images/1.jpg',
+        populateForGiveDrinkAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء إذا أفطر عند أهل بيت',
+        'assets/images/1.jpg',
+        populateForEatingWithFamilyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الصائم إذا حضر الطعام ولم يفطر',
+        'assets/images/1.jpg',
+        populateFastingWhoDidNotEatAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول الصائم إذا سابه أحد',
+        'assets/images/1.jpg',
+        populateFastingSaysForUnpoliteAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء عند رؤية باكورة الثمر',
+        'assets/images/1.jpg',
+        populateNewFruitAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء العطاس',
+        'assets/images/1.jpg',
+        populateSneezeAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        ' ما يقالُ للكافر إذا عطس فحمد الله',
+        'assets/images/1.jpg',
+        populateSneezeForOtherAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء للمتزوج',
+        'assets/images/1.jpg',
+        populateForMarriedAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء المتزوج لنفسه ودعاء شراء الدابة',
+        'assets/images/1.jpg',
+        populateMarriedForHimselfAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء قبل إتيان الزوجة',
+        'assets/images/1.jpg',
+        populateMarriedAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الغضب',
+        'assets/images/1.jpg',
+        populateAngryAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من رأى مبتلى',
+        'assets/images/1.jpg',
+        populateSeeingSickAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقال في المجلس',
+        'assets/images/1.jpg',
+        populateCouncilAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'كفارة المجلس',
+        'assets/images/1.jpg',
+        populateAfterCouncilAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن قال غفر الله لك',
+        'assets/images/1.jpg',
+        populateForOtherAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن صنع إليك معروفاً',
+        'assets/images/1.jpg',
+        populateForOtherWhoDidGoodAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يعصم به من الدجالً',
+        'assets/images/1.jpg',
+        populateForDajalAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن قال إني أحبك في اللهً',
+        'assets/images/1.jpg',
+        populateForLoveInGoodAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن عرض عليك مالهً',
+        'assets/images/1.jpg',
+        populateSuggestGivingMoneyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن أقرض عند القضاءً',
+        'assets/images/1.jpg',
+        populateForWhoGiveMoneyAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الخوف من الشركً',
+        'assets/images/1.jpg',
+        populateFearAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن قال بارك الله فيكً',
+        'assets/images/1.jpg',
+        populateForWhoSaidAllahBlessYouAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء كراهية الطيرةً',
+        'assets/images/1.jpg',
+        populateNotLikeTayarahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء ركوب الدابةً',
+        'assets/images/1.jpg',
+        populateRiddingAnimalAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء السفر',
         'assets/images/travelIcon.png',
         populateTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الخلاء',
-        'assets/images/restroomIcon.png',
-        populateRestroomAthkars(),
+        'دعاء دخول القرية أو البلدة',
+        'assets/images/1.jpg',
+        populateAccessTownAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار اللباس',
-        'assets/images/clothIcon.png',
-        populateClothAthkars(),
+        'دعاء دخول السوق',
+        'assets/images/1.jpg',
+        populateAccessMarketAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الطعام',
-        'assets/images/forkIcon.png',
-        populateFoodAthkars(),
+        'الدعاء إذا تعس المركوب',
+        'assets/images/1.jpg',
+        populateBadRiddingAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار الخروج من المنزل',
-        'assets/images/outOfHomeIcon.png',
-        populateOutOfHomeAthkars(),
+        'دعاء المسافر للمقيم',
+        'assets/images/1.jpg',
+        populateForWhoTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
-        'أذكار دخول المنزل',
-        'assets/images/backToHomeIcon.png',
-        populateBackToHomeAthkars(),
+        'دعاء المقيم للمسافر',
+        'assets/images/1.jpg',
+        populateForWhoTravel2Athkars(),
       ),
     );
+    athkars.add(
+      new AthkarCategory(
+        'التكبير والتسبيح في سير السفر',
+        'assets/images/1.jpg',
+        populateForTakbeerAndTasbeehAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء المسافر إذا أسحر',
+        'assets/images/1.jpg',
+        populateTravelerIfAsharAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء إذا نزل منزلا في سفر أو غيره',
+        'assets/images/1.jpg',
+        populateStayAtTravelAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ذكر الرجوع من السفر',
+        'assets/images/1.jpg',
+        populateBackFromTravelAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول ويفعل من أتاه أمر يسره أو يكرهه',
+        'assets/images/1.jpg',
+        populateWhatToSayOnGoodAndBadAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'فضل الصلاة على النبي ﷺ',
+        'assets/images/1.jpg',
+        populateSalahOnProphetMuhammadAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'إفشاء السلام',
+        'assets/images/1.jpg',
+        populateSayHiAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'كيف يرد السلام على الكافر إذا سلم',
+        'assets/images/1.jpg',
+        populateReplyToHiAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء صياح الديك ونهيق الحمار',
+        'assets/images/1.jpg',
+        populateAnimalSoundsAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء نباح الكلاب بالليل',
+        'assets/images/1.jpg',
+        populateDogsSoundsAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء لمن سببته',
+        'assets/images/1.jpg',
+        populateToSomeoneElseAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول المسلم إذا مدح المسلم',
+        'assets/images/1.jpg',
+        populateComplimentAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول المسلم إذا زكي',
+        'assets/images/1.jpg',
+        populateMaYaqolEzaZokiAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'كيف يلبي المحرم في الحج أو العمرة',
+        'assets/images/1.jpg',
+        populateTalbeyahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'التكبيرة إذا أتي الركن الأسود',
+        'assets/images/1.jpg',
+        populateTakbeerhAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء بين الركن اليماني والحجر الأسود',
+        'assets/images/1.jpg',
+        populateRokonYamaniAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء الوقوف على الصفا والمروة',
+        'assets/images/1.jpg',
+        populateSafaAndMarwaAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الدعاء يوم عرفة',
+        'assets/images/1.jpg',
+        populateArafahAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الذكر عند المشعر الحرام',
+        'assets/images/1.jpg',
+        populateMasharAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'التكبيرة عند رمي الجمار مع كل حصاة',
+        'assets/images/1.jpg',
+        populateStoneThrowingAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول عند التعجب والأمر السار',
+        'assets/images/1.jpg',
+        populateExclamationAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يفعل من أتاه أمر يسره',
+        'assets/images/1.jpg',
+        populateEasyThingsAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول من أحس وجعاً في جسده',
+        'assets/images/1.jpg',
+        populatePainAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'دعاء من خشي أن يصيب شيئاً بعينه',
+        'assets/images/1.jpg',
+        populatePainInEyesAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقال عند الفزع',
+        'assets/images/1.jpg',
+        populateScareAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول عند الذبح أو النحر',
+        'assets/images/1.jpg',
+        populateOdheyehAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'ما يقول لرد كيد مردة الشياطين',
+        'assets/images/1.jpg',
+        populateProtectFromDevilAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'الاستغفار والتوبة',
+        'assets/images/1.jpg',
+        populateEsteghfarAthkars(),
+      ),
+    );
+    athkars.add(
+      new AthkarCategory(
+        'فضل التسبيح والتحميد ، والتهليل ، والتكبير',
+        'assets/images/1.jpg',
+        populateTasbehTahmedTakbeerAthkars(),
+      ),
+    );
+    /* athkars.add(
+      new AthkarCategory(
+        'كيف كان النبي صلى الله عليه وسلم يسبح ؟',
+        'assets/images/1.jpg',
+        populateTakbeerProhibitMuhammadAthkars(),
+      ),
+    ); */
     athkars.add(
       new AthkarCategory(
         'أدعية للميت',
@@ -107,14 +912,591 @@ class CategoryUtil {
         populatePrayersForDeadAthkars(),
       ),
     );
-//    athkars
-//        .add(new AthkarCategory('أذكار المسجد', 'assets/images/morning.png'));
-//    athkars.add(new AthkarCategory(
-//        'أذكار الآمور العارضة', 'assets/images/morning.png'));
+
+//    athkars.add(
+//      new AthkarCategory(
+//        'أذكار الصلاة',
+//        'assets/images/prayIcon.png',
+//        populatePrayAthkars(),
+//      ),
+//    );
   }
 
   List<AthkarCategory> getCategories() {
     return this.athkars;
+  }
+
+  List<SubCategoryDetails> populatewakingAthkars() {
+    List<SubCategoryDetails> wakingAthkars = new List<SubCategoryDetails>();
+    wakingAthkars.add(
+      new SubCategoryDetails(
+          'الحَمْدُ لله الذِي أحْيَانا بَعْدَ مَا أمَاتَنَا وإلَيْهِ النَشُور.',
+          1,
+          0),
+    );
+    wakingAthkars.add(
+      new SubCategoryDetails(
+          ' لا إلَهَ إلاَّ الله وحْدَهُ لا شَرِيكَ لَهُ، لَهُ المُلْكُ ولَهُ الحَمْدُ وهُوَ على كلِّ شيءٍ قَدير،سُبْحانَ الله والحَمْدُ لله  ولا إله إلا الله والله أكبر ولا حَولَ ولا قُوةَ إلا بالله العلي العظيم، رب اغْفِرْ لي.',
+          1,
+          0),
+    );
+    wakingAthkars.add(
+      new SubCategoryDetails(
+          'الحَمْدُ لله الذِي عَافَانِي في جَسَدِي ورَدَّ عَلَيَّ رُوحِي، وأَذِنَ لي بِذِكْرهِ.',
+          1,
+          0),
+    );
+    wakingAthkars.add(
+      new SubCategoryDetails(
+          '(إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالأَرْضِ وَاخْتِلاَفِ اللَّيْلِ وَالنَّهَارِ لآيَاتٍ لِّأُوْلِي الألْبَابِ * الَّذِينَ يَذْكُرُونَ اللّهَ قِيَاماً وَقُعُوداً وَعَلَىَ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالأَرْضِ رَبَّنَا مَا خَلَقْتَ هَذا بَاطِلاً سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ * رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ * رَّبَّنَا إِنَّنَا سَمِعْنَا مُنَادِياً يُنَادِي لِلإِيمَانِ أَنْ آمِنُواْ بِرَبِّكُمْ فَآمَنَّا رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأبْرَارِ * رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا عَلَى رُسُلِكَ وَلاَ تُخْزِنَا يَوْمَ الْقِيَامَةِ إِنَّكَ لاَ تُخْلِفُ الْمِيعَادَ * فَاسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّي لاَ أُضِيعُ عَمَلَ عَامِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَى بَعْضُكُم مِّن بَعْضٍ فَالَّذِينَ هَاجَرُواْ وَأُخْرِجُواْ مِن دِيَارِهِمْ وَأُوذُواْ فِي سَبِيلِي وَقَاتَلُواْ وَقُتِلُواْ لأُكَفِّرَنَّ عَنْهُمْ سَيِّئَاتِهِمْ وَلأُدْخِلَنَّهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الأَنْهَارُ ثَوَاباً مِّن عِندِ اللّهِ وَاللّهُ عِندَهُ حُسْنُ الثَّوَابِ * لاَ يَغُرَّنَّكَ تَقَلُّبُ الَّذِينَ كَفَرُواْ فِي الْبِلاَدِ *مَتَاعٌ قَلِيلٌ ثُمَّ مَأْوَاهُمْ جَهَنَّمُ وَبِئْسَ الْمِهَادُ *لَكِنِ الَّذِينَ اتَّقَوْاْ رَبَّهُمْ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الأَنْهَارُ خَالِدِينَ فِيهَا نُزُلاً مِّنْ عِندِ اللّهِ وَمَا عِندَ اللّهِ خَيْرٌ لِّلأَبْرَارِ * وَإِنَّ مِنْ أَهْلِ الْكِتَابِ لَمَن يُؤْمِنُ بِاللّهِ وَمَا أُنزِلَ إِلَيْكُمْ وَمَا أُنزِلَ إِلَيْهِمْ خَاشِعِينَ لِلّهِ لاَ يَشْتَرُونَ بِآيَاتِ اللّهِ ثَمَناً قَلِيلاً أُوْلَـئِكَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ إِنَّ اللّهَ سَرِيعُ الْحِسَابِ * يَا أَيُّهَا الَّذِينَ آمَنُواْ اصْبِرُواْ وَصَابِرُواْ وَرَابِطُواْ وَاتَّقُواْ اللّهَ لَعَلَّكُمْ تُفْلِحُونَ).',
+          1,
+          0),
+    );
+    return wakingAthkars;
+  }
+
+  List<SubCategoryDetails> populateClothWearAthkars() {
+    List<SubCategoryDetails> clothWearAthkars = new List<SubCategoryDetails>();
+    clothWearAthkars.add(
+      new SubCategoryDetails(
+          'الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.',
+          1,
+          0),
+    );
+    return clothWearAthkars;
+  }
+
+  List<SubCategoryDetails> populateWearNewClothAthkars() {
+    List<SubCategoryDetails> wearNewClothAthkars =
+        new List<SubCategoryDetails>();
+    wearNewClothAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيه، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَه، وَأَعُوذُ بِكَ مِنْ شَرِّه و شَرِّ مَا صُنِعَ لَه.',
+          1,
+          0),
+    );
+    return wearNewClothAthkars;
+  }
+
+  List<SubCategoryDetails> populateToWhoWearNewClothAthkars() {
+    List<SubCategoryDetails> toWhoWearNewClothAthkars =
+        new List<SubCategoryDetails>();
+    toWhoWearNewClothAthkars.add(
+      new SubCategoryDetails('تُبْلي ويَخْلِفُ اللّهُ تَعَالَى.', 1, 0),
+    );
+    toWhoWearNewClothAthkars.add(
+      new SubCategoryDetails(
+          'الْبَسْ جَدِيدًا، وَعِشْ حَمِيدًا، وَمُتْ شَهِيدًا.', 1, 0),
+    );
+    return toWhoWearNewClothAthkars;
+  }
+
+  List<SubCategoryDetails> populatePutClothAthkars() {
+    List<SubCategoryDetails> putClothAthkars = new List<SubCategoryDetails>();
+
+    putClothAthkars.add(
+      new SubCategoryDetails('بِسْمِ اللّه.', 1, 0),
+    );
+    return putClothAthkars;
+  }
+
+  List<SubCategoryDetails> populateEnterRestroomAthkars() {
+    List<SubCategoryDetails> enterRestroomAthkars =
+        new List<SubCategoryDetails>();
+    enterRestroomAthkars.add(
+      new SubCategoryDetails(
+          '[بِسْمِ الله] اللّهُـمَّ إِنِّـي أَعـوذُ بِـكَ مِـنَ الْخُـبْثِ وَالْخَبائِث.',
+          1,
+          0),
+    );
+    return enterRestroomAthkars;
+  }
+
+  List<SubCategoryDetails> populateOutOfRestroomAthkars() {
+    List<SubCategoryDetails> outOfRestroomAthkars =
+        new List<SubCategoryDetails>();
+    outOfRestroomAthkars.add(
+      new SubCategoryDetails('غُفْـرانَك.', 1, 0),
+    );
+    return outOfRestroomAthkars;
+  }
+
+  List<SubCategoryDetails> populateBeforeAblutionAthkars() {
+    List<SubCategoryDetails> beforeAblutionAthkars =
+        new List<SubCategoryDetails>();
+    beforeAblutionAthkars.add(
+      new SubCategoryDetails('بِسْمِ ٱلله.ّٰ', 1, 0),
+    );
+    return beforeAblutionAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterAblutionAthkars() {
+    List<SubCategoryDetails> afterAblutionAthkars =
+        new List<SubCategoryDetails>();
+    afterAblutionAthkars.add(
+      new SubCategoryDetails(
+          'أشْهَدُ أن لا إله إلا الله وحْدَهُ لا شريكَ له، وأشْهَدُ أنَّ محمداً عَبدُهُ ورسُولُه.',
+          1,
+          0),
+    );
+    afterAblutionAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجْعَلْني مِنَ التَّوَّابينَ واجْعَلْنِي من المُتَطَهِّرِينَ.',
+          1,
+          0),
+    );
+    afterAblutionAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَكَ اللَّهُمَّ وبَحَمْدكَ أشْهدُ أنْ لا إلهَ إلا أنْتَ أَسْتَغْفِرُكَ وأتُوبُ إِلَيْكَ.',
+          1,
+          0),
+    );
+    return afterAblutionAthkars;
+  }
+
+  List<SubCategoryDetails> populateOutOfHomeAthkars() {
+    List<SubCategoryDetails> outOfHomeAthkars = new List<SubCategoryDetails>();
+    outOfHomeAthkars.add(
+      new SubCategoryDetails(
+          'بِسْم اللَّهِ توكَّلْتُ عَلَى اللَّه، ولا حوْلَ ولا قُوةَ إلاَّ بِاللَّهُ.',
+          1,
+          0),
+    );
+    outOfHomeAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّي أعوذُ بِكَ أنْ أَضِلَّ أو أُضَلَّ، أَوْ أَزِلَّ أوْ أُزلَّ، أوْ أظلِمَ أوْ أُظلَم، أوْ أَجْهَلَ أو يُجهَلَ عَلَيَّ.',
+          1,
+          0),
+    );
+    return outOfHomeAthkars;
+  }
+
+  List<SubCategoryDetails> populateBackToHomeAthkars() {
+    List<SubCategoryDetails> backToHomeAthkars = new List<SubCategoryDetails>();
+    backToHomeAthkars.add(
+      new SubCategoryDetails(
+          'َبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا، ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِه.',
+          1,
+          0),
+    );
+    return backToHomeAthkars;
+  }
+
+  List<SubCategoryDetails> populateGoingToMosqueAthkars() {
+    List<SubCategoryDetails> gointToMosqueAthkars =
+        new List<SubCategoryDetails>();
+    gointToMosqueAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجْعَلْ في قَلْبي نُوراً، وَفي لِساني نوراً، وفي سَمْعي نُوراً، وفي بَصَري نُوراً، ومِنْ فَوقي نُوراً، ومِن تحتي نُوراً، وعن يميني نُوراً، وعن شمالي نُوراً، من أمامي نُوراً، ومن خَلْفي نوراً، واجعل في نفسي نُوراً، وأَعْظِم لِي نُوراً، وعَظِّم لي نُوراً، واجْعَلْ لي نُوراً، واجعلني نُوراً، اللّهُمَّ أَعْطِني نُوراً، واجعل في عَصَبي نُوراً، وفي لَحْمِي نُوراً، وفي دَمِي نُوراً، وفي شعري نُوراً، وفي بَشَرِي نُوراً. [اللَّهُمَّ اجعَلْ لي نُوراً في قَبْري.. ونُوراً في عِظَامي]، ”وزِدْني نُوراً، وزِدْني نُوراً، وزِدْني نُورا]، [وَهَبْ لي نُوراً على نُورٍ].',
+          1,
+          0),
+    );
+    return gointToMosqueAthkars;
+  }
+
+  List<SubCategoryDetails> populateEnterMosqueAthkars() {
+    List<SubCategoryDetails> enterMosqueAthkars =
+        new List<SubCategoryDetails>();
+    enterMosqueAthkars.add(
+      new SubCategoryDetails(
+          'أَعُوذُ باللهِ العَظيـم، وَبِوَجْهِهِ الكَرِيم، وَسُلْطانِهِ القَديم، مِنَ الشّيْطانِ الرَّجـيم. [بِسْمِ الله، وَالصَّلاةُ]،  [وَالسَّلامُ عَلى رَسولِ الله]، اللَّهُمَّ افْتَحْ لي أَبْوابَ رَحْمَتِكَ.',
+          1,
+          0),
+    );
+    return enterMosqueAthkars;
+  }
+
+  List<SubCategoryDetails> populateGettingOutMosqueAthkars() {
+    List<SubCategoryDetails> gettingOutMosqueAthkars =
+        new List<SubCategoryDetails>();
+    gettingOutMosqueAthkars.add(
+      new SubCategoryDetails(
+          'بِسْمِ الله وَالصّلاةُ وَالسّلامُ عَلى رَسُولِ الله، اللّهُمَّ إِنّي أَسْأَلُكَ مِنْ فَضْلِك، اللّهُمَّ اعصِمْني مِنَ الشَّيْطانِ الرَّجيمَ.',
+          1,
+          0),
+    );
+    return gettingOutMosqueAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayerCallAthkars() {
+    List<SubCategoryDetails> prayerCallAthkars = new List<SubCategoryDetails>();
+    prayerCallAthkars.add(
+      new SubCategoryDetails(
+          'يَقُولُ مثل ما يَقُولُ الـمُؤَذِّنُ إلاَّ فِي "حَيَّ عَلَى الصَّلاةِ وَحَيَّ عَلَى الفَلاَحِ" فَيَقُولُ: "لاَ حَوْلَ وَلا قُوَّةَ إلاَّ باللَّهِ".',
+          1,
+          0),
+    );
+    prayerCallAthkars.add(
+      new SubCategoryDetails(
+          'يَقُولُ: وأنا أَشْهَد أَنْ لا إِله إِلاَّ اللَّه وحْدهُ لا شَريك لهُ، وَأَنَّ مُحمَّداً عبْدُهُ وَرسُولُه، رضِيتُ بِاللَّهِ ربًّا، وبمُحَمَّدٍ رَسُولاً، وبالإِسْلامِ دِينًاُ" يقول ذلك عقب تشهد المؤذن.',
+          1,
+          0),
+    );
+    prayerCallAthkars.add(
+      new SubCategoryDetails(
+          'يصلي على النبي ﷺ بعد فراغه من إجابة المؤذنُ".', 1, 0),
+    );
+
+    prayerCallAthkars.add(
+      new SubCategoryDetails(
+          'يَقُولُ: اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، والصَّلاةِ القَائِمَةِ، آتِ مُـحَمَّداً الوَسِيْلَةَ والفَضِيْلَةَ، وابْعَثْهُ مَقَاماً مَـحْمُوداً الَّذِي وَعَدْتَهُ، إنَّكَ لا تُخْلِفُ الـمِيْعَادِ.',
+          1,
+          0),
+    );
+    prayerCallAthkars.add(
+      new SubCategoryDetails(
+          'يدعو لنفسه بَيْنَ الأَذَانِ وَالْإِقَامَة فإِنَّ الدُّعَاءَ حينئذٍ لَا يُرَدُّ.',
+          1,
+          0),
+    );
+    return prayerCallAthkars;
+  }
+
+  List<SubCategoryDetails> populateEsteftahAthkars() {
+    List<SubCategoryDetails> esteftahAthkars = new List<SubCategoryDetails>();
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنْ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ.',
+          1,
+          0),
+    );
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَكَ اللهُمَّ وَبِحَمْدِكَ، تَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَِ.',
+          1,
+          0),
+    );
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَأوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ الْمَلِكُ لاَ إِلَهَ إِلاَّ أَنْت. أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبِي جَمِيعًا لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. وَاهْدِنِي ِلأَحْسَنِ الأَخْلاَق لاَ يَهْدِي ِلأَحْسَنِهَا إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالالشَّرُّ لَيسَ إلَيكََ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكََِ.',
+          1,
+          0),
+    );
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ رَبَّ جِبْرَائِيل،َ وَمِيكَائِيلَ، وَإِسْرَافِيلَ فَاطِرَ السَّمَأوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ. اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ.',
+          1,
+          0),
+    );
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'اللهُ أَكْبَرُ كَبِيرًا، اللهُ أَكْبَرُ كَبِيرًا، اللهُ أَكْبَرُ كَبِيرًا، و الْحَمْدُ لِلهِ كَثِيرًا، و الْحَمْدُ لِلهِ كَثِيرًا، و الْحَمْدُ لِلهِ كَثِيرًا، و سُبْحَانَ اللهِ بُكْرَةً وَأَصِيلاً، و سُبْحَانَ اللهِ بُكْرَةً وَأَصِيلاً، و سُبْحَانَ اللهِ بُكْرَةً وَأَصِيلاً. أَعُوذُ بِاللهَ مِنَ الشَّيْطَانِ: مِنْ  وَنَفْخِه،ِ وَنَفْثِه، هَمْزِهٍِِ.',
+          1,
+          0),
+    );
+    esteftahAthkars.add(
+      new SubCategoryDetails(
+          'كان النبي ﷺ إذا قام من الليل يتهجد قال: " اللهم لك الحمد أنت نور السموات والأرض ومن فيهن ، ولك الحمد أنت قيمُ السموات والأرض ومن فيهن [ ولك الحمد أنت رب السموات والأرض ومن فيهن ]، [ ولك الحمد لك ملك السموات والأرض ومن فيهن ] [ ولك الحمد أنت ملك السموات والأرض] [ ولك الحمد] أنت الحق ، ووعدك الحق ، وقولك الحق ،ولقاؤك الحق ، والجنة حق ، والنار حق ، والنبيّون حق ومحمد ﷺ حق والساعة حق ] [اللهم لك أسلمت ،  وعليك توكلت ، وبك آمنت ، وإليك أنبت ، وبك خاصمت ، وإليك حاكمت ، فاغفر لي ما قدمت وما أخرت ، وأسررت، وما أعلنت ][ أنت المقدم ،وأنت المؤخر لا إله إلا أنت ][أنت إلهي لا إله إلا أنت].',
+          1,
+          0),
+    );
+    return esteftahAthkars;
+  }
+
+  List<SubCategoryDetails> populateKneelDownAthkars() {
+    List<SubCategoryDetails> kneelDownAthkars = new List<SubCategoryDetails>();
+    kneelDownAthkars.add(
+      new SubCategoryDetails('سُبْحَانَ رَبِّيَ الْعَظِيمِِ.', 3, 0),
+    );
+    kneelDownAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِك، اللَّهُمَّ اغْفِرْ لِيِِ.',
+          1,
+          0),
+    );
+    kneelDownAthkars.add(
+      new SubCategoryDetails(
+          'سُّبُّوحٌ، قُدُوسٌ، رَبُ الملائكة والرُّوحِِ.', 1, 0),
+    );
+    kneelDownAthkars.add(
+      new SubCategoryDetails(
+          'للَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْت، وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي، وَبَصَرِي، وَمُخِّي، وَعَظْمِي، وَعَصَبِي، وما استقل به قدمي.',
+          1,
+          0),
+    );
+    kneelDownAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
+          1,
+          0),
+    );
+    return kneelDownAthkars;
+  }
+
+  List<SubCategoryDetails> populateKneelUpAthkars() {
+    List<SubCategoryDetails> kneelUpAthkars = new List<SubCategoryDetails>();
+    kneelUpAthkars.add(
+      new SubCategoryDetails('سَمِعَ اللهُ لِمَنْ حَمِدَهُِِ.', 1, 0),
+    );
+    kneelUpAthkars.add(
+      new SubCategoryDetails(
+          'رَبَّنَا وَلَكَ الْحَمْدُ ، حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهُِِِ.',
+          1,
+          0),
+    );
+    kneelUpAthkars.add(
+      new SubCategoryDetails(
+          'مِلْء السَّمَاوَاتِ وَالأَرْضِ و ما بينهما، وَمِلْء مَا شِئْتَ مِنْ شَيْءٍ بَُّعْدُ، أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللَّهُمَّ لا مَانِعَ لِمَا أَعْطَيْتَ، وَلا مُعْطِيَ لِمَا مَنَعْتَ، وَلا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُِِِ.',
+          1,
+          0),
+    );
+    return kneelUpAthkars;
+  }
+
+  List<SubCategoryDetails> populateProstratingAthkars() {
+    List<SubCategoryDetails> prostratingAthkars =
+        new List<SubCategoryDetails>();
+    prostratingAthkars.add(
+      new SubCategoryDetails('سُبْحَانَ رَبِّيَ الْأَعْلَى.', 3, 0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'سبحانَكَ اللَّهمَّ ربَّنا وبحمدِكَ اللَّهمَّ اغفر ليِ.', 1, 0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'سُّبُّوحٌ، قُدُوسٌ، رَبُ الملائكة والرُّوح.', 1, 0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْت، سَجَدَ وَجْهِي لِلَّذِي خَلَقَه، وَصَوَّرَه، وَشَقَّ سَمْعَهُ وَبَصَرَه، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَِِ.',
+          1,
+          0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَ ذِي الجَبَرُوت، وَالمَلَكُوت، وَالكِبْرِيَاء، وَالعَظَمَةِ.',
+          1,
+          0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لي ذَنْبِي كُلَّه، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَه وَعَلاَنِيَتَهُ وَسِرَّهُ.',
+          1,
+          0),
+    );
+    prostratingAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ إني أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَُ.',
+          1,
+          0),
+    );
+
+    return prostratingAthkars;
+  }
+
+  List<SubCategoryDetails> populateBetweenProstratingAthkars() {
+    List<SubCategoryDetails> betweenProstratingAthkars =
+        new List<SubCategoryDetails>();
+    betweenProstratingAthkars.add(
+      new SubCategoryDetails('ربِّ اغْفِرْ لِي، ربِّ اغْفِرْ لِي.', 1, 0),
+    );
+    betweenProstratingAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي.',
+          1,
+          0),
+    );
+    return betweenProstratingAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayersProstratingAthkars() {
+    List<SubCategoryDetails> prayersProstratingAthkars =
+        new List<SubCategoryDetails>();
+    prayersProstratingAthkars.add(
+      new SubCategoryDetails(
+          'سَجَدَ وَجْهِيَ للَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وبَصَرَهُ، بِحَوْلِهِ وَقُوَّتِهِ، (فَتَبَارَكَ اللَّهُ أَحْسَنُ الْـخَالِقِينَ).',
+          1,
+          0),
+    );
+    prayersProstratingAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ اكتُب لي بِها عندَكَ أجرًا ، وضَع عنِّي بِها وزرًا، واجعَلها لي عندَكَ ذُخرًا، وتقبَّلها منِّي كما تقبَّلتَها من عبدِكَ داودَ.',
+          1,
+          0),
+    );
+    return prayersProstratingAthkars;
+  }
+
+  List<SubCategoryDetails> populateTashahudAthkars() {
+    List<SubCategoryDetails> tashahudAthkars = new List<SubCategoryDetails>();
+    tashahudAthkars.add(
+      new SubCategoryDetails(
+          'التَّحِيَّاتُ لِلَّه, وَالصَّلَوَات,ُ وَالطَّيِّبَاتُ, السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ, السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.',
+          1,
+          0),
+    );
+    return tashahudAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterTashahudAthkars() {
+    List<SubCategoryDetails> afterTashahudAthkars =
+        new List<SubCategoryDetails>();
+    afterTashahudAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيم وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، وَبَارِكْ عَلَى مُحَمَّد وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيم وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيد.',
+          1,
+          0),
+    );
+    afterTashahudAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِهِ، كَمَا صَلَّيْتَ عَلَى آل إِبْرَاهِيم. وبَارِك عَلَى مُحَمَّدٍ وَعَلَى أَزْوَاجِهِ وَذُرِّيَّتِه، كَمَا بَارِكتَ عَلَى آل إِبْرَاهِيم. إِنَّكَ حَمِيدٌ مَجِيد.',
+          1,
+          0),
+    );
+    return afterTashahudAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterTashahudBeforeSalamAthkars() {
+    List<SubCategoryDetails> afterTashahudforeSalamAthkars =
+        new List<SubCategoryDetails>();
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنَّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، و مِنْ عَذَابِ جَهَنَّمَ، وَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَات، و مِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنَّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وأَعُوذُ بِكََ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّال، وأَعُوذُ بِكََ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَات. اللَّهُمَّ إِنَّي أَعُوذُ بِكَ من المَأثَمِ و المَغرَم. ',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كثِيرًا، وَلا يَغْفِر الذُّنوبَ إِلاَّ أَنْتَ، فَاغْفِر لي مغْفِرَةً مِن عِنْدِكَ وَارحَمْني إِنَّكَ أَنْتَ الْغَفور الرَّحِيم.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ، وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إنِّي أعُوذُ بِكَ مِنَ البُخْلِ، وَأَعوذُ بِكَ مِنَ الجُبْنِ، وَأعُوذُ بِكَ أنْ أُرَدَّ إِلَى أَرْذَلِ العُمُرِ، وَأعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ القَبْرِ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْق أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِي، اللَّهُمَّ إِنِّي أَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأَسْأَلُكَ الْقَصْدَ فِي الْغِنَى وَالْفَقْرِ، وَأَسْأَلُكَ نَعِيمَاً لاَ يَنْفَدُ، وأَسْأَلُكَ قُرَّةَ عَيْنٍ لاَ تَنْقَطِعْ، وَأَسْأَلُكَ الرِّضَا بَعَدَ الْقَضَاءِ، وَأَسْأَلُكَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأْلُكَ لَذَّةَ النَّظَرِ إلَى وَجْهِكَ، وَالشَّوْقَ إِلَى لِقَائِكَ، فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ، وَلاَ فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللهم إني أسألك يا الله بأنك الواحد الأحد الصمد الذي لم يلد ولم يولد ولم يكن له كفواً أحد أن تغفر لي ذنوبي إنك أنت الغفور الرحيم.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّيْ أسْألُكَ بِأنَّ لَكَ الْحَمْدُ لَا إِلَهَ إِلَّا أنْتَ وَحْدَكَ لَا شَرِيْكَ لَكَ، الْمَنَّانُ، يَا بَدِيعَ السَّمَوَاتِ وَالْارْض يَا ذَا الْجَلالِ وَالإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ.',
+          1,
+          0),
+    );
+    afterTashahudforeSalamAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لَا إِلَهَ إِلَّا أَنْتَ، الأَحَدُ الصَّمَد الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ.',
+          1,
+          0),
+    );
+    return afterTashahudforeSalamAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterPrayAthkars() {
+    List<SubCategoryDetails> afterPrayAthkars = new List<SubCategoryDetails>();
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله. اللّهُـمَّ أَنْـتَ السَّلامُ، وَمِـنْكَ السَّلام، تَبارَكْتَ يا ذا الجَـلالِ وَالإِكْـرام.',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'لا إلهَ إلاّ اللّهُ وحدَهُ لا شريكَ لهُ، لهُ المُـلْكُ ولهُ الحَمْد، وهوَ على كلّ شَيءٍ قَدير، اللّهُـمَّ لا مانِعَ لِما أَعْطَـيْت، وَلا مُعْطِـيَ لِما مَنَـعْت، وَلا يَنْفَـعُ ذا الجَـدِّ مِنْـكَ الجَـد.',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'لا إلهَ إلاّ اللّه, وحدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمد، وهوَ على كلّ شيءٍ قدير، لا حَـوْلَ وَلا قـوَّةَ إِلاّ بِاللهِ، لا إلهَ إلاّ اللّـه، وَلا نَعْـبُـدُ إِلاّ إيّـاه, لَهُ النِّعْـمَةُ وَلَهُ الفَضْل وَلَهُ الثَّـناءُ الحَـسَن، لا إلهَ إلاّ اللّهُ مخْلِصـينَ لَـهُ الدِّينَ وَلَوْ كَـرِهَ الكـافِرون.',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر.', 33, 0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير.',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          '(قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ).',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          '(قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ).',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          '(قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ).',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          '(اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ   أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ).',
+          1,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          '(لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ لهُ، لهُ المُلكُ ولهُ الحَمْد، يُحيـي وَيُمـيتُ وهُوَ على كُلّ شيءٍ قدير)(عَشْر مَرّات بَعْدَ المَغْرِب وَالصّـبْح).',
+          10,
+          0),
+    );
+    afterPrayAthkars.add(
+      new SubCategoryDetails(
+          'اللّهُـمَّ إِنِّـي أَسْأَلُـكَ عِلْمـاً نافِعـاً وَرِزْقـاً طَيِّـبا، وَعَمَـلاً مُتَقَـبَّلاً (مرة واحدة بَعْد السّلامِ من صَلاةِ الفَجْر).',
+          1,
+          0),
+    );
+    return afterPrayAthkars;
+  }
+
+  List<SubCategoryDetails> populateEstekharaAthkars() {
+    List<SubCategoryDetails> estekharaAthkars = new List<SubCategoryDetails>();
+    estekharaAthkars.add(
+      new SubCategoryDetails(
+          '.قال جابر بن عبد الله رضي الله عنهما: كان رسول الله ﷺ يُعلمنا الاستخارة في الأمور كلها كما يعلمُنا السورة من القرآن، يقول: (إذا هم أحدكم بالأمر فليركع ركعتين من غير الفريضة ثم ليقل: اللهم إني أستخيرك بعلمك، وأستقدرك بقدرتك، وأسألك من فضلك العظيم, فإنك تقدِرُ ولا أقدِرُ، وتعلم ولا أعلم، وأنت علام الغيوب، اللهم إن كنت تعلم أن هذا الأمر -يسمي حاجته- خير لي في ديني ومعاشي وعاقبة أمري-أو قال: عاجلة وآجله- فاقدره لي ويسره لي، ثم بارك لي فيه، وإن كنت تعلم أن هذا الأمر شر لي في ديني ومعاشي وعاقبة أمري-أو قال: عاجله وآجله- فاصرفه عني واصرفني عنه واقدر لي الخير حيث كان، ثم ارضني به". \n وما ندم من استخار الخالق، وشاور المخلوقين المؤمنين وتثبت في أمره، فقد قال سبحانه: { وَشَاوِرْهُمْ فِي الأَمْرِ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللّهِ}',
+          1,
+          0),
+    );
+    return estekharaAthkars;
   }
 
   List<SubCategoryDetails> populateMorningAthkars() {
@@ -209,7 +1591,7 @@ class CategoryUtil {
     );
     morningAthkars.add(
       new SubCategoryDetails(
-          'رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـا.',
+          'رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ ﷺ نَبِيّـا.',
           3,
           0),
     );
@@ -352,7 +1734,7 @@ class CategoryUtil {
     );
     eveningAthkars.add(
       new SubCategoryDetails(
-          'رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـا.',
+          'رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ ﷺ نَبِيّـا.',
           3,
           0),
     );
@@ -482,492 +1864,1434 @@ class CategoryUtil {
     return sleepingAthkars;
   }
 
-  List<SubCategoryDetails> populateAblutionAthkars() {
-    List<SubCategoryDetails> ablutionAthkars = new List<SubCategoryDetails>();
-    ablutionAthkars.add(
-      new SubCategoryDetails('الذكر قبل الوضوء: بِسْمِ ٱلله.ّٰ', 1, 0),
-    );
-    ablutionAthkars.add(
+  List<SubCategoryDetails> populateWakefulnessAthkars() {
+    List<SubCategoryDetails> wakefulnessAthkars =
+        new List<SubCategoryDetails>();
+    wakefulnessAthkars.add(
       new SubCategoryDetails(
-          'الذكر بعد الوضوء: أشْهَدُ أن لا إله إلا الله وحْدَهُ لا شريكَ له، وأشْهَدُ أنَّ محمداً عَبدُهُ ورسُولُه.',
+          'لا إلهَ إلَّا اللهُ الواحدُ القهَّار،ُ ربُّ السَّمواتِ والأرضِ وما بينَهما العزيزُ الغفَّارُ.',
           1,
           0),
     );
-    ablutionAthkars.add(
-      new SubCategoryDetails(
-          'الذكر بعد الوضوء: اللَّهُمَّ اجْعَلْني مِنَ التَّوَّابينَ واجْعَلْنِي من المُتَطَهِّرِينَ.',
-          1,
-          0),
-    );
-    ablutionAthkars.add(
-      new SubCategoryDetails(
-          'الذكر بعد الوضوء: سُبْحَانَكَ اللَّهُمَّ وبَحَمْدكَ أشْهدُ أنْ لا إلهَ إلا أنْتَ أَسْتَغْفِرُكَ وأتُوبُ إِلَيْكَ.',
-          1,
-          0),
-    );
-    return ablutionAthkars;
+    return wakefulnessAthkars;
   }
 
-  List<SubCategoryDetails> populatePrayerCallAthkars() {
-    List<SubCategoryDetails> prayerCallAthkars = new List<SubCategoryDetails>();
-    prayerCallAthkars.add(
+  List<SubCategoryDetails> populateNightmareAthkars() {
+    List<SubCategoryDetails> nightmareAthkars = new List<SubCategoryDetails>();
+    nightmareAthkars.add(
       new SubCategoryDetails(
-          'يَقُولُ مثل ما يَقُولُ الـمُؤَذِّنُ إلاَّ فِي "حَيَّ عَلَى الصَّلاةِ وَحَيَّ عَلَى الفَلاَحِ" فَيَقُولُ: "لاَ حَوْلَ وَلا قُوَّةَ إلاَّ باللَّهِ".',
+          'أَعُوذُ بِكَلِمَـاتِ اللَّهِ التَّامَّات مِنْ غَضَبِهِ وَعِقَابِهِ، وشَرِّ عِبَادِهِ، وَمِنْ هَمَزَاتِ الشَّيَاطِين وأنْ يَحْضُرُونِ.',
           1,
           0),
     );
-    prayerCallAthkars.add(
-      new SubCategoryDetails(
-          'يَقُولُ: وأنا أَشْهَد أَنْ لا إِله إِلاَّ اللَّه وحْدهُ لا شَريك لهُ، وَأَنَّ مُحمَّداً عبْدُهُ وَرسُولُه، رضِيتُ بِاللَّهِ ربًّا، وبمُحَمَّدٍ رَسُولاً، وبالإِسْلامِ دِينًاُ" يقول ذلك عقب تشهد المؤذن.',
-          1,
-          0),
-    );
-    prayerCallAthkars.add(
-      new SubCategoryDetails(
-          'يصلي على النبي صلى الله عليه وسلم بعد فراغه من إجابة المؤذنُ".',
-          1,
-          0),
-    );
-
-    prayerCallAthkars.add(
-      new SubCategoryDetails(
-          'يَقُولُ: اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، والصَّلاةِ القَائِمَةِ، آتِ مُـحَمَّداً الوَسِيْلَةَ والفَضِيْلَةَ، وابْعَثْهُ مَقَاماً مَـحْمُوداً الَّذِي وَعَدْتَهُ، إنَّكَ لا تُخْلِفُ الـمِيْعَادِ.',
-          1,
-          0),
-    );
-    prayerCallAthkars.add(
-      new SubCategoryDetails(
-          'يدعو لنفسه بَيْنَ الأَذَانِ وَالْإِقَامَة فإِنَّ الدُّعَاءَ حينئذٍ لَا يُرَدُّ.',
-          1,
-          0),
-    );
-    return prayerCallAthkars;
+    return nightmareAthkars;
   }
 
-  List<SubCategoryDetails> populatePrayAthkars() {
-    List<SubCategoryDetails> prayAthkars = new List<SubCategoryDetails>();
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: اللَّهُمَّ بَاعِدْ بَيْنِيْ وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ   الْمشرِقِ وَالمغْرِبِ، اللهم نَقِّنِيْ مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأبْيَضُ مِنَ الدَّنَسِ، اللهم اغْسِلْنِيْ مِنْ خَطَايَايَ، بِالثَّلْجِ وَالْمَاءِ والْبَرَدِ.',
-          1,
-          0),
+  List<SubCategoryDetails> populateSeeingDreamAthkars() {
+    List<SubCategoryDetails> seeingDreamAthkars =
+        new List<SubCategoryDetails>();
+    seeingDreamAthkars.add(
+      new SubCategoryDetails('يَنْفُثُ عَنْ يَسَارِهَ.', 3, 0),
     );
-    prayAthkars.add(
+    seeingDreamAthkars.add(
       new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: سُبْحَانَكَ سُبْحَانَكَ اللهم وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ.',
-          1,
-          0),
+          'يستعيذُ باللهِ مِنَ الشَّيْطَانِ، ومِنْ شَرِّ مَا رَأَى.', 3, 0),
     );
-    prayAthkars.add(
+    seeingDreamAthkars.add(
+      new SubCategoryDetails('لا يحدث بها أحداً.', 0, 0),
+    );
+    seeingDreamAthkars.add(
       new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: الْحَمْدُ للّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ.',
-          1,
-          0),
+          'يتحَوَّلُ عَنْ جَنْبِهِ الذي كَانَ عَلَيْهِ.', 0, 0),
     );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: اللهُ أكْبَرُ كَبِيْرًا، وَالْحَمْدُ لِلهِ كَثِيْرًا، وَسُبْحَانَ اللهِ بُكْرَةً وَّاصِيْلًا. أعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ.',
-          1,
-          0),
+    seeingDreamAthkars.add(
+      new SubCategoryDetails('يَقومُ يُصَلِّي إنْ أرَادَ ذَلِكَِ.', 0, 0),
     );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: اللَّهُمَّ رَبَّ جَبْرَائِيلَ، وَمِيْكَائِيلَ، وَإِسْرَافِيْلَ، فَاطِرَ السَّمَوَاتِ وَالْأرْضِ، عَالِمَ الغَيْبِ وَالشَّهَادَة،ِ أنْتَ تَحْكُمُ بَيْنَ   عِبَادِكَ فِيْمَا كَانُوا فِيْهِ يَخْتَلِفُونَ، اِهْدِنِيْ لما اخْتُلِفَ فِيْهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِيْ مَنْ تَشَاءُ إِلَى صِرَاطٍ مُّسْتَقِيْمٍ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية استفتاح الصلاة: وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَوَاتِ وَالْأرْضَ حَنِيْفًا وَّمَا أنَا مِنَ المشركينَ، إِنَّ صَلَاتِيْ، وَنُسُكِيْ، وَمَحْيَايَ، وَمَمَاتِيْ لِلهِ رَبِّ الْعالمينَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَانَا مِنَ المسلمينَ، اللهم أنْتَ الملِكُ لَا إِلَهَ إِلَّا أنْتَ، أنْتَ رَبِّيْ وَأنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا إِنَّهُ لَا يَغْفِرُ الذُّنوبَ إِلَّا أنْتَ. وَاهْدِنِيْ لِأحْسَنِ الْأخْلَاقِ لَا يَهْدِيْ لِأحْسَنِهَا إِلَّا أنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا، لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أسْتَغْفِرُكَ وَأتُوْبُ إِلَيْكَ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الركوع: سُبْحَانَ رَبِّيَ العَظِيمِ وَبِحَمْدِهِ.', 3, 0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الركوع: سُبحانَكَ اللّهمَّ ربَّنا وَبِحمدِكَ، اللّهمَّ اغفِرْ لي.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الركوع: سُبُّوُحٌ، قُدُّوسٌ، رَبُّ المَلَائِكَةِ وَالرُّوْحِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الركوع: سُبْحَانَ ذِيْ الْجَبَرُوْتِ، وَالْملكوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الركوع: اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي وَبَصَرِي، وَمُخِّي وَعَظْمِي وَعَصَبِي.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الرفع من الركوع: سَمِعَ اللهُ لمنْ حَمِدَهُ.', 1, 0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الرفع من الركوع: رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبارَكًا فِيْهِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الرفع من الركوع: اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ اسْلَمْتُ، خَشَعَ لَكَ سَمْعِيْ، و بَصَـرِيْ، وَمُخِّيْ، وَعَظْمِيْ، وَعَصَبِيْ، وَمَا استَقَلَّتْ بِهِ قَدَمِيْ لِلهِ رَبِّ العالمين.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الرفع من الركوع: اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْارْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، أهْلَ الثَّنَاءِ والمجد، أحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللهم لَا مَانِعَ لما أعْطَيْتَ، وَلَا مُعْطِيَ لما مَنَعْتَ، وَلَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الْجَدُّ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الرفع من الركوع: اللَّهُمَّ لَكَ الْحَمْدُ مِلْءَ السَّمَاءِ، وَمِلْءَ الْارْضِ، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، اللَّهُمَّ طَهِّرْنِي بِالثَّلْجِ وَالْبَرَدِ، والماء الْبَارِدِ، اللَّهُمَّ طَهِّرْنِي مِنَ الذُّنُوبِ وَالْخَطَايَا، كَمَا يُنَقَّى الثَّوْبُ الْابْيَضُ مِنَ الْوَسَخِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: سُبْحَانَ رَبِّيَ الأعْلَى وَبِحَمْدِهِ.', 3, 0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: سُبُّوحٌ قُدُّوسٌ رَبُّ الملائكةِ وَالرُّوحِ.', 1, 0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: سُبحانَكَ اللّهمَّ ربَّنا وَبِحمدِكَ، اللّهمَّ اغفِرْ لي.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: سُبْحَانَ ذِي الْجَبْرُوتِ والملكوت وَالْكِبْرِيَاءِ وَالْعَظَمَةِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَتَهُ وَسِرَّهُ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: اللَّهُمَّ لَكَ سَجَدْتُّ وَبِكَ آمَنْتُ، وَلَكَ أسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِيْ خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللهُ أحْسَنُ الخالقين.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: اللَّهُمَّ إِنِّيْ أعُوْذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقوْبَتِكَ، وَأعُوْذُ بِكَ مِنْكَ، لَا أُحْصِـي ثَنَاءً عَلَيْكَ، أنْتَ كَمَا أثْنَيْتَ عَلَى نَفْسِكَ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: رَبِّ اعْطِ نَفْسِي تَقْوَاهَا زَكِّهَا أنْتَ خَيْرُ مَنْ زَكَّاهَا أنْتَ وَلِيُّهَا وَمَوْلَاهَا.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية السجود: اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًاُ، وَاجْعَلْ فِيْ سَمْعِيْ نُورًاُ، وَاجْعَلْ فِيْ بَصَرِيْ نُورًاُ، وَاجْعَلْ مِنْ تَحْتِي نُورًاُ، وَاجْعَلْ مِنْ فَوْقِي نُورًاُ، وَعَنْ يَمِينِي نُورًاُ، وَعَنْ يَسَارِي نُورًاُ، وَاجْعَلْ أمَامِي نُورًاُ، وَاجْعَلْ خَلْفِي نُورًاُ، وَأعْظِمْ لِيْ نُورًا.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية الجلوس بين السجدتين: رَبِّ رَبِّ اغْفِرْ لِيْ، رَبِّ اغْفِرْ لِيْ. \n اللَّهُمَّ اغْفِرْ لِيْ، وَارْحَمْنِيْ، وَاهْدِنِيْ، وَاجْبُرْنِيْ، وَعَافِنِيْ، وَارْزُقْنِيْ، وَارْفَعْنِيْ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'دعاء سجود التلاوة: سَجَدَ وَجْهِيَ للَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وبَصَرَهُ، بِحَوْلِهِ وَقُوَّتِهِ، فَتَبَارَكَ اللَّهُ أَحْسَنُ الْـخَالِقِينَ.\n اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أجْراً، وَضَعْ عَنِّي بِهَا وِزْرَاً، واْجعَلْهَا لِي عِنْدِكَ ذُخْراً، وتَقَبَّلَهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'التشهد الأول: التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَات،ُ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُه،ُ السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِين، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّه،ُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'التشهد الأخير: التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَات،ُ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.\n اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدً، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ. وَأَعُوذُ بِكَ مِنْ فِتْنَةِ المسيح الدَّجَّالِ. وَأَعُوذُ بِكَ مِنْ فِتْنَةِ المحيا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ المأثم والمغرم.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيرا، وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ. وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ. وَمَا أَسْرَفْتُ. وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ المقدم وَأَنْتَ الْمُؤَخِّرُ. لاَ إِلهَ إِلاَّ أَنْتَ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ الْجَنَّةَ وَأعُوْذُ بِكَ مِنَ النَّارِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ يَا أللهُ بِأنَّكَ الْوَاحِدُ الْأحَدُ الصَّمَدُ الَّذِيْ لَمْ يَلِدْ وَلَمْ يُوْلَدْ، وَلَمْ يَكنْ لَهُ كُفُوًا أحَدٌ، أنْ تَغْفِرَ لِيْ ذُنُوْبِيْ إِنَّكَ أنْتَ الْغَفُوْرُ الرَّحِيْمُ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ حَاسِبْنِيْ حِسَابَاً يَسِيراً.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ بِأنَّ لَكَ الْحَمْدُ لَا إِلَهَ إِلَّا أنْتَ وَحْدَكَ لَا شَرِيْكَ لَكَ، المنان، يَا بَدِيعَ السَّمَوَاتِ وَالْارْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ إِنِّيْ أسْألُكَ الْجَنَّةَ وَأعُوْذُ بِكَ مِنَ النَّارِ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ بِأنَّيْ أشْهَدُ أنَّكَ أنْتَ اللهُ لَا إِلَهَ إِلَّا أنْتَ الْأحَدُ الصَّمَدُ الَّذِيْ لَمْ يَلِدْ وَلَمْ يُوْلَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أحَدٌ.',
-          1,
-          0),
-    );
-    prayAthkars.add(
-      new SubCategoryDetails(
-          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ بِعِلْمِكَ الغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أحْيِنِيْ مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِيْ، وَتَوَفَّنِيْ إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِيْ، اللهم إِنِّيْ أسْألُكَ خَشْيَتَكَ فِيْ الْغَيْبِ وَالشَّهَادَةِ، وَأسْألُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأسْألُكَ الْقَصْدَ فِيْ الْغِنَى وَالْفَقْرِ، وَأسْألُكَ نَعِيْمًا لَا يَنْفَدُ، وَأسْألُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأسْألُكَ الرِّضَا بَعْدَ الْقَضَاءِ، وَأسْألُكَ بَرْدَ الْعَيْشِ بَعْدَ الموت، وَأسْألُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ، وَالشَّوْقَ إِلَى لِقائِكَ فِيْ غَيْرِ ضَرَّاءَ مُضِرَّةٍ، وَلَا فِتْنَةٍ مُضِلَّةٍ، اللهم زَيِّنَّا بِزِينَةِ الْإِيْمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِيْنَ.',
-          1,
-          0),
-    );
-    return prayAthkars;
+    return seeingDreamAthkars;
   }
 
-  List<SubCategoryDetails> populateAfterPrayAthkars() {
-    List<SubCategoryDetails> afterPrayAthkars = new List<SubCategoryDetails>();
-    afterPrayAthkars.add(
+  List<SubCategoryDetails> populateAlwaterAthkars() {
+    List<SubCategoryDetails> alwaterAthkars = new List<SubCategoryDetails>();
+    alwaterAthkars.add(
       new SubCategoryDetails(
-          'أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله. اللّهُـمَّ أَنْـتَ السَّلامُ، وَمِـنْكَ السَّلام، تَبارَكْتَ يا ذا الجَـلالِ وَالإِكْـرام.',
+          'اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّمَا قْضَيْتَ، إِنَّهُ لا يَذِلُّ مَنْ وَالَيْتَ، َ[ولا يعزُّ من عاديت]، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتًَ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    alwaterAthkars.add(
       new SubCategoryDetails(
-          'لا إلهَ إلاّ اللّهُ وحدَهُ لا شريكَ لهُ، لهُ المُـلْكُ ولهُ الحَمْد، وهوَ على كلّ شَيءٍ قَدير، اللّهُـمَّ لا مانِعَ لِما أَعْطَـيْت، وَلا مُعْطِـيَ لِما مَنَـعْت، وَلا يَنْفَـعُ ذا الجَـدِّ مِنْـكَ الجَـد.',
+          'اللَّهُمَّ أعُوذُ برِضَاكَ مِن سَخَطِكَ، وبِمُعَافَاتِكَ مِن عُقُوبَتِكَ، وأَعُوذُ بكَ مِنْك،َ لا أُحْصِي ثَنَاءً عَلَيْكَ، أنْتَ كما أثْنَيْتَ علَى نَفْسِكَِ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    alwaterAthkars.add(
       new SubCategoryDetails(
-          'لا إلهَ إلاّ اللّه, وحدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمد، وهوَ على كلّ شيءٍ قدير، لا حَـوْلَ وَلا قـوَّةَ إِلاّ بِاللهِ، لا إلهَ إلاّ اللّـه، وَلا نَعْـبُـدُ إِلاّ إيّـاه, لَهُ النِّعْـمَةُ وَلَهُ الفَضْل وَلَهُ الثَّـناءُ الحَـسَن، لا إلهَ إلاّ اللّهُ مخْلِصـينَ لَـهُ الدِّينَ وَلَوْ كَـرِهَ الكـافِرون.',
+          'اللَّهُمَّ إيَّاكَ نَعْبُدُ، ولَكَ نُصَلِّي وَنَسْجُدُ، وَإلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ، ونَخْشَى عَذَابَكَ، إنَّ عَذَابَكَ بالكَافِريْنَ مُلْحَقٌ. اللَّهُمَّ إنَّا نَسْتَعِينُكَ، ونَسْتَغْفِرُكَ، وَنُثْنِي عَلَيْكَ الـخَيْرَ، وَلا نَكْفُرُكَ، وَنُؤْمِنُ بِكَ، وَنخْضَعُ لَكَ، وَنخْلَعُ مَنْ يَكْفُرُكَ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    return alwaterAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterAlwaterAthkars() {
+    List<SubCategoryDetails> afterAlwaterAthkars =
+        new List<SubCategoryDetails>();
+    afterAlwaterAthkars.add(
       new SubCategoryDetails(
-          'سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر.', 33, 0),
+          'سبحانَ الملكِ القدُّوس، ثلاث مرات والثالثة يجهر بها ويمد بها صوته [رَبُّ الْمَلَائِكَةِ وَالرُّوحِ].',
+          3,
+          0),
     );
-    afterPrayAthkars.add(
+    return afterAlwaterAthkars;
+  }
+
+  List<SubCategoryDetails> populateSadnessAthkars() {
+    List<SubCategoryDetails> sadnessAthkars = new List<SubCategoryDetails>();
+    sadnessAthkars.add(
       new SubCategoryDetails(
-          'لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير.',
+          'اللهمَّ إني عبدُك، ابنُ عبدِك، ابنُ أمَتِك، ناصيَتي بيدِك، ماضٍ فيَّ حُكمُك، عَدْلٌ فيَّ قضاؤُك، أسألُك بكلِّ اسمٍ هو لك، سميتَ به نفسَك، أو أنزلته في كتابِك، أوْ علَّمْتَه أحدًا مِنْ خلقِك، أو استأثرتَ به في علمِ الغيبِ عندَك، أنْ تجعلَ القرآنَ ربيعَ قلبي، ونورَ صدري، وجلاءَ حُزني، وذهابَ هَمِّي.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    sadnessAthkars.add(
       new SubCategoryDetails(
-          '(قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ).',
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    return sadnessAthkars;
+  }
+
+  List<SubCategoryDetails> populateAlkarbAthkars() {
+    List<SubCategoryDetails> alkarbAthkars = new List<SubCategoryDetails>();
+    alkarbAthkars.add(
       new SubCategoryDetails(
-          '(قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ).',
+          'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَوَاتِ، وَرَبُّ الْأَرْضِ، وَرَبُّ الْعَرْشِ الْكَرِيمِ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    alkarbAthkars.add(
       new SubCategoryDetails(
-          '(قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ).',
+          'اللَّهُمَّ رَحْمَتَكَ أَرْجُو فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، لَا إِلَهَ إِلَّا أَنْتَ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
+    alkarbAthkars.add(
       new SubCategoryDetails(
-          '(اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ   أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ).',
+          'أَنْ لا إِلَهَ إِلا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.',
           1,
           0),
     );
-    afterPrayAthkars.add(
-      new SubCategoryDetails(
-          '(لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ لهُ، لهُ المُلكُ ولهُ الحَمْد، يُحيـي وَيُمـيتُ وهُوَ على كُلّ شيءٍ قدير)(عَشْر مَرّات بَعْدَ المَغْرِب وَالصّـبْح).',
-          10,
-          0),
+    alkarbAthkars.add(
+      new SubCategoryDetails('اللهُ اللهُ ربِّي لا أُشرِكُ به شيئًا.', 1, 0),
     );
-    afterPrayAthkars.add(
+    return alkarbAthkars;
+  }
+
+  List<SubCategoryDetails> populateFacingEnemyAthkars() {
+    List<SubCategoryDetails> facingEnemyAthkars =
+        new List<SubCategoryDetails>();
+    facingEnemyAthkars.add(
       new SubCategoryDetails(
-          'اللّهُـمَّ إِنِّـي أَسْأَلُـكَ عِلْمـاً نافِعـاً وَرِزْقـاً طَيِّـبا، وَعَمَـلاً مُتَقَـبَّلاً (مرة واحدة بَعْد السّلامِ من صَلاةِ الفَجْر).',
+          'اللَّهُمَّ إِنَّا نجعلُكَ في نحورِهِمْ، ونعُوذُ بِكَ مِنْ شرُورِهمِْ.',
           1,
           0),
     );
-    return afterPrayAthkars;
+    facingEnemyAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أنْتَ عَضُدِي، وأنْتَ نَصِيري، بِكَ أحُولُ، وَبِكَ أصُولُ، وَبِكَ أقَاتِلَُ.',
+          1,
+          0),
+    );
+    facingEnemyAthkars.add(
+      new SubCategoryDetails('حَسْبُنَا اللهُ وَنِعْمَ الْوَكِيلُ.', 1, 0),
+    );
+    return facingEnemyAthkars;
+  }
+
+  List<SubCategoryDetails> populateFearOfFacingEnemyAthkars() {
+    List<SubCategoryDetails> fearOfFacingEnemyAthkars =
+        new List<SubCategoryDetails>();
+    fearOfFacingEnemyAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ رَبَّ السَّـمَواتِ السَّبْعِ، ورَبَّ العَرْشِ العَظِيمِ، كُنْ لِي جَاراً مِنْ فُلاَنِ بْنِ فُلانٍ، وأحْزَابِهِ مِنْ خَلائِقِكَ؛ أنْ يَفْرُطَ عَلَيَّ أَحدٌ مِنْهُمْ أوْ يَطْغَى، عَزَّ جَارُكَ، وَجَلَّ ثَنُاؤُكَ، ولا إِلَهَ إلاَّ أنْتَ.',
+          1,
+          0),
+    );
+    fearOfFacingEnemyAthkars.add(
+      new SubCategoryDetails(
+          'اللهُ أكْبَرُ، اللهُ أعَزُّ مِنْ خَلْقِهِ جَمِيعاً، اللهُ أعَزُّ مِـمَّا أخَافُ وأحْذَرُ، أعُوذُ باللـهِ الذِي لَا إِلَهَ إلاَّ هُوَ، الـمُمْسِكِ السَّـمَواتِ السَّبْعِ أنْ يَقَعْنَ عَلَى الأرْضِ إِلاَّ بإذْنِهِ، مِنْ شَرِّ عَبْدِكَ فُلانٍ، وُجُنُودِهِ وَأتْبَاعِهِ وأشْيَاعِهِ، مِنَ الجِنِّ والإنْسِ، اللَّهُمَّ كُنْ لِي جَاراً مِنْ شَرِّهِمْ، جَلَّ ثَنَاؤُكَ، وَعَزَّ جَارُكَ، وتَبَارَكَ اسْمُكَ: وَلَا إِلَهَ غَيْرُكََُ.',
+          3,
+          0),
+    );
+    return fearOfFacingEnemyAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayersOnEnemyAthkars() {
+    List<SubCategoryDetails> prayersOnEnemyAthkars =
+        new List<SubCategoryDetails>();
+    prayersOnEnemyAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ مُنْزِلَ الْكِتَابِ، سَرِيعَ الْحِسَاب،ِ اهْزِمِ الأَحْزَاب،َ اللَّهُمَّ اهْزِمْهُمْ وَزَلْزِلْهُمَْ.',
+          1,
+          0),
+    );
+    return prayersOnEnemyAthkars;
+  }
+
+  List<SubCategoryDetails> populatePeopleFearAthkars() {
+    List<SubCategoryDetails> peopleFearAthkars = new List<SubCategoryDetails>();
+    peopleFearAthkars.add(
+      new SubCategoryDetails('اللَّهُمَّ اكْفِنِيْهِمْ بِمَا شِئْت.', 1, 0),
+    );
+    return peopleFearAthkars;
+  }
+
+  List<SubCategoryDetails> populateFaithQuestioningAthkars() {
+    List<SubCategoryDetails> faithQuestioningAthkars =
+        new List<SubCategoryDetails>();
+    faithQuestioningAthkars.add(
+      new SubCategoryDetails('يَسْتَعِيذُ بِاللّه. ينتهي عما شك فيه.', 1, 0),
+    );
+    faithQuestioningAthkars.add(
+      new SubCategoryDetails('يقول: آمنت بالله ورسله.', 1, 0),
+    );
+    faithQuestioningAthkars.add(
+      new SubCategoryDetails(
+          'يقرأ قوله تعالى: (هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ).',
+          1,
+          0),
+    );
+    return faithQuestioningAthkars;
+  }
+
+  List<SubCategoryDetails> populatePaymentAthkars() {
+    List<SubCategoryDetails> paymentAthkars = new List<SubCategoryDetails>();
+    paymentAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ اكْفِني بحلالِكَ عَن حَرَامِكَ وَاغْنِني بِفَضلِكَ عَمَّن سِوَاكَ.',
+          1,
+          0),
+    );
+    paymentAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ.',
+          1,
+          0),
+    );
+    return paymentAthkars;
+  }
+
+  List<SubCategoryDetails> populateWaswasinPrayingAthkars() {
+    List<SubCategoryDetails> waswasinPrayingAthkars =
+        new List<SubCategoryDetails>();
+    waswasinPrayingAthkars.add(
+      new SubCategoryDetails(
+          'أعُوذُ بِاللـهِ مِنَ الشَّيْطَانِ الرَّجِيمِ، واتْفُلْ عَلَى يَسَارِكَ (ثلاث مرات).',
+          3,
+          0),
+    );
+    return waswasinPrayingAthkars;
+  }
+
+  List<SubCategoryDetails> populateHardThingsAthkars() {
+    List<SubCategoryDetails> hardThingsAthkars = new List<SubCategoryDetails>();
+    hardThingsAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لَا سَهْلَ إلاَّ مَا جَعَلْتَهُ سَهْلاً، وأنْتَ تَجْعَلُ الحَزْنَ إذَا شِئْتَ سَهْلاً.',
+          1,
+          0),
+    );
+    return hardThingsAthkars;
+  }
+
+  List<SubCategoryDetails> populateWhoDidBadThingsAthkars() {
+    List<SubCategoryDetails> whoDidBadThingsAthkars =
+        new List<SubCategoryDetails>();
+    whoDidBadThingsAthkars.add(
+      new SubCategoryDetails(
+          'ما مِن عبدٍ يذنبُ ذنبًا فيُحسنُ الطُّهورَ، ثمَّ يقومُ فيُصلِّي رَكْعتينِ، ثمَّ يستغفِرُ اللَّهَ، إلَّا غفرَ اللَّهُ لَهًُ.',
+          0,
+          0),
+    );
+    return whoDidBadThingsAthkars;
+  }
+
+  List<SubCategoryDetails> populateForDevilAthkars() {
+    List<SubCategoryDetails> forDevilAthkars = new List<SubCategoryDetails>();
+    forDevilAthkars.add(
+      new SubCategoryDetails('الاستعاذة بالله منه.', 0, 0),
+    );
+    forDevilAthkars.add(
+      new SubCategoryDetails('الأذانًُ.', 0, 0),
+    );
+    forDevilAthkars.add(
+      new SubCategoryDetails('الأذكار وقراءة القرآن.', 0, 0),
+    );
+    return forDevilAthkars;
+  }
+
+  List<SubCategoryDetails> populateWeaknessAthkars() {
+    List<SubCategoryDetails> weaknessAthkars = new List<SubCategoryDetails>();
+    weaknessAthkars.add(
+      new SubCategoryDetails('قَدَرُ اللَّهِ وَمَا شَاءَ فَعَلَ.', 0, 0),
+    );
+    return weaknessAthkars;
+  }
+
+  List<SubCategoryDetails> populateNewBabyAthkars() {
+    List<SubCategoryDetails> newBabyAthkars = new List<SubCategoryDetails>();
+    newBabyAthkars.add(
+      new SubCategoryDetails(
+          'بَارَكَ اللَّهُ لَكَ فِي الـمَوْهُوبِ لَكَ، وَشَكَرْتَ الوَاهِبَ، وبَلَغَ أشُدَّهُ، وَرُزِقْتَ بِرَّهُ. ويَرُدُّ عَلَيْهِ الـمُهَنَّأُ فَيَقُولُ: بَارَكَ اللَّهُ لَكَ، وبَارَكَ عَلَيْكَ، وجَزَاكَ اللَّهُ خَيْراً، ورَزَقَكَ اللَّهُ مِثْلَهُ، وأجْزَلَ ثَوَابَكََ.',
+          1,
+          0),
+    );
+    return newBabyAthkars;
+  }
+
+  List<SubCategoryDetails> populateForKidsAthkars() {
+    List<SubCategoryDetails> forKidsAthkars = new List<SubCategoryDetails>();
+    forKidsAthkars.add(
+      new SubCategoryDetails(
+          'كانَ رسولُ اللَّهِ صلى اللَّهُ عليهِ وسلَّمَ يعوِّذُ الحسنَ والحسين، يقولُ: أعيذُكُما بِكلماتِ اللَّهِ التَّامَّة مِن كلِّ شيطانٍ وَهامَّةٍ، ومن كلِّ عينٍ لامَّةٍ.',
+          1,
+          0),
+    );
+    return forKidsAthkars;
+  }
+
+  List<SubCategoryDetails> populateVisitingSickPersonAthkars() {
+    List<SubCategoryDetails> visitingSickPersonAthkars =
+        new List<SubCategoryDetails>();
+    visitingSickPersonAthkars.add(
+      new SubCategoryDetails('لا بأس طهور إن شاء الله.', 1, 0),
+    );
+    visitingSickPersonAthkars.add(
+      new SubCategoryDetails(
+          'أسأل الله العظيم رب العرش العظيم أن يشفيك.', 7, 0),
+    );
+    return visitingSickPersonAthkars;
+  }
+
+  List<SubCategoryDetails> populateTheBenefitOfVisitingSickPersonAthkars() {
+    List<SubCategoryDetails> theBenefitOfVisitingSickPersonAthkars =
+        new List<SubCategoryDetails>();
+    theBenefitOfVisitingSickPersonAthkars.add(
+      new SubCategoryDetails(
+          'إِذَا عَادَ الرَّجُلُ أَخَاهُ الْمُسْلِمَ مَشَى فِي خِرَافَةِ الْجَنَّةِ حَتَّى يَجْلِسَ فَإِذَا جَلَسَ غَمَرَتْهُ الرَّحْمَة، فَإِنْ كَانَ غُدْوَةً صَلَّى عَلَيْهِ سَبْعُونَ أَلْفَ مَلَكٍ حَتَّى يُمْسِيَ، وَإِنْ كَانَ مَسَاءً صَلَّى عَلَيْهِ سَبْعُونَ أَلْفَ مَلَكٍ حَتَّى يُصْبِحَ.',
+          0,
+          0),
+    );
+    return theBenefitOfVisitingSickPersonAthkars;
+  }
+
+  List<SubCategoryDetails> populateDesperateAthkars() {
+    List<SubCategoryDetails> desperateAthkars = new List<SubCategoryDetails>();
+    desperateAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَأَلْحِقْنِي بِالرَّفِيقِ الأَعْلَىَ.',
+          1,
+          0),
+    );
+    desperateAthkars.add(
+      new SubCategoryDetails(
+          'جَعَلَ النَّبيّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمََ عِند مَوْتِه يُدْخِلُ يَدَيْهِ فِي المَاء فَيَمْسَحُ بِهِمَا وَجْهَهُ وَيَقُولُ: لاَ إِلَهَ إِلَّا اللَّه إِنَّ لِلْمَوْتِ سَكَرَات.',
+          1,
+          0),
+    );
+    desperateAthkars.add(
+      new SubCategoryDetails(
+          'لَا إِلَهَ إِلَّا اللَّهُ والله أكبر، لَا إِلَهَ إِلَّا اللَّه وحْدهُ، لَا إِلَهَ إِلَّا اللَّه وحْده حْدهُ لاَ شَرِيكَ لهُ، لَا إِلَهَ إِلَّا اللَّه لَهُ المُلْكُ ولَهُ الحمْدُ، لَا إِلَهَ إِلَّا اللَّه و لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِالله.',
+          1,
+          0),
+    );
+    return desperateAthkars;
+  }
+
+  List<SubCategoryDetails> populateTalqeenAlMohtaderAthkars() {
+    List<SubCategoryDetails> talqeenAlMohtaderAthkars =
+        new List<SubCategoryDetails>();
+    talqeenAlMohtaderAthkars.add(
+      new SubCategoryDetails(
+          'مَنْ كَانَ آخِرُ كَلَامِهِ لَا إِلَهَ إِلَّا اللَّهُ دَخَلَ الْجَنَّةَ.',
+          0,
+          0),
+    );
+    return talqeenAlMohtaderAthkars;
+  }
+
+  List<SubCategoryDetails> populateMnOsebBmosebahAthkars() {
+    List<SubCategoryDetails> mnOsebBmosebahAthkars =
+        new List<SubCategoryDetails>();
+    mnOsebBmosebahAthkars.add(
+      new SubCategoryDetails(
+          'إنَّا لِلَّهِ وإنَّا إلَيْهِ راجِعُونَ اللَّهُمَّ أْجُرْنِي في مُصِيبَتِي، وأَخْلِفْ لي خَيْرًا مِنْها، إلَّا أخْلَفَ اللَّهُ له خَيْرًا مِنْها.',
+          1,
+          0),
+    );
+    return mnOsebBmosebahAthkars;
+  }
+
+  List<SubCategoryDetails> populateEghmadAlMayetAthkars() {
+    List<SubCategoryDetails> eghmadAlMayetAthkars =
+        new List<SubCategoryDetails>();
+    eghmadAlMayetAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ اغْفِرْ لِفُلانٍ (باسْمِهِ) وارْفَعْ دَرَجَتهُ فِي الـمَهْدِيِّيْنَ، واخْلُفْهُ فِي عَقِبِهِ فِي الغَابِريْنَ، واغْفِرْ لَـنَا ولَهُ يَا رَبَّ العَالَـمِيْنَ، وافْسَحْ لَهُ فِي قَبْرِهِ وَنَوِّرْ لَهُ فِيْهِ.',
+          1,
+          0),
+    );
+    return eghmadAlMayetAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayForDeadAthkars() {
+    List<SubCategoryDetails> prayForDeadAthkars =
+        new List<SubCategoryDetails>();
+    prayForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لَهُ وارْحَمْهُ، وعَافِهِ، واعْفُ عَنْهُ، وأكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ، واغْسِلهُ بالـمَاءِ والثَّلْجِ والبَرَدِ، ونَقِّهِ مِنَ الخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الأبْيَضَ مِنَ الدَّنَسِ، وأبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وأهْلاً خَيْراً مِنْ أهْلِهِ، وزَوْجاً خَيْراً مِنْ زَوْجِهِ، وأدْخِلْهُ الجَنَّةَ، وأَعِذْهُ مِنْ عَذَابِ القَبْرِ [وَعَذَابِ النَّارِ].',
+          1,
+          0),
+    );
+    prayForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اغْفِرْ لِحَيِّنَا، وَمَيِّتِنَا، وَشَاهِدِنَا، وَغَائِبِنَا، وَصَغِيرِنَا وَكَبِيرِنَا، وَذَكَرِنَا وَأُنْثَانَا. اللَّهُمَّ مَنْ أَحْيَيْتَهُ مِنَّا فَأَحْيِهِ عَلَى الْإسْلَام، وَمَنْ تَوَفَّيْتَهُ مِنَّا فَتَوَفَّهُ عَلَى الإيمَان، اللَّهُمَّ لَا تَحْرِمْنَا أَجْرَه وَلَا تُضِلَّنَا بَعْدَهُ.',
+          1,
+          0),
+    );
+    prayForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ إنَّ فُلانَ بنَ فُلانٍ في ذمَّتِكَ، وحَبلِ جِوارِك،َ فقِهِ مِن فتنةِ القبرِ وعذابِ النَّار، وأنتَ أهلُ الوفاءِ والحقِّ. اللَّهمَّ فاغفِر لَه وارحَمهُ إنَّكَ أنتَ الغفورُ الرَّحيمُ.',
+          1,
+          0),
+    );
+    prayForDeadAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهمَّ عَبْدُكَ وابْنُ عَبْدُكَ وابْنُ أمْتِكَ احْتَاجَ إلى رَحْمَتِكَ، وأَنْتَ غَنِيّ عَنْ عَذَابِه، إنَّ كَانَ مُحسناً فزده في حَسَنَاتِهِ، وإنَّ كَانَ مُسيئاً فَتَجَاوزْ عَنْهُ.',
+          1,
+          0),
+    );
+    return prayForDeadAthkars;
+  }
+
+  List<SubCategoryDetails> populatePrayForDead2Athkars() {
+    List<SubCategoryDetails> prayForDead2Athkars =
+        new List<SubCategoryDetails>();
+    prayForDead2Athkars.add(
+      new SubCategoryDetails(
+          'للَّهُمَّ أعِذْهُ مِنْ عَذَابِ القَبْر.ِ \n و إن قال: اللَّهُمَّ اجْعَلْهُ فَرَطَاً وَذُخْراً لِوَالِدَيْهِ، وشَفِيعاً مُجَاباً. اللَّهُمَّ ثَقِّلْ بِهِ مَوَازِيْنَهُمَا وأعْظِمْ بهِ أُجُورَهُمَا، وألْحِقْهُ بِصَالِحِ الـمُؤْمِنينَ، واجْعَلْهُ فِي كَفَالَةِ إِبْرَاهِيمَ، وَقِهِ بِرَحْمَتِكَ عَذَابَ الجَحِيمِ، وأبْدِلْهُ دَاراً خَيْراً مِنْ دَارِهِ، وَأَهْلاً خَيْراً مِنْ أَهْلِهِ، اللَّهُمَّ اغْفِرْ لأسْلاَفِنَا، وَأَفْرَاطِنَا، وَمَنْ سَبَقَنا بالإيْمَانِ.',
+          1,
+          0),
+    );
+    prayForDead2Athkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجْعَلْهُ لَـنَا فَرَطَاً، وَسَلَفاً، وَأَجْراً.', 1, 0),
+    );
+    return prayForDead2Athkars;
+  }
+
+  List<SubCategoryDetails> populateAltazeyahAthkars() {
+    List<SubCategoryDetails> altazeyahAthkars = new List<SubCategoryDetails>();
+    altazeyahAthkars.add(
+      new SubCategoryDetails(
+          'إِنَّ لِلَّـهِ مَا أَخَذَ، وَلَهُ مَا أَعْطَى، وَكُلُّ شَيءٍ عِنْدَهُ بِأَجَلٍ مُسَمَّىً... فَلْتَصْبِرْ وَلْتَحْتَسِبِْ.',
+          1,
+          0),
+    );
+    altazeyahAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اجْعَلْهُ لَـنَا فَرَطَاً، وَسَلَفاً، وَأَجْراً. \n وَإنْ قَالَ: ((أعْظَمَ اللهُ أجْرَكَ، وَأَحْسَنَ عَزَاءَكَ، وَغَفَرَ لِـمَيِّتكَ)) فَحَسَنٌ.',
+          1,
+          0),
+    );
+    return altazeyahAthkars;
+  }
+
+  List<SubCategoryDetails> populatePutDeadInGraveAthkars() {
+    List<SubCategoryDetails> putDeadInGraveAthkars =
+        new List<SubCategoryDetails>();
+    putDeadInGraveAthkars.add(
+      new SubCategoryDetails(
+          'بِسْمِ اللَّـهِ، وَعَلَى سُنَّةِ رَسُولِ الله.', 1, 0),
+    );
+    return putDeadInGraveAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterPutDeadInGraveAthkars() {
+    List<SubCategoryDetails> afterPutDeadInGraveAthkars =
+        new List<SubCategoryDetails>();
+    afterPutDeadInGraveAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُـمَّ اغْفِـرْ لَهُ اللَّهُـمَّ ثَبِّتْهُ.', 1, 0),
+    );
+    return afterPutDeadInGraveAthkars;
+  }
+
+  List<SubCategoryDetails> populateVisitGraveAthkars() {
+    List<SubCategoryDetails> visitGraveAthkars = new List<SubCategoryDetails>();
+    visitGraveAthkars.add(
+      new SubCategoryDetails(
+          'السَّلَامُ عَلَيْكُمْ أهْلَ الدِّيَارِ، مِنَ الـمُؤْمِنِينَ والـمُسْلِمِينَ، وَإنَّا إنْ شَاءَ اللَّهُ بِكُمْ لاحِقُونَ، [وَيَرْحَمُ اللَّهُ الـمُستَقْدِمينَ مِنَّا والـمُستأخِرينَ] أسألُ اللَّهَ لنَا وَلَكُمُ العَافِيَةَُ.',
+          1,
+          0),
+    );
+    return visitGraveAthkars;
+  }
+
+  List<SubCategoryDetails> populateWindAthkars() {
+    List<SubCategoryDetails> windAthkars = new List<SubCategoryDetails>();
+    windAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّهَا.',
+          1,
+          0),
+    );
+    windAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَخَيْرَ مَا فِيهَا، وَخَيْرَ مَا أُرْسِلَتْ بِهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ مَا فِيهَا، وَشَرِّ مَا أُرْسِلَتْ بِهِ.',
+          1,
+          0),
+    );
+    return windAthkars;
+  }
+
+  List<SubCategoryDetails> populateThunderAthkars() {
+    List<SubCategoryDetails> thunderAthkars = new List<SubCategoryDetails>();
+    thunderAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلَائِكَةُ مِنْ خِيفَتِهِ.',
+          1,
+          0),
+    );
+    return thunderAthkars;
+  }
+
+  List<SubCategoryDetails> populateAskForRainAthkars() {
+    List<SubCategoryDetails> askForRainAthkars = new List<SubCategoryDetails>();
+    askForRainAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أَسْقِنَا غَيْثاً مُغِيثاً مَرِيئاً مَرِيعاً، نَافِعاً غَيْرَ ضَارٍّ، عَاجِلاً غَيْرَ آجِلٍِ.',
+          1,
+          0),
+    );
+    askForRainAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا.',
+          1,
+          0),
+    );
+    askForRainAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ اسقِ عبادَك، وبَهائمك، وانشُر رحمتَك،َ وأحييِ بلدَك الميِّتَ.',
+          1,
+          0),
+    );
+    return askForRainAthkars;
+  }
+
+  List<SubCategoryDetails> populateDuringRainAthkars() {
+    List<SubCategoryDetails> duringRainAthkars = new List<SubCategoryDetails>();
+    duringRainAthkars.add(
+      new SubCategoryDetails('اللَّهُمَّ صَيِّبًا نَافِعًا.', 1, 0),
+    );
+    return duringRainAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterRainAthkars() {
+    List<SubCategoryDetails> afterRainAthkars = new List<SubCategoryDetails>();
+    afterRainAthkars.add(
+      new SubCategoryDetails('مُطِرْنَا بِفَضْلِ اللَّهِ وَرَحْمتِهِ.', 1, 0),
+    );
+    return afterRainAthkars;
+  }
+
+  List<SubCategoryDetails> populateEsteshaAthkars() {
+    List<SubCategoryDetails> esteshaAthkars = new List<SubCategoryDetails>();
+    esteshaAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ حَوَالَيْنَا ولَا عَلَيْنَا. اللَّهُمَّ علَى الآكَامِ والظِّرَابِ، وبُطُونِ الأوْدِيَةِ، ومَنَابِتِ الشَّجَرِِ.',
+          1,
+          0),
+    );
+    return esteshaAthkars;
+  }
+
+  List<SubCategoryDetails> populateSeeingCrescentAthkars() {
+    List<SubCategoryDetails> seeingCrescentAthkars =
+        new List<SubCategoryDetails>();
+    seeingCrescentAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُ أَكْبَرُ، اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلَامَةِ وَالْإِسْلَامِ، وَالتَّوْفِيقِ لِمَا يُحِبُّ رَبُّنَا وَيَرْضَى، رَبُّنَا وَرَبُّكَِِ اللَّهُ.',
+          1,
+          0),
+    );
+    return seeingCrescentAthkars;
+  }
+
+  List<SubCategoryDetails> populateFeedingFastingPersonAthkars() {
+    List<SubCategoryDetails> feedingFastingPersonAthkars =
+        new List<SubCategoryDetails>();
+    feedingFastingPersonAthkars.add(
+      new SubCategoryDetails(
+          'ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ.',
+          1,
+          0),
+    );
+    feedingFastingPersonAthkars.add(
+      new SubCategoryDetails(
+          'اللّـهُمَّ اِنّي أَسْأَلُكَ بِرَحْمَتِكَ الَّتي وَسِعَتْ كُلَّ شَيْءُ أَنْ تَغْفِرَ لِي.',
+          1,
+          0),
+    );
+    return feedingFastingPersonAthkars;
+  }
+
+  List<SubCategoryDetails> populateBeforeEatingFoodAthkars() {
+    List<SubCategoryDetails> beforeEatingFoodAthkars =
+        new List<SubCategoryDetails>();
+    beforeEatingFoodAthkars.add(
+      new SubCategoryDetails(
+          'إِذَا أَكَلَ أَحَدكُمْ الطَعَام فَلْيَقُلْ بِسْمِ اللَّه، فَإِنْ نَسِيَ فِي أَوَّله فَلْيَقُلْ: بِسْمِ اللَّه فِي أَوَّله وَآخِره.',
+          1,
+          0),
+    );
+    beforeEatingFoodAthkars.add(
+      new SubCategoryDetails(
+          'مَنْ أطْعَمَهُ اللهُ الطَّعَامَ؛ فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنـَا فِيْهِ، وأطْعِمْنَا خَيْراً مِنْهُ، ومَنْ سَقَاهُ اللهُ لَبَناً فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَـنَا فِيْهِ، وَزِدْنَا مِنْه.',
+          1,
+          0),
+    );
+    return beforeEatingFoodAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterEatingFoodAthkars() {
+    List<SubCategoryDetails> afterEatingFoodAthkars =
+        new List<SubCategoryDetails>();
+    afterEatingFoodAthkars.add(
+      new SubCategoryDetails(
+          'الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا الطَّعَامَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.',
+          1,
+          0),
+    );
+    afterEatingFoodAthkars.add(
+      new SubCategoryDetails(
+          'لْحَمْدُ لِلَّهِ كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ، [مَكْفِيٍّ وَلَا] وَلَا مُوَدَّعٍ وَلَا مُسْتَغْنًى عَنْهُ رَبَّنَا.',
+          1,
+          0),
+    );
+    return afterEatingFoodAthkars;
+  }
+
+  List<SubCategoryDetails> populateVisitorForHostingAthkars() {
+    List<SubCategoryDetails> visitorForHostingAthkars =
+        new List<SubCategoryDetails>();
+    visitorForHostingAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ بَارِكْ لَهُم فيما رَزَقتهْمْ، واغْفِر لهم وارحَمْهُمٍ.',
+          1,
+          0),
+    );
+    return visitorForHostingAthkars;
+  }
+
+  List<SubCategoryDetails> populateForGiveDrinkAthkars() {
+    List<SubCategoryDetails> forGiveDrinkAthkars =
+        new List<SubCategoryDetails>();
+    forGiveDrinkAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ أَطْعِمْ مَنْ أطْعَمَني وأَسْقِ مَنْ سْقَانيٍ.', 1, 0),
+    );
+    return forGiveDrinkAthkars;
+  }
+
+  List<SubCategoryDetails> populateForEatingWithFamilyAthkars() {
+    List<SubCategoryDetails> forEatingWithFamilyAthkars =
+        new List<SubCategoryDetails>();
+    forEatingWithFamilyAthkars.add(
+      new SubCategoryDetails(
+          'أَفطَر عِنْدَكُم الصائِمون، وأكل طعامَكُمُ الأبْرارُ، وصلت عليكُمُ الملائِكَةُ.',
+          1,
+          0),
+    );
+    return forEatingWithFamilyAthkars;
+  }
+
+  List<SubCategoryDetails> populateFastingWhoDidNotEatAthkars() {
+    List<SubCategoryDetails> fastingWhoDidNotEatAthkars =
+        new List<SubCategoryDetails>();
+    fastingWhoDidNotEatAthkars.add(
+      new SubCategoryDetails(
+          'إذَا دُعِيَ أَحَدُكُمْ فَلْيُجِبْ، فَإِنْ كَانَ صَائِماً فَلْيُصَلِّ وَإنْ كَانَ مُفْطِراً فَلْيَطْعَمْ. ومَعنَى فَلْيُصَل أيْ فَلْيَدْعُ.',
+          0,
+          0),
+    );
+    return fastingWhoDidNotEatAthkars;
+  }
+
+  List<SubCategoryDetails> populateFastingSaysForUnpoliteAthkars() {
+    List<SubCategoryDetails> fastingSaysForUnpoliteAthkars =
+        new List<SubCategoryDetails>();
+    fastingSaysForUnpoliteAthkars.add(
+      new SubCategoryDetails('إِنِّي صَائِم، إِنِّي صَائِم.', 1, 0),
+    );
+    return fastingSaysForUnpoliteAthkars;
+  }
+
+  List<SubCategoryDetails> populateNewFruitAthkars() {
+    List<SubCategoryDetails> newFruitAthkars = new List<SubCategoryDetails>();
+    newFruitAthkars.add(
+      new SubCategoryDetails(
+          'اللهُمَّ بَارِكْ لَنَا فِي ثَمَرِنَا، وَبَارِكْ لَنَا فِي مَدِينَتِنَا وَبَارِكْ لَنَا فِي صَاعِنَا، وَبَارِكْ لَنَا فِي مُدِّنَا.',
+          1,
+          0),
+    );
+    return newFruitAthkars;
+  }
+
+  List<SubCategoryDetails> populateSneezeAthkars() {
+    List<SubCategoryDetails> sneezeAthkars = new List<SubCategoryDetails>();
+    sneezeAthkars.add(
+      new SubCategoryDetails(
+          'إِذَا عَطَسَ أَحَدُكُمْ فَلْيَقُلْ : الْحَمْدُ لِلَّهِ ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ : يَرْحَمُكَ اللَّهُ ، فَإِذَا قَالَ لَهُ يَرْحَمُكَ اللَّهُ فَلْيَقُلْ : يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ.',
+          1,
+          0),
+    );
+    return sneezeAthkars;
+  }
+
+  List<SubCategoryDetails> populateSneezeForOtherAthkars() {
+    List<SubCategoryDetails> sneezeForOtherAthkars =
+        new List<SubCategoryDetails>();
+    sneezeForOtherAthkars.add(
+      new SubCategoryDetails(
+          'إيَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ.', 1, 0),
+    );
+    return sneezeForOtherAthkars;
+  }
+
+  List<SubCategoryDetails> populateForMarriedAthkars() {
+    List<SubCategoryDetails> forMarriedAthkars = new List<SubCategoryDetails>();
+    forMarriedAthkars.add(
+      new SubCategoryDetails(
+          'بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْك،َ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ.',
+          1,
+          0),
+    );
+    return forMarriedAthkars;
+  }
+
+  List<SubCategoryDetails> populateMarriedForHimselfAthkars() {
+    List<SubCategoryDetails> marriedForHimselfAthkars =
+        new List<SubCategoryDetails>();
+    marriedForHimselfAthkars.add(
+      new SubCategoryDetails(
+          'إِذَا تَزَوَّجَ أَحَدُكُمُ امْرَأَةً أَوِ إِذَا اشْتَرَى خَادِمًا، فَلْيَقُلِ: اللَّهُمَّ! إِنِّي أَسْأَلُكَ خَيْرَهَا وَخَيْرَ مَا جَبَلْتَهَا عَلَيْهِ وَأَعُوذُ بِكَ مِنْ شَرِّهَا و شَرِّ مَا جَبَلْتَهَا عَلَيْهِ، وَإِذَا اشْتَرَى بَعِيرًا فَلْيَأْخُذْ بِذِرْوَةِ سَنَامِهِ وَلْيَقُلْ مِثْلَ ذَلِكٍَ.',
+          1,
+          0),
+    );
+    return marriedForHimselfAthkars;
+  }
+
+  List<SubCategoryDetails> populateMarriedAthkars() {
+    List<SubCategoryDetails> marriedAthkars = new List<SubCategoryDetails>();
+    marriedAthkars.add(
+      new SubCategoryDetails(
+          'َبِسْمِ اللَّهِ ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ ، وَجَنِّبْ الشَّيْطَانَ مَا رَزَقْتَنَاٍَ.',
+          1,
+          0),
+    );
+    return marriedAthkars;
+  }
+
+  List<SubCategoryDetails> populateAngryAthkars() {
+    List<SubCategoryDetails> angryAthkars = new List<SubCategoryDetails>();
+    angryAthkars.add(
+      new SubCategoryDetails(
+          'َأَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيمٍَِ.', 1, 0),
+    );
+    return angryAthkars;
+  }
+
+  List<SubCategoryDetails> populateSeeingSickAthkars() {
+    List<SubCategoryDetails> seeingSickAthkars = new List<SubCategoryDetails>();
+    seeingSickAthkars.add(
+      new SubCategoryDetails(
+          'َالحمدُ للهِ الذي عافاني مما ابتلاكَ به و فضَّلني على كثيرٍ ممن خلق تفضيلًاٍَِ.',
+          1,
+          0),
+    );
+    return seeingSickAthkars;
+  }
+
+  List<SubCategoryDetails> populateCouncilAthkars() {
+    List<SubCategoryDetails> councilAthkars = new List<SubCategoryDetails>();
+    councilAthkars.add(
+      new SubCategoryDetails(
+          'عن ابن عمر قال : كَانَ يُعَدُّ لِرَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ فِي الْمَجْلِسِ الْوَاحِدِ مِائَةَ مَرَّةٍ  مِن قَبْلِ أنْ يَقُومَ [رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ].',
+          1,
+          0),
+    );
+    return councilAthkars;
+  }
+
+  List<SubCategoryDetails> populateAfterCouncilAthkars() {
+    List<SubCategoryDetails> afterCouncilAthkars =
+        new List<SubCategoryDetails>();
+    afterCouncilAthkars.add(
+      new SubCategoryDetails(
+          'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلَهَ إِلا أَنْت، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.',
+          1,
+          0),
+    );
+    return afterCouncilAthkars;
+  }
+
+  List<SubCategoryDetails> populateForOtherAthkars() {
+    List<SubCategoryDetails> forOtherAthkars = new List<SubCategoryDetails>();
+    forOtherAthkars.add(
+      new SubCategoryDetails('وَلَكَ.', 1, 0),
+    );
+    return forOtherAthkars;
+  }
+
+  List<SubCategoryDetails> populateForOtherWhoDidGoodAthkars() {
+    List<SubCategoryDetails> forOtherWhoDidGoodAthkars =
+        new List<SubCategoryDetails>();
+    forOtherWhoDidGoodAthkars.add(
+      new SubCategoryDetails('جَزَاكَ الله خيراً.', 1, 0),
+    );
+    return forOtherWhoDidGoodAthkars;
+  }
+
+  List<SubCategoryDetails> populateForDajalAthkars() {
+    List<SubCategoryDetails> dajalAthkars = new List<SubCategoryDetails>();
+    dajalAthkars.add(
+      new SubCategoryDetails(
+          'مَنْ حَفِظَ عَشْر آيَاتٍ مِنْ أوَّلِ سُورَةِ الكَهْفِ، عُصِمَ مِنَ الدَّجَّالِ. \n والاسْتِعَاذَةُ باللـهِ مِنْ فِتْنَتِهِ، عَقِبَ التَّشَهُّدِ الأخيرِ، مِنْ كُلِّ صَلاةًٍ.',
+          0,
+          0),
+    );
+    return dajalAthkars;
+  }
+
+  List<SubCategoryDetails> populateForLoveInGoodAthkars() {
+    List<SubCategoryDetails> forLoveInGoodAthkars =
+        new List<SubCategoryDetails>();
+    forLoveInGoodAthkars.add(
+      new SubCategoryDetails('أَحَبَّكَ الَّذِي أَحْبَبْتَنِي لَهُ.', 1, 0),
+    );
+
+    return forLoveInGoodAthkars;
+  }
+
+  List<SubCategoryDetails> populateSuggestGivingMoneyAthkars() {
+    List<SubCategoryDetails> suggestGivingMoneyAthkars =
+        new List<SubCategoryDetails>();
+    suggestGivingMoneyAthkars.add(
+      new SubCategoryDetails('بَارَك اللَّهُ لَكَ فِي أهْلِكَ ومَالِكَ.', 1, 0),
+    );
+
+    return suggestGivingMoneyAthkars;
+  }
+
+  List<SubCategoryDetails> populateForWhoGiveMoneyAthkars() {
+    List<SubCategoryDetails> forWhoGiveMoneyAthkars =
+        new List<SubCategoryDetails>();
+    forWhoGiveMoneyAthkars.add(
+      new SubCategoryDetails(
+          'بَارَكَ اللَّهُ لَكَ فِي أهْلِكَ وَمَالِكَ، إنَّـمَا جَزَاءُ السَّلَفِ الـحَمْدُ والأدَاءُ.',
+          1,
+          0),
+    );
+
+    return forWhoGiveMoneyAthkars;
+  }
+
+  List<SubCategoryDetails> populateFearAthkars() {
+    List<SubCategoryDetails> fearAthkars = new List<SubCategoryDetails>();
+    fearAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ وَأَنَا أَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا لاَ أَعْلَمُ.',
+          1,
+          0),
+    );
+
+    return fearAthkars;
+  }
+
+  List<SubCategoryDetails> populateForWhoSaidAllahBlessYouAthkars() {
+    List<SubCategoryDetails> forWhoSaidAllahBlessYouAthkars =
+        new List<SubCategoryDetails>();
+    forWhoSaidAllahBlessYouAthkars.add(
+      new SubCategoryDetails('وَفِيكَ بَارَكَ اللَّهُُ.', 1, 0),
+    );
+
+    return forWhoSaidAllahBlessYouAthkars;
+  }
+
+  List<SubCategoryDetails> populateNotLikeTayarahAthkars() {
+    List<SubCategoryDetails> notLikeTayarahAthkars =
+        new List<SubCategoryDetails>();
+    notLikeTayarahAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لَا طَيْرَ إِلَّا طَيْرُكَ، وَلَا خَيْرَ إِلَّا خَيْرُكَ، وَلَا إِلَهَ غَيْرُكَُُ.',
+          1,
+          0),
+    );
+
+    return notLikeTayarahAthkars;
+  }
+
+  List<SubCategoryDetails> populateRiddingAnimalAthkars() {
+    List<SubCategoryDetails> riddingAnimalAthkars =
+        new List<SubCategoryDetails>();
+    riddingAnimalAthkars.add(
+      new SubCategoryDetails(
+          'بِسْمِ اللَّه، الحَمْدُلِلَّه (سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ * وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ)، الحَمْدُلِلَّه، الحَمْدُلِلَّه، الحَمْدُلِلَّه، اللَّهُ أَكبرُ، اللَّهُ أَكبرُ، اللَّهُ أَكبرُ، سبحانَك اللَّهم إنِّي ظلمتُ نفسِي فاغفِر، لي فإنَّهُ لا يغفِرُ الذُّنوبَ إلَّا أنتَ.',
+          1,
+          0),
+    );
+    return riddingAnimalAthkars;
   }
 
   List<SubCategoryDetails> populateTravelAthkars() {
     List<SubCategoryDetails> travelAthkars = new List<SubCategoryDetails>();
     travelAthkars.add(
       new SubCategoryDetails(
-          'الله أكبر، الله أكبر، الله أكبر، (سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ * وَإِنَّا إِلَى رَبِّنَا لمنقلبون) اللهم إنا نسألُكَ في سفرنا هذا البرَّ والتقوى، ومن العمل ما ترضى، اللهم هون علينا سفرنا هذا واطو عنا بعده، اللهم أنت الصاحب في السفر، والخليفة في الأهل، اللهم إني أعوذ بك من وعْثاءِ السفر، وكآبة المنظر، وسوء المنقلب في المال والأهل، وإذا رجع قالهن وزاد فيهن آيبون، تائبون، عابدون، لربنا حامدون',
-          1,
-          0),
-    );
-    travelAthkars.add(
-      new SubCategoryDetails(
-          'ذكر الرجوع من السفر: يُكَبِّرُ عَلَى كُلِّ شَرَفٍ ثَلاثَ تَكْبيرَاتٍ، ثُمَّ يَقُولُ: لَا إِلَهَ إِلاَّ اللهُ وَحْدَهُ لا شَرِيْكَ لَهُ، لَهُ الـمُلْكُ ولَهُ الـحَمْدُ، وهُوَ عَلَى كُلِّ شَيءٍ قَدِيرٌ، آيبُونَ، تَائِبُونَ، عَابِدُونَ، لِرَبِّنَا حَامِدُونَ، صَدَقَ اللهُ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وهَزَمَ الأحْزَابَ وَحْدَه.',
+          'الله أكبر، الله أكبر، الله أكبر، (سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ * وَإِنَّا إِلَى رَبِّنَا لمنقلبون) اللهم إنا نسألُكَ في سفرنا هذا البرَّ والتقوى، ومن العمل ما ترضى، اللهم هون علينا سفرنا هذا واطو عنا بعده، اللهم أنت الصاحب في السفر، والخليفة في الأهل، اللهم إني أعوذ بك من وعْثاءِ السفر، وكآبة المنظر، وسوء المنقلب في المال والأهل، وإذا رجع قالهن وزاد فيهن آيبون، تائبون، عابدون، لربنا حامدون.',
           1,
           0),
     );
     return travelAthkars;
   }
 
-  List<SubCategoryDetails> populateRestroomAthkars() {
-    List<SubCategoryDetails> restroomAthkars = new List<SubCategoryDetails>();
-    restroomAthkars.add(
+  List<SubCategoryDetails> populateAccessTownAthkars() {
+    List<SubCategoryDetails> accessTownAthkars = new List<SubCategoryDetails>();
+    accessTownAthkars.add(
       new SubCategoryDetails(
-          'الذكر عند الخلاء: (بِسْمِ الله) اللّهُـمَّ إِنِّـي أَعـوذُ بِـكَ مِـنَ الْخُـبْثِ وَالْخَبائِث.',
+          'اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ الأَرَضِينِ السَّبْعِ وَمَا أَقْلَلْن، وَرَبَّ الشَّيَاطِينِ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ. أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ وَخَيْرَ أَهْلِهَا، وخَيْرَِّ مَا فِيهَا، وأَعُوذُ بِكَ مِنْ شَرِّهَا، وَشَرِّ أَهْلِهَا، وَشَرِّ مَا فِيهَا.',
           1,
           0),
     );
-    restroomAthkars.add(
-      new SubCategoryDetails('الذكر بعد الخروج من الخلاء: غُفْـرانَك.', 1, 0),
-    );
-    return restroomAthkars;
+    return accessTownAthkars;
   }
 
-  List<SubCategoryDetails> populateClothAthkars() {
-    List<SubCategoryDetails> clothAthkars = new List<SubCategoryDetails>();
-    clothAthkars.add(
+  List<SubCategoryDetails> populateAccessMarketAthkars() {
+    List<SubCategoryDetails> accessMarketAthkars =
+        new List<SubCategoryDetails>();
+    accessMarketAthkars.add(
       new SubCategoryDetails(
-          'مَنْ لَبِسَ ثَوْبًا فَقَالَ الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ)  وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ.',
+          'َلاَ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ، يُحْيي وَيُميتُ وَهُوَ حَيٌّ لا يَمُوت،ُ بِيَدِهِ الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
           1,
           0),
     );
-    clothAthkars.add(
-      new SubCategoryDetails(
-          'دعاء لبس الثوب الجديد: اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيه، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَه، وَأَعُوذُ بِكَ مِنْ شَرِّه و شَرِّ مَا صُنِعَ لَه.',
-          1,
-          0),
-    );
-    clothAthkars.add(
-      new SubCategoryDetails(
-          'الدعاء لم لبس ثوبا جديدا: تُبْلي ويَخْلِفُ الله تعالى.', 1, 0),
-    );
-    clothAthkars.add(
-      new SubCategoryDetails(
-          'الدعاء لم لبس ثوبا جديدا: الْبَسْ جَدِيدًا، وَعِشْ حَمِيدًا، وَمُتْ شَهِيدًا.',
-          1,
-          0),
-    );
-    clothAthkars.add(
-      new SubCategoryDetails('ما يقول إذا وضع ثوبا جديدا: بسم الله.', 1, 0),
-    );
-    return clothAthkars;
+    return accessMarketAthkars;
   }
 
-  List<SubCategoryDetails> populateFoodAthkars() {
-    List<SubCategoryDetails> foodAthkars = new List<SubCategoryDetails>();
-    foodAthkars.add(
-      new SubCategoryDetails(
-          'إِذَا أَكَلَ أَحَدكُمْ الطَعَام فَلْيَقُلْ بِسْمِ اللَّه، فَإِنْ نَسِيَ فِي أَوَّله فَلْيَقُلْ: بِسْمِ اللَّه فِي أَوَّله وَآخِره.',
-          1,
-          0),
+  List<SubCategoryDetails> populateBadRiddingAthkars() {
+    List<SubCategoryDetails> badRiddingAthkars = new List<SubCategoryDetails>();
+    badRiddingAthkars.add(
+      new SubCategoryDetails('بِسْمِ اللَّـهِ.', 1, 0),
     );
-    foodAthkars.add(
-      new SubCategoryDetails(
-          'مَنْ أطْعَمَهُ اللهُ الطَّعَامَ؛ فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَنـَا فِيْهِ، وأطْعِمْنَا خَيْراً مِنْهُ، ومَنْ سَقَاهُ اللهُ لَبَناً فَلْيَقُلْ: اللَّهُمَّ بَارِكْ لَـنَا فِيْهِ، وَزِدْنَا مِنْه.',
-          1,
-          0),
-    );
-    foodAthkars.add(
-      new SubCategoryDetails(
-          'الدعاء عند الفراغ من الطعام: الحمد لله الذي أطعمني هذا ،وزرقنيه ،من غير حول مني ولا قوة.',
-          1,
-          0),
-    );
-    foodAthkars.add(
-      new SubCategoryDetails(
-          'الدعاء عند الفراغ من الطعام: الحمدُ لله حمداً كثيراً طيباً مباركاً فيهِ، غيْرَ [مَكْفيٍّ ولا] مُوَدَّع، ولا مُستَغنَى عَنْهُ ربّنا.',
-          1,
-          0),
-    );
-    foodAthkars.add(
-      new SubCategoryDetails(
-          'دعاء الضيف لصاحب الطعام: اللهُمَّ بَارِكْ لَهُم فيما رَزَقتهْمْ، واغْفِر لهم وارحَمْهُم.',
-          1,
-          0),
-    );
-    return foodAthkars;
+    return badRiddingAthkars;
   }
 
-  List<SubCategoryDetails> populateOutOfHomeAthkars() {
-    List<SubCategoryDetails> outOfHomeAthkars = new List<SubCategoryDetails>();
-    outOfHomeAthkars.add(
-      new SubCategoryDetails(
-          'اللَّهُمَّ إِنِّي أعوذُ بِكَ أنْ أَضِلَّ أو أُضَلَّ، أَوْ أَزِلَّ أوْ أُزلَّ، أوْ أظلِمَ أوْ أُظلَم، أوْ أَجْهَلَ أو يُجهَلَ عَلَيَّ.',
-          1,
-          0),
+  List<SubCategoryDetails> populateForWhoTravelAthkars() {
+    List<SubCategoryDetails> forWhoTravelAthkars =
+        new List<SubCategoryDetails>();
+    forWhoTravelAthkars.add(
+      new SubCategoryDetails('أستودعُكَ الله الذي لا تضيع ودائعه.', 1, 0),
     );
-    outOfHomeAthkars.add(
-      new SubCategoryDetails(
-          'بِسْم اللَّهِ توكَّلْتُ عَلَى اللَّه، ولا حوْلَ ولا قُوةَ إلاَّ بِاللَّهُ.',
-          1,
-          0),
-    );
-    return outOfHomeAthkars;
+    return forWhoTravelAthkars;
   }
 
-  List<SubCategoryDetails> populateBackToHomeAthkars() {
-    List<SubCategoryDetails> backToHomeAthkars = new List<SubCategoryDetails>();
-    backToHomeAthkars.add(
+  List<SubCategoryDetails> populateForWhoTravel2Athkars() {
+    List<SubCategoryDetails> forWhoTravel2Athkars =
+        new List<SubCategoryDetails>();
+    forWhoTravel2Athkars.add(
       new SubCategoryDetails(
-          'َبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا، ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِه.',
+          'أَسْتَودِعُ اللهَ دِيْنَكَ، وَأَمَانَتَكَ، وَخَوَاتِيمَ عَمَلِكَ.',
           1,
           0),
     );
-    return backToHomeAthkars;
+    forWhoTravel2Athkars.add(
+      new SubCategoryDetails(
+          'زَوَّدَكَ اللهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، ويَسَّرَ لَكَ الـخَيْرَ حَيْثُمَا كُنْتَ.',
+          1,
+          0),
+    );
+    return forWhoTravel2Athkars;
   }
 
+  List<SubCategoryDetails> populateForTakbeerAndTasbeehAthkars() {
+    List<SubCategoryDetails> takbeerAndTasbeehAthkars =
+        new List<SubCategoryDetails>();
+    takbeerAndTasbeehAthkars.add(
+      new SubCategoryDetails(
+          'قَال جَابِرِ رَضِيَ اللَّهُ عَنْه: كُنَّا إِذَا صَعِدْنَا كَبَّرْنَا وَإِذَا نَزَلْنَا سَبَّحْنَا.',
+          0,
+          0),
+    );
+    return takbeerAndTasbeehAthkars;
+  }
+
+  List<SubCategoryDetails> populateTravelerIfAsharAthkars() {
+    List<SubCategoryDetails> travelerIfAsharAthkars =
+        new List<SubCategoryDetails>();
+    travelerIfAsharAthkars.add(
+      new SubCategoryDetails(
+          'سَمَّعَ سَامِعٌ بِـحَمْدِ اللَّـهِ، وَحُسْنِ بَلائِهِ عَلَيْنَا، رَبَّنَا صَاحِبْنَا، وَأفْضِلْ عَلَيْنَا عَائِذاً بِاللـهِ مِنَ النَّارِ.',
+          1,
+          0),
+    );
+    return travelerIfAsharAthkars;
+  }
+
+  List<SubCategoryDetails> populateStayAtTravelAthkars() {
+    List<SubCategoryDetails> stayAtTravelAthkars =
+        new List<SubCategoryDetails>();
+    stayAtTravelAthkars.add(
+      new SubCategoryDetails(
+          'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّات مِنْ شَرِّ مَا خَلَقَِ.',
+          1,
+          0),
+    );
+    return stayAtTravelAthkars;
+  }
+
+  List<SubCategoryDetails> populateBackFromTravelAthkars() {
+    List<SubCategoryDetails> backFromTravelAthkars =
+        new List<SubCategoryDetails>();
+    backFromTravelAthkars.add(
+      new SubCategoryDetails(
+          'يُكَبِّرُ عَلَى كُلِّ شَرَفٍ ثَلاثَ تَكْبيرَاتٍ، ثُمَّ يَقُولُ: لَا إِلَهَ إِلاَّ اللهُ وَحْدَهُ لا شَرِيْكَ لَهُ، لَهُ الـمُلْكُ ولَهُ الـحَمْدُ، وهُوَ عَلَى كُلِّ شَيءٍ قَدِيرٌ، آيبُونَ، تَائِبُونَ، عَابِدُونَ، لِرَبِّنَا حَامِدُونَ، صَدَقَ اللهُ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وهَزَمَ الأحْزَابَ وَحْدَه.',
+          1,
+          0),
+    );
+    return backFromTravelAthkars;
+  }
+
+  List<SubCategoryDetails> populateWhatToSayOnGoodAndBadAthkars() {
+    List<SubCategoryDetails> whatToSayOnGoodAndBadAthkars =
+        new List<SubCategoryDetails>();
+    whatToSayOnGoodAndBadAthkars.add(
+      new SubCategoryDetails(
+          'كَانَ ﷺ إذَا أَتَاهُ الأمْرُ يَسُرُّهُ، قَالَ: ((الـحَمْدُ للـهِ الَّذِي بِنِعْمَتهِ تَتِمُّ الصَّالِـحَاتُ))، وإذَا أتَاهُ الأمْرُ يَكْرَهُهُ، قَالَ: ((الـحَمْدُ للـهِ عَلَى كُلِّ حَالٍ)).',
+          1,
+          0),
+    );
+    return whatToSayOnGoodAndBadAthkars;
+  }
+
+  List<SubCategoryDetails> populateSalahOnProphetMuhammadAthkars() {
+    List<SubCategoryDetails> salahOnProphetMuhammadAthkars =
+        new List<SubCategoryDetails>();
+    salahOnProphetMuhammadAthkars.add(
+      new SubCategoryDetails(
+          'قَالَ ﷺ مَنْ صَلَّى عَلَيَّ صَلَاةً صَلَّى اللَّهُ عَلَيْهِ بِهَا عَشْرًا.',
+          1,
+          0),
+    );
+    salahOnProphetMuhammadAthkars.add(
+      new SubCategoryDetails(
+          'و قَالَ ﷺ لَا تَجْعَلُوا قَبْرِي عِيدًا وَصَلُّوا عَلَيَّ، فَإِنَّ صَلَاتَكُمْ تَبْلُغُنِي حَيْثُ كُنْتُمْ.',
+          0,
+          0),
+    );
+    salahOnProphetMuhammadAthkars.add(
+      new SubCategoryDetails(
+          'و قَالَ ﷺ الْبخِيلُ مَنْ ذُكِرْتُ عِنْدَهُ، فَلَم يُصَلِّ علَيَّ.',
+          0,
+          0),
+    );
+    salahOnProphetMuhammadAthkars.add(
+      new SubCategoryDetails(
+          'و قَالَ ﷺ إنَّ للَّهِ ملائِكةً سيَّاحينَ في الأرضِ يبلِّغوني عن أمَّتيَ السَّلامَ.',
+          0,
+          0),
+    );
+    salahOnProphetMuhammadAthkars.add(
+      new SubCategoryDetails(
+          'و قَالَ ﷺ ما من أحدٍ يسلِّمُ عليَّ إلَّا ردَّ اللَّهُ عليَّ روحي حتَّى أردَّ عليْهِ السَّلامَ.',
+          0,
+          0),
+    );
+    return salahOnProphetMuhammadAthkars;
+  }
+
+  List<SubCategoryDetails> populateSayHiAthkars() {
+    List<SubCategoryDetails> sayHiAthkars = new List<SubCategoryDetails>();
+    sayHiAthkars.add(
+      new SubCategoryDetails(
+          'قَالَ رسول الله ﷺ لَا تَدْخُلُونَ الْجَنَّةَ حَتَّى تُؤْمِنُوا، وَلَا تُؤْمِنُوا حَتَّى تَحَابُّوا، أولا أدلكم عَلَى شَيْءٍ إِذَا فَعَلْتُمُوهُ تَحَابَبْتُمْ، أَفْشُوا السَّلَامَ بَيْنَكُمْ.',
+          0,
+          0),
+    );
+    sayHiAthkars.add(
+      new SubCategoryDetails(
+          'ثَلاثٌ مَنْ جَمَعَهُنَّ فَقَدْ جَمَعَ الإيْمَانَ: الإنْصَافُ مِنْ نَفْسِكَ، وبَذْلُ السَّلاَمِ للعَالَمِ، والإنْفَاقُ مِنَ الإِقْتَارِْ.',
+          0,
+          0),
+    );
+    sayHiAthkars.add(
+      new SubCategoryDetails(
+          'و عَنْ عَبْدِ اللَّهِ بْنِ عَمْرٍو رَضِيَ اللَّهُ عَنْهُمَا: أَنَّ رَجُلًا سَأَلَ النَّبِيَّ ﷺَ أَيُّ الْإِسْلَامِ خَيْرٌ قَالَ: تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلَامَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ َّ.',
+          0,
+          0),
+    );
+    return sayHiAthkars;
+  }
+
+  List<SubCategoryDetails> populateReplyToHiAthkars() {
+    List<SubCategoryDetails> replyToHiAthkars = new List<SubCategoryDetails>();
+    replyToHiAthkars.add(
+      new SubCategoryDetails(
+          'إذَا سَلَّم عَلَيْكُمْ أهْلُ الكِتَابِ؛ فَقُولُوا: وَعَلَيْكُمْْ.',
+          0,
+          0),
+    );
+    return replyToHiAthkars;
+  }
+
+  List<SubCategoryDetails> populateAnimalSoundsAthkars() {
+    List<SubCategoryDetails> animalSoundsAthkars =
+        new List<SubCategoryDetails>();
+    animalSoundsAthkars.add(
+      new SubCategoryDetails(
+          'إِذَا سَمِعْتُمْ صِيَاحَ الدِّيَكَةِ فَاسْأَلُوا اللَّهَ مِنْ فَضْلِهِ ؛ فَإِنَّهَا رَأَتْ مَلَكاً ، وَإِذَا سَمِعْتُمْ نَهِيقَ الْحِمَارِ فَتَعَوَّذُوا بِاللَّهِ مِنَ الشَّيْطَانِ ؛ فَإِنَّهُ رَأَى شَيْطَاناًْْ.',
+          1,
+          0),
+    );
+    return animalSoundsAthkars;
+  }
+
+  List<SubCategoryDetails> populateDogsSoundsAthkars() {
+    List<SubCategoryDetails> dogsSoundsAthkars = new List<SubCategoryDetails>();
+    dogsSoundsAthkars.add(
+      new SubCategoryDetails(
+          'إذَا سَمِعْتُمْ نُبَاحَ الكِلاَبِ ونَـهِيقَ الـحَمِيرِ بِاللَّيْلِ، فَتَعَوَّذُوا مِنْهُنَّ فإنَّهُنَّ يَرَيْنَ مَا لا تَرَوْنَ.',
+          0,
+          0),
+    );
+    return dogsSoundsAthkars;
+  }
+
+  List<SubCategoryDetails> populateToSomeoneElseAthkars() {
+    List<SubCategoryDetails> toSomeoneElseAthkars =
+        new List<SubCategoryDetails>();
+    toSomeoneElseAthkars.add(
+      new SubCategoryDetails(
+          'قال ﷺ اللَّهُمَّ فَأَيُّمَا مُؤْمِنٍ سَبَبْتُهُ فَاجْعَلْ ذَلِكَ لَهُ قُرْبَةً إِلَيْكَ يَوْمَ الْقِيَامَةِ.',
+          1,
+          0),
+    );
+    return toSomeoneElseAthkars;
+  }
+
+  List<SubCategoryDetails> populateComplimentAthkars() {
+    List<SubCategoryDetails> complimentAthkars = new List<SubCategoryDetails>();
+    complimentAthkars.add(
+      new SubCategoryDetails(
+          'قال ﷺ: إذَا كانَ أَحَدُكُمْ مَادِحًا صَاحِبَهُ لا مَحَالَةَ فَلْيَقُلْ: أَحْسِبُ فُلَانًا وَاللَّهُ حَسِيبُهُ لَا أُزَكِّي علَى اللهِ أَحَدًا أَحْسِبُهُ -إنْ كانَ يَعْلَمُ ذَاكَ- كَذَا وَكَذَا.',
+          1,
+          0),
+    );
+    return complimentAthkars;
+  }
+
+  List<SubCategoryDetails> populateMaYaqolEzaZokiAthkars() {
+    List<SubCategoryDetails> maYaqolEzaZokiAthkars =
+        new List<SubCategoryDetails>();
+    maYaqolEzaZokiAthkars.add(
+      new SubCategoryDetails(
+          'اللَّهُمَّ لاَ تُؤَاخِذْنِي بِمَا يَقُولُونَ، وَاغْفِرْ لِي مَا لا يَعْلَمُونَ [واجعلني خيراً مما يظنون].',
+          1,
+          0),
+    );
+    return maYaqolEzaZokiAthkars;
+  }
+
+  List<SubCategoryDetails> populateTalbeyahAthkars() {
+    List<SubCategoryDetails> talbeyah = new List<SubCategoryDetails>();
+    talbeyah.add(
+      new SubCategoryDetails(
+          'لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لاَ شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ، وَالنِّعْمَةَ، لَكَ وَالْمُلْكَ، لاَ شَرِيكَ لَكَ.',
+          0,
+          0),
+    );
+    return talbeyah;
+  }
+
+  List<SubCategoryDetails> populateTakbeerhAthkars() {
+    List<SubCategoryDetails> takbeer = new List<SubCategoryDetails>();
+    takbeer.add(
+      new SubCategoryDetails(
+          'طاف النبي ﷺ بالبيت على بعير كلما أتي الركن أشار إليه بشيء عنده وكبر.',
+          0,
+          0),
+    );
+    return takbeer;
+  }
+
+  List<SubCategoryDetails> populateRokonYamaniAthkars() {
+    List<SubCategoryDetails> rokonYamaniAthkars =
+        new List<SubCategoryDetails>();
+    rokonYamaniAthkars.add(
+      new SubCategoryDetails(
+          'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.',
+          0,
+          0),
+    );
+    return rokonYamaniAthkars;
+  }
+
+  List<SubCategoryDetails> populateSafaAndMarwaAthkars() {
+    List<SubCategoryDetails> safaAndMarwaAthkars =
+        new List<SubCategoryDetails>();
+    safaAndMarwaAthkars.add(
+      new SubCategoryDetails(
+          'فَلَمَّا دَنَا مِنَ الصَّفَا قَرَأَ: (إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ). أَبْدَأُ بِمَا بَدَأَ اللَّهُ بِهِ، فَبدَأ بالصَّفَا فَرَقِيَ عَليه حَتَّى رَأَى الْبَيْتَ فَاسْتَقْبَلَ الْقِبْلَةَ، فَوَحَّدَ اللَّهَ وَكَبَّرَهُ وَقَالَ: لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ، وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ، ثُمَّ دَعَا بَيْنَ ذَلِكَ. قال مثل هذا ثَلَاثَ مَرَّاتٍ، الحَديث.  وَفيهِ فَفَعَلَ عَلَى الْمَرْوَةِ كَمَا فَعَلَ عَلَى الصَّفَا.',
+          0,
+          0),
+    );
+    return safaAndMarwaAthkars;
+  }
+
+  List<SubCategoryDetails> populateArafahAthkars() {
+    List<SubCategoryDetails> arafahAthkars = new List<SubCategoryDetails>();
+    arafahAthkars.add(
+      new SubCategoryDetails(
+          'خَيْرُ الدُّعَاءِ دُعَاءُ يَوْمِ عَرَفَةَ، وَخَيْرُ مَا قُلْتُ أَنَا وَالنَّبِيُّونَ مِنْ قَبْلِي: لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
+          0,
+          0),
+    );
+    return arafahAthkars;
+  }
+
+  List<SubCategoryDetails> populateMasharAthkars() {
+    List<SubCategoryDetails> masharAthkars = new List<SubCategoryDetails>();
+    masharAthkars.add(
+      new SubCategoryDetails(
+          ' ركب ﷺ القصواء حتى أتى المشعر الحرام فاستقبل القبلة ( فدعاه ُ، وكبرهُ ،وهللهُ ، ووحدهُ) فلم يزل واقفاً حتى أسفر جداً فدفع قبل أن تطلع الشمس.',
+          0,
+          0),
+    );
+    return masharAthkars;
+  }
+
+  List<SubCategoryDetails> populateStoneThrowingAthkars() {
+    List<SubCategoryDetails> stoneThrowingAthkars =
+        new List<SubCategoryDetails>();
+    stoneThrowingAthkars.add(
+      new SubCategoryDetails(
+          'يُكَبِّرُ كُلَّمَا رَمَى بِحَصَاةٍ عِنْدَ الجِمَارِ الثَّلاثِ، ثُمَّ يَتَقَدَّمُ، وَيَقِفُ يَدْعُوْ مُسْتَقْبِلَ القِبْلَةِ، رَافِعاً يَدَيْهِ بَعْدَ الـجَمْرَةِ الأوْلَى والثَّانِيةِ، أمَّا جَمْرَةُ العَقَبَةِ فيَرْمِيهَا، ويُكَبِّرُ عِنْدَ كُلِّ حَصَاةٍ، ويَنْصَرِفُ، ولا يَقِفُ عِنْدَهَا.',
+          0,
+          0),
+    );
+    return stoneThrowingAthkars;
+  }
+
+  List<SubCategoryDetails> populateExclamationAthkars() {
+    List<SubCategoryDetails> exclamationAthkars =
+        new List<SubCategoryDetails>();
+    exclamationAthkars.add(
+      new SubCategoryDetails('سُبْحَانَ اللَّهِ.', 1, 0),
+    );
+    exclamationAthkars.add(
+      new SubCategoryDetails('الله أكبر.', 1, 0),
+    );
+    return exclamationAthkars;
+  }
+
+  List<SubCategoryDetails> populateEasyThingsAthkars() {
+    List<SubCategoryDetails> easyThingsAthkars = new List<SubCategoryDetails>();
+    easyThingsAthkars.add(
+      new SubCategoryDetails(
+          'كَانَ النَّبِيُّ ﷺ إِذَا أَ تَاهُ أَمْرٌ يَسُرُّهُ أَوْ يُسَرُّ بِهِ؛ خَرَّ سَاجِداً شُكْراً لِلـهِ تَبَاركَ وَتَعَالىِ.',
+          1,
+          0),
+    );
+    return easyThingsAthkars;
+  }
+
+  List<SubCategoryDetails> populatePainAthkars() {
+    List<SubCategoryDetails> painAthkars = new List<SubCategoryDetails>();
+    painAthkars.add(
+      new SubCategoryDetails(
+          'ضع يدَك على الذي تألَّم من جسدِك، و قُل: بسم اللهُِ.', 3, 0),
+    );
+    painAthkars.add(
+      new SubCategoryDetails(
+          'ضع يدَك على الذي تألَّم من جسدِك، و قُل: أعوذُ باللهِ و قُدرتِه من شرِّ ما أَجِدُ و أُحاذِرُ.',
+          7,
+          0),
+    );
+    return painAthkars;
+  }
+
+  List<SubCategoryDetails> populatePainInEyesAthkars() {
+    List<SubCategoryDetails> painInEyesAthkars = new List<SubCategoryDetails>();
+    painInEyesAthkars.add(
+      new SubCategoryDetails(
+          'إذَا رَأى أحَدُكُمْ مِنْ أخِيِهِ، أوْ مِنْ نَفْسِهِ، أوْ مِنْ مَالِهِ مَا يُعْجِبُهُ [فَلْيَدْعُ لَهُ بالبَرَكَةِ] فَإنَّ العَيْنَ حَقٌّ.',
+          0,
+          0),
+    );
+    return painInEyesAthkars;
+  }
+
+  List<SubCategoryDetails> populateScareAthkars() {
+    List<SubCategoryDetails> scareAthkars = new List<SubCategoryDetails>();
+    scareAthkars.add(
+      new SubCategoryDetails('لا إلهَ إلاَّ اللَّه.', 1, 0),
+    );
+    return scareAthkars;
+  }
+
+  List<SubCategoryDetails> populateOdheyehAthkars() {
+    List<SubCategoryDetails> odheyehAthkars = new List<SubCategoryDetails>();
+    odheyehAthkars.add(
+      new SubCategoryDetails(
+          'بِسْمِ الله وَالله أكْبَرُ [اللَّهُمَّ هَذَا مِنْكَ وَإِلَيْكَ] اللَّهُمَّ تَقَبَّلْ مِنِّي.',
+          1,
+          0),
+    );
+    return odheyehAthkars;
+  }
+
+  List<SubCategoryDetails> populateProtectFromDevilAthkars() {
+    List<SubCategoryDetails> protectFromDevilAthkars =
+        new List<SubCategoryDetails>();
+    protectFromDevilAthkars.add(
+      new SubCategoryDetails(
+          'أعُوذُ بِكَلِمَـاتِ اللـهِ التَّامَّاتِ، الَّتِي لا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ مِنْ شَرِّ مَا خَلَقَ، وبَرَأَ وذَرَأ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الأرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ والنَّهَارِ، ومِنْ شَرِّ كُلِّ طَارِقٍ إلاَّ طَارِقاً يَطْرُقُ بِخَيْرٍ يَارَحْمـنُ.',
+          1,
+          0),
+    );
+    return protectFromDevilAthkars;
+  }
+
+  List<SubCategoryDetails> populateEsteghfarAthkars() {
+    List<SubCategoryDetails> esteghfarAthkars = new List<SubCategoryDetails>();
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'قال رَسُولَ اللَّهِ ﷺَ: وَاللَّهِ إِنِّي لاَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ فِي الْيَوْمِ أَكْثَرَ مِنْ سَبْعِينَ مَرَّةً.',
+          70,
+          0),
+    );
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: يَا أَيُّهَا النَّاسُ تُوبُوا إِلَى اللَّهِ فَإِنِّي أَتُوبُ فِي الْيَوْمِ إِلَيْهِ مِائَةَ مَرَّةٍ.',
+          100,
+          0),
+    );
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ، وَأَتُوبُ إِلَيْهِ، غُفِرَتْ لَهُ ذُنُوبُهُ، وَإِنْ كَانَ فَارًّا مِنَ الزَّحْفِ.',
+          1,
+          0),
+    );
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: أقربُ ما يكونُ الربُّ من العبدِ في جوفِ الليلِ الآخرِ فإِنِ استطعْتَ أن تكونَ ممن يذكرُ اللهَ في تلْكَ الساعَةِ فكُنْ.',
+          0,
+          0),
+    );
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: أقربُ مَا يَكونُ العبْدُ مِن ربِّهِ وَهَو ساجدٌ، فَأَكثِرُوا الدُّعاءَ.',
+          0,
+          0),
+    );
+    esteghfarAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: إنَّه لَيُغَانُ علَى قَلْبِي، وإنِّي لأَسْتَغْفِرُ اللَّهَ، في اليَومِ مِئَةَ مَرَّةٍ.',
+          100,
+          0),
+    );
+
+    return esteghfarAthkars;
+  }
+
+  List<SubCategoryDetails> populateTasbehTahmedTakbeerAthkars() {
+    List<SubCategoryDetails> tasbehTahmedTakbeerAthkars =
+        new List<SubCategoryDetails>();
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'قال ﷺ: مَنْ قَالَ سُبْحَانَ اللَّهِ وَبِحَمْدِهِ فِي يَوْمٍ مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ.',
+          100,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ:  مَنْ قَالَ لا إلَهَ إِلاَّ اللهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ المُلْكُ ؛ وَلَهُ الحَمْدُ ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، عَشْرَ مَرَّاتٍ ، كَانَ كَمَنْ أعْتَقَ أرْبَعَةَ أنْفُسٍ منْ وَلَدِ إسْمَاعِيلَ.',
+          10,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: كَلِمَتَانِ خَفِيفَتَانِ علَى اللِّسَانِ، ثَقِيلَتَانِ في المِيزَانِ، حَبِيبَتَانِ إلى الرَّحْمَنِ: سُبْحَانَ اللهِ وَبِحَمْدِهِ، سُبْحَانَ اللهِ العَظِيمِ.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: لأَنْ أَقُولَ سُبْحَانَ اللهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، أَحَبُّ إِلَيَّ ممَّا طَلَعَتْ عليه الشَّمْسُ.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: أَيَعْجِزُ أَحَدُكُمْ أَنْ يَكْسِبَ ، كُلَّ يَوْمٍ أَلْفَ حَسَنَةٍ ؟  فَسَأَلَهُ سَائِلٌ مِنْ جُلَسَائِهِ : كَيْفَ يَكْسِبُ أَحَدُنَا أَلْفَ حَسَنَةٍ ؟ قَالَ :  يُسَبِّحُ مِائَةَ تَسْبِيحَةٍ ، فَيُكْتَبُ لَهُ أَلْفُ حَسَنَةٍ ، أَوْ يُحَطُّ عَنْهُ أَلْفُ خَطِيئَةٍ.',
+          100,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'مَنْ قَالَ : سُبْحَانَ اللهِ العَظِيمِ وَبِحَمْدِهِ ، غُرِسَتْ لَهُ نَخْلَةٌ فِي الجَنَّةِ.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: يَا عَبْدَاللَّهِ بْنَ قَيْسٍ، أَلَا أَدُلُّكَ عَلَى كَنْزٍ مِنْ كُنُوزِ الْجَنَّةِ؟ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'و قال ﷺ: أَحَبُّ الكَلامِ إلى اللهِ أرْبَعٌ: سُبْحانَ اللهِ، والْحَمْدُ لِلَّهِ، ولا إلَهَ إلَّا اللَّهُ، واللَّهُ أكْبَرُ. لا يَضُرُّكَ بأَيِّهِنَّ بَدَأْتَ.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'جاءَ أَعْرَابي إِلى رسُولِ اللَّه ﷺ فقالَ: علِّمْني كَلامًا أَقُولُهُ. قالَ: قُل لاَ إله إلاَّ اللَّه وحدَهُ لا شرِيكَ لهُ، اللَّه أَكْبَرُ كَبِيرًا، والحمْدُ للَّهِ كَثيرًا، وسُبْحانَ اللَّه ربِّ العالمِينَ، وَلاَ حوْل وَلا قُوَّةَ إلاَّ باللَّهِ العَزيز الحكيمِ، قَالَ: فَهؤلاء لِرَبِّي، فَما لِي؟ قَالَ: قُل: اللَّهُمَّ اغْفِرْ لِي وارْحمني. واهْدِني، وارْزُقْني.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'كانَ الرَّجُلُ إذَا أَسْلَمَ، عَلَّمَهُ النبيُّ صَلَّى اللَّهُ عليه وسلَّمَ الصَّلَاةَ، ثُمَّ أَمَرَهُ أَنْ يَدْعُوَ بهَؤُلَاءِ الكَلِمَاتِ: اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَعَافِنِي وَارْزُقْنِي.',
+          1,
+          0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'إن أَفْضَلُ الذِّكْرِ لاَ إِلَهَ إِلاَّ اللَّهُ.', 1, 0),
+    );
+    tasbehTahmedTakbeerAthkars.add(
+      new SubCategoryDetails(
+          'الباقيات الصالحات: سبحان الله والحمد لله ولا إله إلا الله والله أكبر، و لا حول ولا قوة إلا بالله.',
+          1,
+          0),
+    );
+    return tasbehTahmedTakbeerAthkars;
+  }
+
+  //populateTakbeerProhibitMuhammadAthkars
+  //ﷺ
   List<SubCategoryDetails> populatePrayersForDeadAthkars() {
     List<SubCategoryDetails> prayersForDeadAthkars =
         new List<SubCategoryDetails>();
@@ -1185,4 +3509,236 @@ class CategoryUtil {
     );
     return prayersForDeadAthkars;
   }
+
+//  List<SubCategoryDetails> populatePrayAthkars() {
+//    List<SubCategoryDetails> prayAthkars = new List<SubCategoryDetails>();
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: اللَّهُمَّ بَاعِدْ بَيْنِيْ وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ   الْمشرِقِ وَالمغْرِبِ، اللهم نَقِّنِيْ مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأبْيَضُ مِنَ الدَّنَسِ، اللهم اغْسِلْنِيْ مِنْ خَطَايَايَ، بِالثَّلْجِ وَالْمَاءِ والْبَرَدِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: سُبْحَانَكَ اللهم وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: الْحَمْدُ للّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: اللهُ أكْبَرُ كَبِيْرًا، وَالْحَمْدُ لِلهِ كَثِيْرًا، وَسُبْحَانَ اللهِ بُكْرَةً وَّاصِيْلًا. أعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: اللَّهُمَّ رَبَّ جَبْرَائِيلَ، وَمِيْكَائِيلَ، وَإِسْرَافِيْلَ، فَاطِرَ السَّمَوَاتِ وَالْأرْضِ، عَالِمَ الغَيْبِ وَالشَّهَادَة،ِ أنْتَ تَحْكُمُ بَيْنَ   عِبَادِكَ فِيْمَا كَانُوا فِيْهِ يَخْتَلِفُونَ، اِهْدِنِيْ لما اخْتُلِفَ فِيْهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِيْ مَنْ تَشَاءُ إِلَى صِرَاطٍ مُّسْتَقِيْمٍ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية استفتاح الصلاة: وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَوَاتِ وَالْأرْضَ حَنِيْفًا وَّمَا أنَا مِنَ المشركينَ، إِنَّ صَلَاتِيْ، وَنُسُكِيْ، وَمَحْيَايَ، وَمَمَاتِيْ لِلهِ رَبِّ الْعالمينَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَانَا مِنَ المسلمينَ، اللهم أنْتَ الملِكُ لَا إِلَهَ إِلَّا أنْتَ، أنْتَ رَبِّيْ وَأنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا إِنَّهُ لَا يَغْفِرُ الذُّنوبَ إِلَّا أنْتَ. وَاهْدِنِيْ لِأحْسَنِ الْأخْلَاقِ لَا يَهْدِيْ لِأحْسَنِهَا إِلَّا أنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا، لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ بِيَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أسْتَغْفِرُكَ وَأتُوْبُ إِلَيْكَ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الركوع: سُبْحَانَ رَبِّيَ العَظِيمِ وَبِحَمْدِهِ.', 3, 0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الركوع: سُبحانَكَ اللّهمَّ ربَّنا وَبِحمدِكَ، اللّهمَّ اغفِرْ لي.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الركوع: سُبُّوُحٌ، قُدُّوسٌ، رَبُّ المَلَائِكَةِ وَالرُّوْحِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الركوع: سُبْحَانَ ذِيْ الْجَبَرُوْتِ، وَالْملكوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الركوع: اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي وَبَصَرِي، وَمُخِّي وَعَظْمِي وَعَصَبِي.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الرفع من الركوع: سَمِعَ اللهُ لمنْ حَمِدَهُ.', 1, 0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الرفع من الركوع: رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبارَكًا فِيْهِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الرفع من الركوع: اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ اسْلَمْتُ، خَشَعَ لَكَ سَمْعِيْ، و بَصَـرِيْ، وَمُخِّيْ، وَعَظْمِيْ، وَعَصَبِيْ، وَمَا استَقَلَّتْ بِهِ قَدَمِيْ لِلهِ رَبِّ العالمين.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الرفع من الركوع: اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْارْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، أهْلَ الثَّنَاءِ والمجد، أحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللهم لَا مَانِعَ لما أعْطَيْتَ، وَلَا مُعْطِيَ لما مَنَعْتَ، وَلَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الْجَدُّ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الرفع من الركوع: اللَّهُمَّ لَكَ الْحَمْدُ مِلْءَ السَّمَاءِ، وَمِلْءَ الْارْضِ، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، اللَّهُمَّ طَهِّرْنِي بِالثَّلْجِ وَالْبَرَدِ، والماء الْبَارِدِ، اللَّهُمَّ طَهِّرْنِي مِنَ الذُّنُوبِ وَالْخَطَايَا، كَمَا يُنَقَّى الثَّوْبُ الْابْيَضُ مِنَ الْوَسَخِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: سُبْحَانَ رَبِّيَ الأعْلَى وَبِحَمْدِهِ.', 3, 0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: سُبُّوحٌ قُدُّوسٌ رَبُّ الملائكةِ وَالرُّوحِ.', 1, 0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: سُبحانَكَ اللّهمَّ ربَّنا وَبِحمدِكَ، اللّهمَّ اغفِرْ لي.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: سُبْحَانَ ذِي الْجَبْرُوتِ والملكوت وَالْكِبْرِيَاءِ وَالْعَظَمَةِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَتَهُ وَسِرَّهُ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: اللَّهُمَّ لَكَ سَجَدْتُّ وَبِكَ آمَنْتُ، وَلَكَ أسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِيْ خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللهُ أحْسَنُ الخالقين.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: اللَّهُمَّ إِنِّيْ أعُوْذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقوْبَتِكَ، وَأعُوْذُ بِكَ مِنْكَ، لَا أُحْصِـي ثَنَاءً عَلَيْكَ، أنْتَ كَمَا أثْنَيْتَ عَلَى نَفْسِكَ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: رَبِّ اعْطِ نَفْسِي تَقْوَاهَا زَكِّهَا أنْتَ خَيْرُ مَنْ زَكَّاهَا أنْتَ وَلِيُّهَا وَمَوْلَاهَا.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية السجود: اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًاُ، وَاجْعَلْ فِيْ سَمْعِيْ نُورًاُ، وَاجْعَلْ فِيْ بَصَرِيْ نُورًاُ، وَاجْعَلْ مِنْ تَحْتِي نُورًاُ، وَاجْعَلْ مِنْ فَوْقِي نُورًاُ، وَعَنْ يَمِينِي نُورًاُ، وَعَنْ يَسَارِي نُورًاُ، وَاجْعَلْ أمَامِي نُورًاُ، وَاجْعَلْ خَلْفِي نُورًاُ، وَأعْظِمْ لِيْ نُورًا.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية الجلوس بين السجدتين: رَبِّ رَبِّ اغْفِرْ لِيْ، رَبِّ اغْفِرْ لِيْ. \n اللَّهُمَّ اغْفِرْ لِيْ، وَارْحَمْنِيْ، وَاهْدِنِيْ، وَاجْبُرْنِيْ، وَعَافِنِيْ، وَارْزُقْنِيْ، وَارْفَعْنِيْ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'دعاء سجود التلاوة: سَجَدَ وَجْهِيَ للَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وبَصَرَهُ، بِحَوْلِهِ وَقُوَّتِهِ، فَتَبَارَكَ اللَّهُ أَحْسَنُ الْـخَالِقِينَ.\n اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أجْراً، وَضَعْ عَنِّي بِهَا وِزْرَاً، واْجعَلْهَا لِي عِنْدِكَ ذُخْراً، وتَقَبَّلَهَا مِنِّي كَمَا تَقَبَّلْتَهَا مِنْ عَبْدِكَ دَاوُدَ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'التشهد الأول: التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَات،ُ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُه،ُ السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِين، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّه،ُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'التشهد الأخير: التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَات،ُ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ.\n اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدً، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ. وَأَعُوذُ بِكَ مِنْ فِتْنَةِ المسيح الدَّجَّالِ. وَأَعُوذُ بِكَ مِنْ فِتْنَةِ المحيا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ المأثم والمغرم.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيرا، وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ. فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ. وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ. وَمَا أَسْرَفْتُ. وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ المقدم وَأَنْتَ الْمُؤَخِّرُ. لاَ إِلهَ إِلاَّ أَنْتَ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ الْجَنَّةَ وَأعُوْذُ بِكَ مِنَ النَّارِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ يَا أللهُ بِأنَّكَ الْوَاحِدُ الْأحَدُ الصَّمَدُ الَّذِيْ لَمْ يَلِدْ وَلَمْ يُوْلَدْ، وَلَمْ يَكنْ لَهُ كُفُوًا أحَدٌ، أنْ تَغْفِرَ لِيْ ذُنُوْبِيْ إِنَّكَ أنْتَ الْغَفُوْرُ الرَّحِيْمُ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ حَاسِبْنِيْ حِسَابَاً يَسِيراً.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ بِأنَّ لَكَ الْحَمْدُ لَا إِلَهَ إِلَّا أنْتَ وَحْدَكَ لَا شَرِيْكَ لَكَ، المنان، يَا بَدِيعَ السَّمَوَاتِ وَالْارْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ إِنِّيْ أسْألُكَ الْجَنَّةَ وَأعُوْذُ بِكَ مِنَ النَّارِ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ إِنِّيْ أسْألُكَ بِأنَّيْ أشْهَدُ أنَّكَ أنْتَ اللهُ لَا إِلَهَ إِلَّا أنْتَ الْأحَدُ الصَّمَدُ الَّذِيْ لَمْ يَلِدْ وَلَمْ يُوْلَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أحَدٌ.',
+//          1,
+//          0),
+//    );
+//    prayAthkars.add(
+//      new SubCategoryDetails(
+//          'أدعية بعد التشهد الأخير وقبل السلام: اللَّهُمَّ بِعِلْمِكَ الغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أحْيِنِيْ مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِيْ، وَتَوَفَّنِيْ إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِيْ، اللهم إِنِّيْ أسْألُكَ خَشْيَتَكَ فِيْ الْغَيْبِ وَالشَّهَادَةِ، وَأسْألُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ، وَأسْألُكَ الْقَصْدَ فِيْ الْغِنَى وَالْفَقْرِ، وَأسْألُكَ نَعِيْمًا لَا يَنْفَدُ، وَأسْألُكَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأسْألُكَ الرِّضَا بَعْدَ الْقَضَاءِ، وَأسْألُكَ بَرْدَ الْعَيْشِ بَعْدَ الموت، وَأسْألُكَ لَذَّةَ النَّظَرِ إِلَى وَجْهِكَ، وَالشَّوْقَ إِلَى لِقائِكَ فِيْ غَيْرِ ضَرَّاءَ مُضِرَّةٍ، وَلَا فِتْنَةٍ مُضِلَّةٍ، اللهم زَيِّنَّا بِزِينَةِ الْإِيْمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِيْنَ.',
+//          1,
+//          0),
+//    );
+//    return prayAthkars;
+//  }
+
 }
