@@ -5,6 +5,7 @@ const kHomePageHeaderText = 'أذكار و أدعية مختارة';
 const kAddPageHeaderText = 'إضافة أذكار/أدعية';
 const kAddText = 'إضافة';
 const kAboutUsHeaderText = 'معلومات التطبيق';
+const kPrayersTimeHeaderText = 'مواقيت الصلاة';
 
 const kBottomContainerHeight = 80.0;
 

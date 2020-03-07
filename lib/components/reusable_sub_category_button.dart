@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
+import 'package:share/share.dart';
 
 class ReusableSubCategoryButton extends StatefulWidget {
   ReusableSubCategoryButton(
@@ -28,11 +29,18 @@ class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
           color: widget.color,
           borderRadius: BorderRadius.circular(30.0),
         ),
-        child: Text(
-          widget.buttonTitle,
-          style: kLargeButtonTextStyle,
-          textDirection: TextDirection.rtl,
+        //child: Center(
+        child: GestureDetector(
+          onLongPress: () {
+            Share.share(widget.buttonTitle);
+          },
+          child: Text(
+            widget.buttonTitle,
+            style: kLargeButtonTextStyle,
+            textDirection: TextDirection.rtl,
+          ),
         ),
+        //),
         margin: EdgeInsets.only(
             top: 7.5,
             bottom: 7.5,

@@ -17,7 +17,7 @@ class ReusableButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 60.0,
+        // height: 60.0,
         decoration: BoxDecoration(
           border: Border.all(
             color: kButtonBorderColor,
