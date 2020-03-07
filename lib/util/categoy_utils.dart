@@ -1110,7 +1110,7 @@ class CategoryUtil {
     List<SubCategoryDetails> backToHomeAthkars = new List<SubCategoryDetails>();
     backToHomeAthkars.add(
       new SubCategoryDetails(
-          'َبِسْمِ اللَّهِ وَلَجْنَا، و بِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا، ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِه.',
+          'بِسْمِ اللَّهِ وَلَجْنَا، وبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا، ثُمَّ لِيُسَلِّمْ عَلَى أَهله.',
           1,
           0),
     );
