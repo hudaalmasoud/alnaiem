@@ -114,11 +114,10 @@ class CategoryUtil {
         populatePrayerCallAthkars(),
       ),
     );
-    //assets/images/16.png
     athkars.add(
       new AthkarCategory(
         'دعاء الاستفتاح',
-        'assets/images/1.jpg',
+        'assets/images/16.png',
         populateEsteftahAthkars(),
       ),
     );
@@ -220,11 +219,10 @@ class CategoryUtil {
         populateWakefulnessAthkars(),
       ),
     );
-    //'assets/images/31.png',
     athkars.add(
       new AthkarCategory(
         'دعاء الفزع في النوم ومن بلي بالوحشةً',
-        'assets/images/1.jpg',
+        'assets/images/31.png',
         populateNightmareAthkars(),
       ),
     );
@@ -257,6 +255,7 @@ class CategoryUtil {
         populateAlhamAndAlhozonAthkars(),
       ),
     );
+    //TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'دعاء الكرب',
@@ -267,21 +266,21 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'دعاء لقاء العدو وذي السلطان',
-        'assets/images/1.jpg',
+        'assets/images/36.png',
         populateFacingEnemyAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء من خاف ظلم السلطان',
-        'assets/images/1.jpg',
+        'assets/images/37.png',
         populateFearOfFacingEnemyAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء على العدو',
-        'assets/images/1.jpg',
+        'assets/images/38.png',
         populatePrayersOnEnemyAthkars(),
       ),
     );
@@ -296,56 +295,56 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'دعاء من أصابه شك في الإيمان',
-        'assets/images/1.jpg',
+        'assets/images/39.png',
         populateFaithQuestioningAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء قضاء الدين',
-        'assets/images/1.jpg',
+        'assets/images/40.png',
         populatePaymentAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الوسوسة في الصلاة والقراءة',
-        'assets/images/1.jpg',
+        'assets/images/41.png',
         populateWaswasinPrayingAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء من استصعب عليه أمر',
-        'assets/images/1.jpg',
+        'assets/images/42.png',
         populateHardThingsAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول ويفعل من أذنب ذنباً',
-        'assets/images/1.jpg',
+        'assets/images/43.png',
         populateWhoDidBadThingsAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء طرد الشيطان ووساوسهً',
-        'assets/images/1.jpg',
+        'assets/images/44.png',
         populateForDevilAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء حينما يقع مالا يرضاه أو غلب على أمره',
-        'assets/images/1.jpg',
+        'assets/images/45.png',
         populateWeaknessAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'تهنئة المولود له وجوابه',
-        'assets/images/1.jpg',
+        'assets/images/46.png',
         populateNewBabyAthkars(),
       ),
     );
@@ -360,112 +359,112 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'الدعاء للمريض في عيادته',
-        'assets/images/1.jpg',
+        'assets/images/47.png',
         populateVisitingSickPersonAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'فضل عيادة المريض',
-        'assets/images/1.jpg',
+        'assets/images/48.png',
         populateTheBenefitOfVisitingSickPersonAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء المريض الذي يئس من حياته',
-        'assets/images/1.jpg',
+        'assets/images/49.png',
         populateDesperateAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'تلقين المحتضر',
-        'assets/images/1.jpg',
+        'assets/images/50.png',
         populateTalqeenAlMohtaderAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء من أصيب بمصيبة',
-        'assets/images/1.jpg',
+        'assets/images/51.png',
         populateMnOsebBmosebahAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء عند إغماض الميت',
-        'assets/images/1.jpg',
+        'assets/images/52.png',
         populateEghmadAlMayetAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء للميت في الصلاة عليه',
-        'assets/images/1.jpg',
+        'assets/images/53.png',
         populatePrayForDeadAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء للفرط في الصلاة عليه ',
-        'assets/images/1.jpg',
+        'assets/images/54.png',
         populatePrayForDead2Athkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء التعزية',
-        'assets/images/1.jpg',
+        'assets/images/55.png',
         populateAltazeyahAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء عند إدخال الميت القبر',
-        'assets/images/1.jpg',
+        'assets/images/56.png',
         populatePutDeadInGraveAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء بعد دفن الميت',
-        'assets/images/1.jpg',
+        'assets/images/57.png',
         populateAfterPutDeadInGraveAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء زيارة القبور',
-        'assets/images/1.jpg',
+        'assets/images/58.png',
         populateVisitGraveAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الريح',
-        'assets/images/1.jpg',
+        'assets/images/59.png',
         populateWindAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الرعد',
-        'assets/images/1.jpg',
+        'assets/images/60.png',
         populateThunderAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'من أدعية الاستسقاء',
-        'assets/images/1.jpg',
+        'assets/images/61.png',
         populateAskForRainAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء إذا نزل المطر',
-        'assets/images/1.jpg',
+        'assets/images/62.png',
         populateDuringRainAthkars(),
       ),
     );
@@ -482,164 +481,165 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'من أدعية الاستصحاء',
-        'assets/images/1.jpg',
+        'assets/images/63.png',
         populateEsteshaAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء رؤية الهلال',
-        'assets/images/1.jpg',
+        'assets/images/64.png',
         populateSeeingCrescentAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء عند إفطار الصائم',
-        'assets/images/1.jpg',
+        'assets/images/65.png',
         populateFeedingFastingPersonAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء قبل الطعام',
-        'assets/images/forkIcon.png',
+        'assets/images/66.png',
         populateBeforeEatingFoodAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء عند الفراغ من الطعام',
-        'assets/images/1.jpg',
+        'assets/images/67.png',
         populateAfterEatingFoodAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الضيف لصاحب الطعام',
-        'assets/images/1.jpg',
+        'assets/images/68.png',
         populateVisitorForHostingAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن سقاه أو إذا أراد ذلك',
-        'assets/images/1.jpg',
+        'assets/images/69.png',
         populateForGiveDrinkAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء إذا أفطر عند أهل بيت',
-        'assets/images/1.jpg',
+        'assets/images/70.png',
         populateForEatingWithFamilyAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الصائم إذا حضر الطعام ولم يفطر',
-        'assets/images/1.jpg',
+        'assets/images/71.png',
         populateFastingWhoDidNotEatAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول الصائم إذا سابه أحد',
-        'assets/images/1.jpg',
+        'assets/images/72.png',
         populateFastingSaysForUnpoliteAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء عند رؤية باكورة الثمر',
-        'assets/images/1.jpg',
+        'assets/images/73.png',
         populateNewFruitAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء العطاس',
-        'assets/images/1.jpg',
+        'assets/images/74.png',
         populateSneezeAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         ' ما يقالُ للكافر إذا عطس فحمد الله',
-        'assets/images/1.jpg',
+        'assets/images/75.png',
         populateSneezeForOtherAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء للمتزوج',
-        'assets/images/1.jpg',
+        'assets/images/76.png',
         populateForMarriedAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء المتزوج و شراء الدابة',
-        'assets/images/1.jpg',
+        'assets/images/77.png',
         populateMarriedForHimselfAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء قبل إتيان الزوجة',
-        'assets/images/1.jpg',
+        'assets/images/78.png',
         populateMarriedAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الغضب',
-        'assets/images/1.jpg',
+        'assets/images/79.png',
         populateAngryAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء من رأى مبتلى',
-        'assets/images/1.jpg',
+        'assets/images/80.png',
         populateSeeingSickAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقال في المجلس',
-        'assets/images/1.jpg',
+        'assets/images/81.png',
         populateCouncilAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'كفارة المجلس',
-        'assets/images/1.jpg',
+        'assets/images/82.png',
         populateAfterCouncilAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن قال غفر الله لك',
-        'assets/images/1.jpg',
+        'assets/images/83.png',
         populateForOtherAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن صنع إليك معروفاً',
-        'assets/images/1.jpg',
+        'assets/images/84.png',
         populateForOtherWhoDidGoodAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يعصم الله به من الدجال',
-        'assets/images/1.jpg',
+        'assets/images/85.png',
         populateForDajalAthkars(),
       ),
     );
+    //TODO: this photo is missing
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن قال إني احبك في الله',
@@ -650,59 +650,60 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن عرض عليك ماله',
-        'assets/images/1.jpg',
+        'assets/images/87.png',
         populateSuggestGivingMoneyAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن أقرض عند القضاء',
-        'assets/images/1.jpg',
+        'assets/images/88.png',
         populateForWhoGiveMoneyAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الخوف من الشرك',
-        'assets/images/1.jpg',
+        'assets/images/89.png',
         populateFearAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن قال بارك الله فيك',
-        'assets/images/1.jpg',
+        'assets/images/90.png',
         populateForWhoSaidAllahBlessYouAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء كراهية الطيرة',
-        'assets/images/1.jpg',
+        'assets/images/91.png',
         populateNotLikeTayarahAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء ركوب الدابة',
-        'assets/images/1.jpg',
+        'assets/images/92.png',
         populateRiddingAnimalAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء السفر',
-        'assets/images/travelIcon.png',
+        'assets/images/93.png',
         populateTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء دخول القرية أو البلدة',
-        'assets/images/1.jpg',
+        'assets/images/94.png',
         populateAccessTownAthkars(),
       ),
     );
+    //TODO: this photo is missing
     athkars.add(
       new AthkarCategory(
         'دعاء دخول السوق',
@@ -713,234 +714,235 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'الدعاء إذا تعس المركوب',
-        'assets/images/1.jpg',
+        'assets/images/96.png',
         populateBadRiddingAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء المسافر للمقيم',
-        'assets/images/1.jpg',
+        'assets/images/97.png',
         populateForWhoTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء المقيم للمسافر',
-        'assets/images/1.jpg',
+        'assets/images/98.png',
         populateForWhoTravel2Athkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'التكبير والتسبيح في سير السفر',
-        'assets/images/1.jpg',
+        'assets/images/99.png',
         populateForTakbeerAndTasbeehAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء المسافر إذا أسحر',
-        'assets/images/1.jpg',
+        'assets/images/100.png',
         populateTravelerIfAsharAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء إذا نزل منزلا في سفر أو غيره',
-        'assets/images/1.jpg',
+        'assets/images/101.png',
         populateStayAtTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ذكر الرجوع من السفر',
-        'assets/images/1.jpg',
+        'assets/images/102.png',
         populateBackFromTravelAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول ويفعل من أتاه أمر يسره أو يكرهه',
-        'assets/images/1.jpg',
+        'assets/images/103.png',
         populateWhatToSayOnGoodAndBadAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'فضل الصلاة على النبي ﷺ',
-        'assets/images/1.jpg',
+        'assets/images/104.png',
         populateSalahOnProphetMuhammadAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'إفشاء السلام',
-        'assets/images/1.jpg',
+        'assets/images/105.png',
         populateSayHiAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'كيف يرد السلام على الكافر إذا سلم',
-        'assets/images/1.jpg',
+        'assets/images/106.png',
         populateReplyToHiAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء صياح الديك ونهيق الحمار',
-        'assets/images/1.jpg',
+        'assets/images/107.png',
         populateAnimalSoundsAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء نباح الكلاب بالليل',
-        'assets/images/1.jpg',
+        'assets/images/108.png',
         populateDogsSoundsAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن سببته',
-        'assets/images/1.jpg',
+        'assets/images/109.png',
         populateToSomeoneElseAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول المسلم إذا مدح المسلم',
-        'assets/images/1.jpg',
+        'assets/images/110.png',
         populateComplimentAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول المسلم إذا زكي',
-        'assets/images/1.jpg',
+        'assets/images/111.png',
         populateMaYaqolEzaZokiAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'كيف يلبي المحرم في الحج أو العمرة',
-        'assets/images/1.jpg',
+        'assets/images/112.png',
         populateTalbeyahAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'التكبيرة إذا أتي الركن الأسود',
-        'assets/images/1.jpg',
+        'assets/images/113.png',
         populateTakbeerhAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء بين الركن اليماني والحجر الأسود',
-        'assets/images/1.jpg',
+        'assets/images/114.png',
         populateRokonYamaniAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء الوقوف على الصفا والمروة',
-        'assets/images/1.jpg',
+        'assets/images/115.png',
         populateSafaAndMarwaAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الدعاء يوم عرفة',
-        'assets/images/1.jpg',
+        'assets/images/116.png',
         populateArafahAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الذكر عند المشعر الحرام',
-        'assets/images/1.jpg',
+        'assets/images/117.png',
         populateMasharAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'التكبيرة عند رمي الجمار مع كل حصاة',
-        'assets/images/1.jpg',
+        'assets/images/118.png',
         populateStoneThrowingAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول عند التعجب والأمر السار',
-        'assets/images/1.jpg',
+        'assets/images/119.png',
         populateExclamationAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يفعل من أتاه أمر يسره',
-        'assets/images/1.jpg',
+        'assets/images/120.png',
         populateEasyThingsAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول من أحس وجعاً في جسده',
-        'assets/images/1.jpg',
+        'assets/images/121.png',
         populatePainAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'دعاء من خشي أن يصيب شيئاً بعينه',
-        'assets/images/1.jpg',
+        'assets/images/122.png',
         populatePainInEyesAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقال عند الفزع',
-        'assets/images/1.jpg',
+        'assets/images/123.png',
         populateScareAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول عند الذبح أو النحر',
-        'assets/images/1.jpg',
+        'assets/images/124.png',
         populateOdheyehAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'ما يقول لرد كيد مردة الشياطين',
-        'assets/images/1.jpg',
+        'assets/images/125.png',
         populateProtectFromDevilAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'الاستغفار والتوبة',
-        'assets/images/1.jpg',
+        'assets/images/126.png',
         populateEsteghfarAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'فضل التسبيح والتحميد ، والتهليل ، والتكبير',
-        'assets/images/1.jpg',
+        'assets/images/127.png',
         populateTasbehTahmedTakbeerAthkars(),
       ),
     );
     athkars.add(
       new AthkarCategory(
         'كيف كان النبي صلى الله عليه وسلم يسبح ؟',
-        'assets/images/1.jpg',
+        'assets/images/128.png',
         populateTakbeerProhibitMuhammadAthkars(),
       ),
     );
+    //TODO: This photo is missing
     athkars.add(
       new AthkarCategory(
         'من أنواع الخير والآداب الجامعة',
@@ -951,7 +953,7 @@ class CategoryUtil {
     athkars.add(
       new AthkarCategory(
         'أدعية للميت',
-        'assets/images/prayersForDeadIcon.png',
+        'assets/images/129.png',
         populatePrayersForDeadAthkars(),
       ),
     );
