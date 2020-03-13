@@ -38,7 +38,7 @@ class ReusableButton extends StatelessWidget {
               bottom: 0,
               top: 0,
               left: 0,
-              right: MediaQuery.of(context).size.width * 0.11),
+              right: MediaQuery.of(context).size.width * 0.12),
           child: Text(
             buttonTitle,
             style: kCategoryButtonTextStyle,

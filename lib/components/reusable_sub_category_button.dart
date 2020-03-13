@@ -4,9 +4,13 @@ import 'package:share/share.dart';
 
 class ReusableSubCategoryButton extends StatefulWidget {
   ReusableSubCategoryButton(
-      {@required this.onTap, @required this.buttonTitle, @required this.color});
+      {@required this.onTap,
+      @required this.buttonTitle,
+      @required this.counter,
+      @required this.color});
   final Function onTap;
   final String buttonTitle;
+  final String counter;
   final Color color;
 
   @override
@@ -32,10 +36,10 @@ class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
         //child: Center(
         child: GestureDetector(
           onLongPress: () {
-            Share.share(widget.buttonTitle);
+            Share.share(widget.buttonTitle + KShareAppDetails);
           },
           child: Text(
-            widget.buttonTitle,
+            widget.buttonTitle + widget.counter,
             style: kLargeButtonTextStyle,
             textDirection: TextDirection.rtl,
           ),

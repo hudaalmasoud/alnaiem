@@ -18,7 +18,7 @@ const kLargeButtonTextStyle = TextStyle(
 );
 
 const kCategoryButtonTextStyle = TextStyle(
-    fontSize: 17.0,
+    fontSize: 16.0,
     fontWeight: FontWeight.bold,
     color: Colors.black,
     fontFamily: ArabicFonts.Cairo,
@@ -87,3 +87,6 @@ const kEurekaAppzEmailBody = 'Email Body';
 const kEurekaAppzEmailSubject = 'Email Subject';
 
 const kShareAppText = 'شارك التطبيق';
+
+const KShareAppDetails =
+    '\n\n' + 'للمزيد حمّل تطبيق النعيم: ' + 'http://onelink.to/alnaiem';

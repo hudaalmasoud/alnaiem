@@ -79,15 +79,14 @@ class _SubCategoryState extends State<SubCategory> {
                   i < widget.athkarCategory.subCategoryDetails.length;
                   i++)
                 ReusableSubCategoryButton(
-                  buttonTitle:
-                      widget.athkarCategory.subCategoryDetails[i].text +
-                          ' (' +
-                          (widget.athkarCategory.subCategoryDetails[i]
-                                      .totalCounter -
-                                  widget.athkarCategory.subCategoryDetails[i]
-                                      .currentCounter)
-                              .toString() +
-                          ')',
+                  buttonTitle: widget.athkarCategory.subCategoryDetails[i].text,
+                  counter: ' (' +
+                      (widget.athkarCategory.subCategoryDetails[i]
+                                  .totalCounter -
+                              widget.athkarCategory.subCategoryDetails[i]
+                                  .currentCounter)
+                          .toString() +
+                      ')',
                   color: (i % 2) == 0 ? kLightButtonColor : kDarkButtonColor,
                   onTap: () {
                     setState(
