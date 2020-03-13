@@ -190,6 +190,14 @@ flutter:
     - assets/images/127.png
     - assets/images/128.png
     - assets/images/129.png
+    - assets/images/130.png
+    - assets/images/131.png
+    - assets/images/132.png
+    - assets/images/133.png
+    - assets/images/134.png
+    - assets/images/135.png
+    - assets/images/136.png
+    - assets/images/137.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -247,19 +247,17 @@ class CategoryUtil {
         populateAfterAlwaterAthkars(),
       ),
     );
-    //TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'دعاء الهم و الحزن',
-        'assets/images/1.jpg',
+        'assets/images/130.png',
         populateAlhamAndAlhozonAthkars(),
       ),
     );
-    //TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'دعاء الكرب',
-        'assets/images/1.jpg',
+        'assets/images/131.png',
         populateAlkarbAthkars(),
       ),
     );
@@ -284,11 +282,10 @@ class CategoryUtil {
         populatePrayersOnEnemyAthkars(),
       ),
     );
-//TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'ما يقول من خاف قوما',
-        'assets/images/1.jpg',
+        'assets/images/132.png',
         populatePrayersOnFearingGroupAthkars(),
       ),
     );
@@ -348,11 +345,10 @@ class CategoryUtil {
         populateNewBabyAthkars(),
       ),
     );
-//TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'ما يعوذ به الأولاد',
-        'assets/images/1.jpg',
+        'assets/images/133.png',
         populateForKidsAthkars(),
       ),
     );
@@ -468,12 +464,10 @@ class CategoryUtil {
         populateDuringRainAthkars(),
       ),
     );
-
-    //TODO: photo is missing
     athkars.add(
       new AthkarCategory(
         'الذكر بعد نزول المطر',
-        'assets/images/1.jpg',
+        'assets/images/134.png',
         populateAfterRainAthkars(),
       ),
     );
@@ -639,11 +633,10 @@ class CategoryUtil {
         populateForDajalAthkars(),
       ),
     );
-    //TODO: this photo is missing
     athkars.add(
       new AthkarCategory(
         'الدعاء لمن قال إني احبك في الله',
-        'assets/images/1.jpg',
+        'assets/images/135.png',
         populateForLoveInGoodAthkars(),
       ),
     );
@@ -703,11 +696,10 @@ class CategoryUtil {
         populateAccessTownAthkars(),
       ),
     );
-    //TODO: this photo is missing
     athkars.add(
       new AthkarCategory(
         'دعاء دخول السوق',
-        'assets/images/1.jpg',
+        'assets/images/136.png',
         populateAccessMarketAthkars(),
       ),
     );
@@ -942,11 +934,10 @@ class CategoryUtil {
         populateTakbeerProhibitMuhammadAthkars(),
       ),
     );
-    //TODO: This photo is missing
     athkars.add(
       new AthkarCategory(
         'من أنواع الخير والآداب الجامعة',
-        'assets/images/1.jpg',
+        'assets/images/137.png',
         populateGoodAndPoliteAthkars(),
       ),
     );
