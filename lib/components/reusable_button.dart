@@ -33,7 +33,12 @@ class ReusableButton extends StatelessWidget {
             alignment: Alignment.topRight,
           ),
         ),
-        child: Center(
+        child: Padding(
+          padding: EdgeInsets.only(
+              bottom: 0,
+              top: 0,
+              left: 0,
+              right: MediaQuery.of(context).size.width * 0.11),
           child: Text(
             buttonTitle,
             style: kCategoryButtonTextStyle,
