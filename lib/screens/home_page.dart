@@ -12,6 +12,7 @@ List<AthkarCategory> _athkarCategoryList = [];
 List<AthkarCategory> _filteredList = [];
 String filter = "";
 TextEditingController controller;
+bool _isVisible = false;
 
 class HomePage extends StatefulWidget {
   @override
@@ -92,6 +93,19 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search),
+                onPressed: () {
+                  setState(() {
+                    _isVisible = !_isVisible;
+                    if (_isVisible == false) {
+                      controller.clear();
+                    }
+                  });
+                },
+              )
+            ],
           ),
           body: Container(
             child: Column(
@@ -99,30 +113,33 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 60.0,
-                    child: TextField(
-                      autocorrect: false,
-                      style: new TextStyle(color: Colors.black),
-                      onChanged: (value) {},
-                      controller: controller,
-                      decoration: InputDecoration(
-                        hintText: "بحث",
-                        hintStyle: TextStyle(
-                            fontSize: 20.0, color: kButtonBorderColor),
-                        fillColor: Colors.white.withOpacity(0.5),
-                        filled: true,
-                        prefixIcon: Icon(
-                          Icons.search,
-                          color: kButtonBorderColor,
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            //color: kButtonBorderColor,
-                            color: Colors.blue,
-                            style: BorderStyle.solid,
+                    child: Visibility(
+                      visible: _isVisible,
+                      child: TextField(
+                        autofocus: _isVisible,
+                        autocorrect: false,
+                        style: new TextStyle(color: Colors.black),
+                        onChanged: (value) {},
+                        controller: controller,
+                        decoration: InputDecoration(
+                          hintText: "بحث",
+                          hintStyle: TextStyle(
+                              fontSize: 20.0, color: kButtonBorderColor),
+                          fillColor: Colors.white.withOpacity(0.5),
+                          filled: true,
+                          prefixIcon: Icon(
+                            Icons.search,
+                            color: kButtonBorderColor,
                           ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(25.0),
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              //color: kButtonBorderColor,
+                              color: Colors.blue,
+                              style: BorderStyle.solid,
+                            ),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(25.0),
+                            ),
                           ),
                         ),
                       ),
