@@ -14,44 +14,46 @@ class ReusableButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        // height: 60.0,
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: kButtonBorderColor,
-            style: BorderStyle.solid,
-            width: 1.0,
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          // height: 60.0,
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: kButtonBorderColor,
+              style: BorderStyle.solid,
+              width: 1.0,
+            ),
+            color: color,
+            borderRadius: BorderRadius.circular(15.0),
+            image: new DecorationImage(
+              image: new AssetImage(imagePath),
+              colorFilter: new ColorFilter.mode(
+                  Colors.black.withOpacity(0.3), BlendMode.dstATop),
+              alignment: Alignment.topRight,
+            ),
           ),
-          color: color,
-          borderRadius: BorderRadius.circular(15.0),
-          image: new DecorationImage(
-            image: new AssetImage(imagePath),
-            colorFilter: new ColorFilter.mode(
-                Colors.black.withOpacity(0.3), BlendMode.dstATop),
-            alignment: Alignment.topRight,
+          child: Padding(
+            padding: EdgeInsets.only(
+                bottom: 0,
+                top: 0,
+                left: 0,
+                right: MediaQuery.of(context).size.width * 0.12),
+            child: Text(
+              buttonTitle,
+              style: kCategoryButtonTextStyle,
+              textDirection: TextDirection.rtl,
+            ),
           ),
+          margin: EdgeInsets.only(
+              top: 7.5,
+              bottom: 7.5,
+              left: MediaQuery.of(context).size.width * 0.03,
+              right: MediaQuery.of(context).size.width * 0.03),
+          padding:
+              EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
         ),
-        child: Padding(
-          padding: EdgeInsets.only(
-              bottom: 0,
-              top: 0,
-              left: 0,
-              right: MediaQuery.of(context).size.width * 0.12),
-          child: Text(
-            buttonTitle,
-            style: kCategoryButtonTextStyle,
-            textDirection: TextDirection.rtl,
-          ),
-        ),
-        margin: EdgeInsets.only(
-            top: 7.5,
-            bottom: 7.5,
-            left: MediaQuery.of(context).size.width * 0.03,
-            right: MediaQuery.of(context).size.width * 0.03),
-        padding:
-            EdgeInsets.only(bottom: 10.0, top: 10.0, left: 10.0, right: 10.0),
       ),
     );
   }

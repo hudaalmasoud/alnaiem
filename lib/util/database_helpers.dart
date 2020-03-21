@@ -31,6 +31,34 @@ class Prayers {
   }
 }
 
+// database table and column names
+final String tableFavorites = 'favorites';
+final String columnFavoriteId = '_id';
+final String columnFavoriteText = 'text';
+
+// data model class
+class Favorites {
+  int idFav;
+  String favText;
+
+  Favorites();
+
+  // convenience constructor to create a prayer object
+  Favorites.fromMap(Map<String, dynamic> map) {
+    idFav = map[columnFavoriteId];
+    favText = map[columnFavoriteText];
+  }
+
+  // convenience method to create a Map from this prayer object
+  Map<String, dynamic> toMap() {
+    var map = <String, dynamic>{columnFavoriteText: favText};
+    if (idFav != null) {
+      map[columnFavoriteId] = idFav;
+    }
+    return map;
+  }
+}
+
 // singleton class to manage the database
 class DatabaseHelper {
   // This is the actual database filename that is saved in the docs directory.
@@ -58,15 +86,38 @@ class DatabaseHelper {
     String path = join(documentsDirectory.path, _databaseName);
     // Open the database. Can also add an onUpdate callback parameter.
     return await openDatabase(path,
-        version: _databaseVersion, onCreate: _onCreate);
+        version: _databaseVersion, onCreate: _onCreate, onOpen: _onOpen);
   }
 
   // SQL string to create the database
   Future _onCreate(Database db, int version) async {
     await db.execute('''
-              CREATE TABLE $tablePrayers (
+              CREATE TABLE IF NOT EXISTS $tablePrayers (
                 $columnId INTEGER PRIMARY KEY,
                 $columnText TEXT NOT NULL
+              )
+              ''');
+
+    await db.execute('''
+              CREATE TABLE IF NOT EXISTS $tableFavorites (
+                $columnFavoriteId INTEGER PRIMARY KEY,
+                $columnFavoriteText TEXT NOT NULL
+              )
+              ''');
+  }
+
+  Future<void> _onOpen(Database db) async {
+    await db.execute('''
+              CREATE TABLE IF NOT EXISTS $tablePrayers (
+                $columnId INTEGER PRIMARY KEY,
+                $columnText TEXT NOT NULL
+              )
+              ''');
+
+    await db.execute('''
+              CREATE TABLE IF NOT EXISTS $tableFavorites (
+                $columnFavoriteId INTEGER PRIMARY KEY,
+                $columnFavoriteText TEXT NOT NULL
               )
               ''');
   }
@@ -76,7 +127,6 @@ class DatabaseHelper {
   Future<int> insert(Prayers prayer) async {
     Database db = await database;
     int id = await db.insert(tablePrayers, prayer.toMap());
-    print(prayer.Text + ':' + id.toString());
     return id;
   }
 
@@ -111,6 +161,49 @@ class DatabaseHelper {
     Database db = await database;
     int count = Sqflite.firstIntValue(
         await db.rawQuery('SELECT COUNT(*) FROM prayers'));
+    return count;
+  }
+
+  //========================================================
+
+  Future<int> insertFav(Favorites favorite) async {
+    Database db = await database;
+    int id = await db.insert(tableFavorites, favorite.toMap());
+    return id;
+  }
+
+  Future<Favorites> queryFav(int id) async {
+    Database db = await database;
+    List<Map> maps = await db.query(tableFavorites,
+        columns: [columnFavoriteId, columnFavoriteText],
+        where: '$columnFavoriteId = ?',
+        whereArgs: [id]);
+    if (maps.length > 0) {
+      return Favorites.fromMap(maps.first);
+    }
+    return null;
+  }
+
+  Future<int> deleteFav(int id) async {
+    Database db = await database;
+    return await db.delete(tableFavorites,
+        where: "$columnFavoriteId = ?", whereArgs: [id]);
+  }
+
+  Future<List<Favorites>> queryAllFav() async {
+    Database db = await database;
+    // get all rows
+    List<Map> result = await db.query(tableFavorites);
+    List<Favorites> list = result.isNotEmpty
+        ? result.map((c) => Favorites.fromMap(c)).toList()
+        : null;
+    return list;
+  }
+
+  Future<int> getNumberOfFav() async {
+    Database db = await database;
+    int count = Sqflite.firstIntValue(
+        await db.rawQuery('SELECT COUNT(*) FROM $tableFavorites'));
     return count;
   }
 }

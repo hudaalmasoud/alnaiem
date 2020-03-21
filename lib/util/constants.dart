@@ -90,3 +90,6 @@ const kShareAppText = 'شارك التطبيق';
 
 const KShareAppDetails =
     '\n\n' + 'للمزيد حمّل تطبيق النعيم: ' + 'http://onelink.to/alnaiem';
+
+const kFavDefaultColor = Color(0xFF808080);
+const kFavColor = Color(0xFFc4421a);
