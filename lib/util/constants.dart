@@ -17,6 +17,14 @@ const kLargeButtonTextStyle = TextStyle(
   package: 'google_fonts_arabic',
 );
 
+const kRedButtonTextStyle = TextStyle(
+  fontSize: 25.0,
+  //fontWeight: FontWeight.bold,
+  color: Color(0xFFc4421a),
+  fontFamily: ArabicFonts.Lateef,
+  package: 'google_fonts_arabic',
+);
+
 const kCategoryButtonTextStyle = TextStyle(
     fontSize: 16.0,
     fontWeight: FontWeight.bold,

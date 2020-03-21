@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:alnaiem/util/constants.dart';
 import 'package:share/share.dart';
@@ -38,9 +41,17 @@ class _ReusableSubCategoryButtonState extends State<ReusableSubCategoryButton> {
           onLongPress: () {
             Share.share(widget.buttonTitle + KShareAppDetails);
           },
-          child: Text(
-            widget.buttonTitle + widget.counter,
-            style: kLargeButtonTextStyle,
+          child: RichText(
+            text: TextSpan(
+              text: widget.buttonTitle,
+              style: kLargeButtonTextStyle,
+              children: <TextSpan>[
+                TextSpan(
+                  text: widget.counter,
+                  style: kRedButtonTextStyle,
+                )
+              ],
+            ),
             textDirection: TextDirection.rtl,
           ),
         ),
