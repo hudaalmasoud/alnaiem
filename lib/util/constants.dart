@@ -47,6 +47,12 @@ const kAboutUsShareTextStyle = TextStyle(
     fontFamily: ArabicFonts.Cairo,
     package: 'google_fonts_arabic');
 
+const kAboutUsOurAppTextStyle = TextStyle(
+    fontSize: 17.0,
+    color: Colors.black,
+    fontFamily: ArabicFonts.Cairo,
+    package: 'google_fonts_arabic');
+
 const kAppNameTextStyle = TextStyle(
     fontSize: 25.0,
     fontWeight: FontWeight.bold,
@@ -101,3 +107,7 @@ const KShareAppDetails =
 
 const kFavDefaultColor = Color(0xFF808080);
 const kFavColor = Color(0xFFc4421a);
+
+const KEurekaAppzYoutubeURL = 'https://youtu.be/UDHwxM6T6iQ';
+
+const KHowTheAppsWork = 'خصائص التطبيق';

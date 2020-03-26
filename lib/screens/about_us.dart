@@ -155,6 +155,41 @@ class AboutUs extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Card(
+                      shape: StadiumBorder(
+                        side: BorderSide(
+                          color: kButtonBorderColor,
+                          width: 1.0,
+                        ),
+                      ),
+                      color: kLightButtonColor,
+                      margin: EdgeInsets.only(
+                        top: 15.0,
+                        left: MediaQuery.of(context).size.width * 0.03,
+                        right: MediaQuery.of(context).size.width * 0.03,
+                      ),
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.web,
+                          color: Colors.white,
+                        ),
+                        title: RichText(
+                          textDirection: TextDirection.ltr,
+                          text: TextSpan(
+                            children: [
+                              TextSpan(
+                                text: KHowTheAppsWork,
+                                style: kAboutUsOurAppTextStyle,
+                                recognizer: TapGestureRecognizer()
+                                  ..onTap = () {
+                                    launch(KEurekaAppzYoutubeURL);
+                                  },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
