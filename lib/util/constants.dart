@@ -110,4 +110,4 @@ const kFavColor = Color(0xFFc4421a);
 
 const KEurekaAppzYoutubeURL = 'https://youtu.be/UDHwxM6T6iQ';
 
-const KHowTheAppsWork = 'خصائص التطبيق';
+const KHowTheAppsWork = 'معلومات التطبيق';
