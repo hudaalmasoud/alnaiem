@@ -12,7 +12,7 @@ description: Athkar Application
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 #latest build for andrios
-version: 2.0.0+2
+version: 3.0.0+3
 #version: 1.0.0+1
 
 environment:
