@@ -49,12 +49,12 @@ class MyAppState extends State<MyApp> {
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text(''),
+                label: '',
                 //backgroundColor: Color(0xFF36a8a8),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.create),
-                title: Text(''),
+                label: '',
                 //backgroundColor: Color(0xFF36a8a8),
               ),
 //              BottomNavigationBarItem(
@@ -64,7 +64,7 @@ class MyAppState extends State<MyApp> {
 //              ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.info),
-                title: Text(''),
+                label: '',
                 //backgroundColor: Color(0xFF36a8a8),
               ),
             ],
